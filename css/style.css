@@ -162,7 +162,7 @@ h3 {
   grid-row: auto;
   height: 75vh;
   background: rgb(68, 66, 131);
-  background-image: url(/images/mountain_image1.jpg);
+  background-image: url(/portfolio-website-gamedev/images/mountain_image1.jpg);
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(11, 1fr);
