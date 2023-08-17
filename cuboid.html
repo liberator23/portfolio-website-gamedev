@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Krogman - Game Designer</title>
+    <link rel="icon" type="image/x-icon" href="https://justinkrogman.com/images/Portfolio Website Favicon.png">
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <style>
+        body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+        .w3-half img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+        .w3-half img:hover{opacity: 1}
+        #main {margin-left: 120px}
+        /* Remove margins from "page content" on small screens */
+        @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
+</head>
+
+<!--Welcome to my Website! If you're reading this, you've found an easter egg! Congrats!-->
+<!-- Beginning of Page Content and Navigation-->
+
+<body class="w3-black">
+
+<!-- NAVIGATION -->
+
+<nav>
+    <div class="w3-bar w3-black">
+        <a href="https://justinkrogman.com/index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
+    <div class="w3-dropdown-hover w3-mobile">
+        <a href="https://justinkrogman.com/portfolio.html"> <button class="w3-button">Portfolio <i class="fa fa-caret-down"></i></button></a>
+    <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+        <a href="https://justinkrogman.com/polder.html" class="w3-bar-item w3-button w3-mobile">Polder</a>
+        <a href="https://justinkrogman.com/odeaanede.html" class="w3-bar-item w3-button w3-mobile">Ode aan Ede</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile w3-cyan">CUBOID</a>
+        <a href="https://justinkrogman.com/trainingday.html" class="w3-bar-item w3-button w3-mobile">Training Day</a>
+    </div>
+    </div>
+        <a href="https://justinkrogman.com/aboutme.html" class="w3-bar-item w3-button w3-mobile">About Me</a>    
+        <a href="https://justinkrogman.com/contact.html" class="w3-bar-item w3-button w3-mobile">Contact</a>
+    </div>
+</nav>
+
+<!-- PAGE CONTENT -->
+
+<div class="w3-row-padding ">
+
+    <div class="w3-twothird">
+
+        <!-- SLIDESHOW -->
+        <div class="w3-content w3-padding-top-24" style="max-width:900px;position:relative">
+            <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/cuboid1.jpeg" style="cursor:pointer;width:100%" onclick="onClick(this)">
+            <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/cuboid2.jpg" style="cursor:pointer;width:100%" onclick="onClick(this)">
+            <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/cuboid3.jpeg" style="cursor:pointer;width:100%" onclick="onClick(this)">
+            <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/cuboid4.jpg" style="cursor:pointer;width:100%" onclick="onClick(this)">
+        
+            <a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;left:0;" onclick="plusDivs(-1)">❮</a>
+            <a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;right:0;" onclick="plusDivs(+1)">❯</a>
+        </div>
+
+        <!-- PROJECT INFORMATION -->
+        <h2 class="w3-padding-top-32">Project Details</h2>
+        <table class="w3-table w3-striped w3-bordered w3-border">
+            <thead class="w3-cyan">
+                <th style="width:30%;font-style:italic;">Category</th>
+                <th style="font-style:italic;">Value</th>
+            </thead>
+            <tr>
+                <td style="width:30%">Development Time</td>
+                <td>2021, 3-4 Months</td>
+            </tr>
+            <tr>
+                <td class="w3-text-black">Team Size</td>
+                <td class="w3-text-black">1x Developer</td>
+            </tr>
+            <tr>
+                <td>Client</td>
+                <td>Self Project</td>
+            </tr>
+            <tr>
+                <td class="w3-text-black">Target Platforms</td>
+                <td class="w3-text-black">Playstation 4 and 5 Consoles</td>
+            </tr>
+        </table>
+
+        <h2 class="w3-padding-top-32">Gameplay Details</h2>
+        <table class="w3-table w3-striped w3-bordered w3-border">
+            <thead class="w3-cyan">
+                <th style="width:30%;font-style:italic;">Category</th>
+                <th style="font-style:italic;">Value</th>
+            </thead>
+            <tr>
+                <td>Genre</td>
+                <td>3rd-Person Platformer</td>
+            </tr>
+            <tr>
+                <td class="w3-text-black">Controls System</td>
+                <td class="w3-text-black">Playstation Dualshock and DualSense Controllers</td>
+            </tr>
+            <tr>
+                <td>Target Audience</td>
+                <td>Playstation Gamers Aged 10-40</td>
+            </tr>
+            <tr>
+                <td class="w3-text-black">Game Skills</td>
+                <td class="w3-text-black">Puzzle Solving, Platforming, Quick Reflexes, Leaderboards</td>
+            </tr>
+        </table>
+
+        <h2 class="w3-padding-top-32">Tools</h2>
+        <table class="w3-table w3-striped w3-bordered w3-border">
+            <thead class="w3-cyan">
+                <th style="width:30%;font-style:italic;">Category</th>
+                <th style="font-style:italic;">Value</th>
+            </thead>
+            <tr>
+                <td>Software</td>
+                <td>Dreams, Miro, Trello</td>
+            </tr>
+            <tr>
+                <td class="w3-text-black">Management System</td>
+                <td class="w3-text-black">Agile, Scrum, 2 week sprints</td>
+            </tr>
+            <tr>
+                <td>Development Platform</td>
+                <td>Playstation 4</td>
+            </tr>
+            <tr>
+                <td class="w3-text-black">Role</td>
+                <td class="w3-text-black">Lead Designer and Developer</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- PROCESS DESCRIPTION -->
+    <div class="w3-third">
+        <h1>CUBOID</h1>
+        <p>CUBOID is a 3rd person isometric platforming game designed for current and next generation consoles.
+        The gameplay is a mix between linear and non-linear levels that focus heavily on platforming skills and
+        fast-paced reflexes to properly switch and interact with different sets of world geometry, hazards, and
+        collectable items.</p>
+        <p>CUBOID is a clumsy program lost in a seemingly endless simulation, there appears to be a path ahead,
+        but it is fraught with danger. The player finds themselves controlling CUBOID in order to escape the
+        simulation one level at a time.</p>
+        <p>Through the experience and excitement of platforming through a collapsing simulation that is full of
+        hazards and puzzles a suspension of disbelief is created wherein the player is able to invest in the main
+        character. At the climax of the story, there is a cognitive dissonance established where the player learns
+        the world is not what they previously believed.</p>
+        <p>I developed this prototype project to expand both my game and level design skills through the development of a fun platfomer in the Dreams game engine on Playstation. By utilizing standard programming logic in a node based system in Dreams, combined with my own created assets I was able to develop a fully playable prototype for the game. The game is designed to feature twenty unique levels split across four different regions, accessible through the central HUB zone where player scores and analytics are tracked and displayed.</p>
+        <p>Due to technical limitations within the Dreams game engine, development of CUBOID has temporarily stopped while I work to recreate the game prototype in Unreal Engine 5.</p>
+    </div>
+
+</div>
+
+<iframe width="100%" height="640px" src="https://www.youtube.com/embed/i0nUYaJ2tXQ" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen class="w3-content w3-justify w3-center w3-padding-top-64 w3-padding"></iframe>
+
+<!-- Footer -->
+  <footer class="w3-content w3-justify w3-center w3-padding-64 w3-text-grey w3-jumbo">
+    <a href="https://www.linkedin.com/in/justin-krogman/" target="_blank"><i class="fa fa-linkedin-square w3-hover-opacity"></i></a>
+
+    <a href="https://www.facebook.com/JustinDouglasKrogman" target="_blank"><i class="fa fa-facebook-square w3-hover-opacity"></i></a>
+
+    <a href="https://www.youtube.com/user/bloodkill23" target="_blank"><i class="fa fa-youtube-square w3-hover-opacity"></i></a>
+
+    <a href="https://twitter.com/liberator23" target="_blank"><i class="fa fa-twitter-square w3-hover-opacity"></i></a>
+
+    <p class="w3-medium">Thanks for visiting!  <a href="#" class="w3-hover-text-cyan">Back to Top</a></p>
+  </footer>
+<!-- End footer -->
+
+<!--Slideshows Script--> 
+  <script>
+        var slideIndex = 1;
+
+        function plusDivs(n) {
+            slideIndex = slideIndex + n;
+            showDivs(slideIndex);
+        }
+
+        function showDivs(n) {
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length };
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+
+        showDivs(1);
+
+</script>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption"></p>
+    </div>
+</div>
+
+<script>
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+</script>
+
+<!-- END PAGE CONTENT -->
+
+</body>
+</html>

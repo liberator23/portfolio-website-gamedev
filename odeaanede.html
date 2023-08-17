@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Krogman - Game Designer</title>
+    <link rel="icon" type="image/x-icon" href="https://justinkrogman.com/images/Portfolio Website Favicon.png">
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <style>
+        body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+        .w3-half img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+        .w3-half img:hover{opacity: 1}
+        #main {margin-left: 120px}
+        /* Remove margins from "page content" on small screens */
+        @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
+</head>
+
+<!--Welcome to my Website! If you're reading this, you've found an easter egg! Congrats!-->
+<!-- Beginning of Page Content and Navigation-->
+
+<body class="w3-black">
+
+<!-- NAVIGATION -->
+
+<nav>
+    <div class="w3-bar w3-black">
+        <a href="https://justinkrogman.com/index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
+    <div class="w3-dropdown-hover w3-mobile">
+        <a href="https://justinkrogman.com/portfolio.html"> <button class="w3-button">Portfolio <i class="fa fa-caret-down"></i></button></a>
+    <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+        <a href="https://justinkrogman.com/polder.html" class="w3-bar-item w3-button w3-mobile">Polder</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile w3-cyan">Ode aan Ede</a>
+        <a href="https://justinkrogman.com/cuboid.html" class="w3-bar-item w3-button w3-mobile">CUBOID</a>
+        <a href="https://justinkrogman.com/trainingday.html" class="w3-bar-item w3-button w3-mobile">Training Day</a>
+    </div>
+    </div>
+        <a href="https://justinkrogman.com/aboutme.html" class="w3-bar-item w3-button w3-mobile">About Me</a>    
+        <a href="https://justinkrogman.com/contact.html" class="w3-bar-item w3-button w3-mobile">Contact</a>
+    </div>
+</nav>
+
+<!-- PAGE CONTENT -->
+
+<div class="w3-row-padding ">
+
+    <div class="w3-twothird">
+
+        <!-- SLIDESHOW -->
+        <div class="w3-content w3-padding-top-24" style="max-width:900px;position:relative">
+            <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/odeaanede1.png" style="cursor:pointer;width:100%" onclick="onClick(this)">
+            <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/odeaanede2.png" style="cursor:pointer;width:100%" onclick="onClick(this)">
+            <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/odeaanede3.png" style="cursor:pointer;width:100%" onclick="onClick(this)">
+            <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/odeaanede4.png" style="cursor:pointer;width:100%" onclick="onClick(this)">
+        
+            <a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;left:0;" onclick="plusDivs(-1)">❮</a>
+            <a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;right:0;" onclick="plusDivs(+1)">❯</a>
+        </div>
+
+        <!-- PROJECT INFORMATION -->
+        <h2 class="w3-padding-top-32">Project Details</h2>
+        <table class="w3-table w3-striped w3-bordered w3-border">
+            <thead class="w3-cyan">
+                <th style="width:30%;font-style:italic;">Category</th>
+                <th style="font-style:italic;">Value</th>
+            </thead>
+            <tr>
+                <td style="width:30%">Development Time</td>
+                <td>2022-Ongoing, 1+ Year</td>
+            </tr>
+            <tr>
+                <td class="w3-text-black">Team Size</td>
+                <td class="w3-text-black">3x Developers, 10x Interns</td>
+            </tr>
+            <tr>
+                <td>Clients</td>
+                <td>The Borg Verhildersum Museum, Indietopia</td>
+            </tr>
+            <tr>
+                <td class="w3-text-black">Target Platform</td>
+                <td class="w3-text-black">Oculus Quest 2 VR Headset</td>
+            </tr>
+        </table>
+
+        <h2 class="w3-padding-top-32">Gameplay Details</h2>
+        <table class="w3-table w3-striped w3-bordered w3-border">
+            <thead class="w3-cyan">
+                <th style="width:30%;font-style:italic;">Category</th>
+                <th style="font-style:italic;">Value</th>
+            </thead>
+            <tr>
+                <td>Genre</td>
+                <td>Casual Exploration, Narrative, Light Puzzle Solving</td>
+            </tr>
+            <tr>
+                <td class="w3-text-black">Controls System</td>
+                <td class="w3-text-black">Oculus Rift VR Controllers</td>
+            </tr>
+            <tr>
+                <td>Target Audience</td>
+                <td>Dutch Museum Patrons Aged 50-80</td>
+            </tr>
+            <tr>
+                <td class="w3-text-black">Game Skills</td>
+                <td class="w3-text-black">Exploration, Object Identification, Light Puzzle Solving</td>
+            </tr>
+        </table>
+
+        <h2 class="w3-padding-top-32">Tools</h2>
+        <table class="w3-table w3-striped w3-bordered w3-border">
+            <thead class="w3-cyan">
+                <th style="width:30%;font-style:italic;">Category</th>
+                <th style="font-style:italic;">Value</th>
+            </thead>
+            <tr>
+                <td>Software</td>
+                <td>GitHub, Unreal Engine 4.27.2, Miro, ClickUp, Quixel Bridge</td>
+            </tr>
+            <tr>
+                <td class="w3-text-black">Management System</td>
+                <td class="w3-text-black">Agile, Scrum, 1 Week Sprints</td>
+            </tr>
+            <tr>
+                <td>Development Platform</td>
+                <td>Personal Laptop, Windows 11</td>
+            </tr>
+            <tr>
+                <td class="w3-text-black">Role</td>
+                <td class="w3-text-black">Lead Designer and Developer</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- PROCESS DESCRIPTION -->
+    <div class="w3-third">
+        <h1>Ode aan Ede</h1>
+        <p>Ode aan Ede features a virtual reality nonlinear exploratory experience where a player can step into the world of Ede Staal
+        and explore his memories, surrounding world, and life achievements through windows found within his
+        house. Ede’s house acts as a central hub point in the experience that users are always able to return to, and contains
+        all of the paintings and portraits that lead to other levels in the experience.</p>
+        <p>Each of the four levels in the experience has a deep connection to the topics of life, language, and landscape and how
+        they relate to Ede Staal. The four levels in the experience are “Ede Staal’s House” representing life, “Het Hogeland” representing landscape, “Mien Toentje” representing language and life, and “Nij Stoatenziel” representing
+        landscape and life. The experience is played through a virtual reality headset while seated, while simultaneously projected onto
+        a large screen in the exhibit room so that others may view what the user wearing the VR headset is seeing and doing.</p>
+        <p>Much of the gameplay involves exploration of the levels, identifying key objects based on musical lyrics and context, and light puzzle solving. There was a great deal of focus taken towards making the experience as enjoyable as possible for the older than average target demogrphics at the museum compared to typical VR gamers. This was a fun and unique challenge to overcome through systems of thorough tutorialization, UX/ UI design, and objectie hints. For many patrons of the museums, this has been the first video game they have ever played.</p>
+        <p>I have lead the development team of this project as the lead designer and developer over the past year, where I had the
+        opportunity to work alongside my colleagues at Indietopia as well as a wonderful team of interns. This experience has
+        allowed me to grow as both a game designer and as a leader, and has allowed me to gain valuable experience launching a
+        commercial title to our clinet at the Borg Verhildersum Museum.</p>
+        <p>Now that the project has launched, I am working alongside my team to develop additional levels and experiences for the game which will be added in the future.</p>
+    </div>
+
+</div>
+
+<iframe width="100%" height="640px" src="https://www.youtube.com/embed/ym-zzXKCncs" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen class="w3-content w3-justify w3-center w3-padding-top-64 w3-padding"></iframe>
+
+<!-- Footer -->
+  <footer class="w3-content w3-justify w3-center w3-padding-64 w3-text-grey w3-jumbo">
+    <a href="https://www.linkedin.com/in/justin-krogman/" target="_blank"><i class="fa fa-linkedin-square w3-hover-opacity"></i></a>
+
+    <a href="https://www.facebook.com/JustinDouglasKrogman" target="_blank"><i class="fa fa-facebook-square w3-hover-opacity"></i></a>
+
+    <a href="https://www.youtube.com/user/bloodkill23" target="_blank"><i class="fa fa-youtube-square w3-hover-opacity"></i></a>
+
+    <a href="https://twitter.com/liberator23" target="_blank"><i class="fa fa-twitter-square w3-hover-opacity"></i></a>
+
+    <p class="w3-medium">Thanks for visiting!  <a href="#" class="w3-hover-text-cyan">Back to Top</a></p>
+  </footer>
+<!-- End footer -->
+
+<!--Slideshows Script--> 
+  <script>
+        var slideIndex = 1;
+
+        function plusDivs(n) {
+            slideIndex = slideIndex + n;
+            showDivs(slideIndex);
+        }
+
+        function showDivs(n) {
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length };
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+
+        showDivs(1);
+
+</script>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption"></p>
+    </div>
+</div>
+
+<script>
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+</script>
+
+<!-- END PAGE CONTENT -->
+
+</body>
+</html>

@@ -12,285 +12,91 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/style.css">
 
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
-
+    <style>
+        body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+        .w3-half img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+        .w3-half img:hover{opacity: 1}
+        #main {margin-left: 120px}
+        /* Remove margins from "page content" on small screens */
+        @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
 </head>
+
 <!--Welcome to my Website! If you're reading this, you've found an easter egg! Congrats!-->
 <!-- Beginning of Page Content and Navigation-->
 
 <body class="w3-black">
-    
 
-    <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+<!-- NAVIGATION -->
 
-  <!-- Avatar image in top left corner -->
-  <img src="https://justinkrogman.com/images/Portfolio Website Favicon.png" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-cyan">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-gamepad w3-xxlarge"></i>
-    <p>PORTFOLIO</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
+<nav>
+    <div class="w3-bar w3-black">
+        <a href="#" class="w3-bar-item w3-button w3-mobile w3-cyan">Home</a>
+    <div class="w3-dropdown-hover w3-mobile">
+        <a href="https://justinkrogman.com/portfolio.html"> <button class="w3-button">Portfolio <i class="fa fa-caret-down"></i></button></a>
+    <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+        <a href="https://justinkrogman.com/polder.html" class="w3-bar-item w3-button w3-mobile">Polder</a>
+        <a href="https://justinkrogman.com/odeaanede.html" class="w3-bar-item w3-button w3-mobile">Ode aan Ede</a>
+        <a href="https://justinkrogman.com/cuboid.html" class="w3-bar-item w3-button w3-mobile">CUBOID</a>
+        <a href="https://justinkrogman.com/trainingday.html" class="w3-bar-item w3-button w3-mobile">Training Day</a>
+    </div>
+    </div>
+        <a href="https://justinkrogman.com/aboutme.html" class="w3-bar-item w3-button w3-mobile">About Me</a>    
+        <a href="https://justinkrogman.com/contact.html" class="w3-bar-item w3-button w3-mobile">Contact</a>
+    </div>
 </nav>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
+<!-- PAGE CONTENT -->
+
+<header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"> Justin Krogman</h1>
+    <p class="w3-text-cyan w3-large">Game Designer</p>
+</header>
+
+<!-- KEY PROJECTS -->
+
+<div class="w3-row">
+    <div class="w3-half">
+        <div class="w3-card-4 w3-gray">
+            <a href="https://justinkrogman.com/polder.html"><img src="https://justinkrogman.com/images/Polder1.png" alt="Key Project 1" style="width:100%"></a>
+        <div class="w3-container">
+        <p>Polder</p>
+        </div>
+        </div>
+    </div>
+
+        <div class="w3-half">
+        <div class="w3-card-4 w3-gray">
+            <a href="https://justinkrogman.com/odeaanede.html"><img src="https://justinkrogman.com/images/odeaanedecover.png" alt="Key Project 2" style="width:100%"></a>
+        <div class="w3-container">
+        <p>Ode aan Ede</p>
+        </div>
+        </div>
+    </div>
 </div>
 
-
-
-<!-- Main Body Content -->
-
-<div class="w3-padding-large" id="main">
-
-  <!-- Header/Home -->
-
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Justin Krogman</h1>
-    <p class="w3-text-cyan">Game and Level Designer</p>
-    <img src="https://justinkrogman.com/images/self_image1.jpg" alt="https://justinkrogman.com/images/animal_head_assignment2.png" class="w3-image w3-circle w3-animate-zoom w3-padding-top-32" width="600" height="600">
-  </header>
-
-  <!-- About Section -->
-
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">Welcome</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p class="w3-cyan w3-round w3-padding">I'm a dual Canadian-German citizen, avid snowboarder, airsoft player, and game designer trying to push the boundaries of interactive entertainment. I'm currently pursuing an education in Game Design at Hanze University of Applied Sciences, with a primary goal of specializing in level design, open world design, and gameplay design. You can find regular updates on my current work listed below and through my social media channels.
-    </p>
-
-        <!-- My Story Timeline -->
-
-    <h3 class="w3-padding-24 w3-padding-top-64 w3-text-light-grey">My Story</h3>
-
-    <img src="https://justinkrogman.com/images/young_image2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right w3-hover-opacity" style="width:80px">
-    <p><span class="w3-large w3-margin-right w3-text-cyan">Early Life</span> 1995-2011</p>
-    <p class="w3-cyan w3-round w3-padding">As a child I was exposed to video games on the Nintendo 64 through my sisters playing games like Mario Party and GoldenEye 007. I continued to enjoy video games from many genres and developed a strong passion for the medium.</p><br>
-    
-    <img src="https://justinkrogman.com/images/electric_image2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right w3-hover-opacity" style="width:80px">
-    <p><span class="w3-large w3-margin-right w3-text-cyan">First Career</span> 2012-2017</p>
-    <p class="w3-cyan w3-round w3-padding">I became a commerical Electricican and pursued an apprenticeship for four and a half years, eventually becoming a fully licensed and endorsed Red Seal Journeyman Electrician.</p>
-
-    <img src="https://justinkrogman.com/images/self_image2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right w3-hover-opacity" style="width:80px">
-    <p><span class="w3-large w3-margin-right w3-text-cyan">Reflection</span> 2018</p>
-    <p class="w3-cyan w3-round w3-padding">I began to think about what I really wanted to do going forward in my life. I realized that I loved games and the experiences they convey.</p>
-
-    <img src="https://justinkrogman.com/images/self_image1.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right w3-hover-opacity" style="width:80px">
-    <p><span class="w3-large w3-margin-right w3-text-cyan">Changes</span> 2019-2021</p>
-    <p class="w3-cyan w3-round w3-padding">I made the decision to move across the globe to Groningen and begin my education in game design at Hanze Uniersiy of Applied Sciences, inspired and motivated to pursue my dream to become a game designer.</p>
-
-    <img src="https://justinkrogman.com/images/self_image3.png" alt="Avatar" class="w3-left w3-circle w3-margin-right w3-hover-opacity" style="width:80px">
-    <p><span class="w3-large w3-margin-right w3-text-cyan">Current Life</span> 2022 and Beyond</p>
-    <p class="w3-cyan w3-round w3-padding">I have successfully completed the first three years of my bachelors degree in Communication and Multimedia Design at Hanze UAS, with a major in Game Design and a minor in Medialism. I have also successfully completed an internship at Dutch publishing studio Indietopia, giving me valuable industry experience and preparing me for the final year of my degree program. I plan to enter the games industry after graduating in the summer of 2023.</p>
-
-        <!-- Skills Breakdown Chart-->
-
-    <h3 class="w3-padding-16 w3-padding-top-64 w3-text-light-grey">My Skills</h3>
-
-    <p class="w3-wide">Game Design</p>
-    <div class="w3-white">
-      <div class="w3-cyan" style="height:28px;width:90%"></div>
+<div class="w3-row">
+            <div class="w3-half">
+        <div class="w3-card-4 w3-gray">
+            <a href="https://justinkrogman.com/cuboid.html"><img src="https://justinkrogman.com/images/cuboidcover.jpeg" alt="Key Project 3" style="width:100%"></a>
+        <div class="w3-container">
+        <p>CUBOID</p>
+        </div>
+        </div>
     </div>
 
-    <p class="w3-wide">Level Design</p>
-    <div class="w3-white">
-      <div class="w3-cyan" style="height:28px;width:75%"></div>
+        <div class="w3-half">
+        <div class="w3-card-4 w3-gray">
+            <a href="https://justinkrogman.com/trainingday.html"><img src="https://justinkrogman.com/images/trainingdaycover.png" alt="Key Project 4" style="width:100%"></a>
+        <div class="w3-container">
+        <p>Training Day</p>
+        </div>
+        </div>
     </div>
+</div>
 
-    <p class="w3-wide">Project Management</p>
-    <div class="w3-white">
-      <div class="w3-cyan" style="height:28px;width:50%"></div>
-    </div>
-
-    <p class="w3-wide">Photogrammetry and Drone Flight</p>
-    <div class="w3-white">
-      <div class="w3-cyan" style="height:28px;width:30%"></div>
-    </div><br>
-    
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">3+</span><br>
-        Years of Student Experience
-      </div>
-
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">12+</span><br>
-        Projects Completed
-      </div>
-
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">5+</span><br>
-        Happy Clients
-      </div>
-
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">300+</span><br>
-        Hours of Unreal Engine Experience
-      </div>
-    </div>
-
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <a href="https://justinkrogman.com/pdfs/Resume - Justin D. Krogman - V2.Game Designer.pdf" target="_blank" class="w3-hover-text-cyan"><i class="fa fa-download"></i> Download Resume</a>
-    </button>
-    
-  </div>
-
-
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">Portfolio</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-    <p class="w3-center w3-round w3-padding w3-light-gray">Listed below is a selection of my current work including game design documents, game prototypes, level designs, 3D environments, 3D models, programming logic, music, and short films.</p>
-    
-      <div class="w3-full w3-padding-top-64">
-        <img src="https://justinkrogman.com/images/IcelandQuixelUE5.png" style="width:100%" class="w3-round">
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>Iceland Scene</b> - Unreal Engine 5, 2022 - Skills: Environmental design and composition</p>
-
-        <img src="https://justinkrogman.com/images/Training Day Progress.png" style="width:100%" class="w3-padding-top-64 w3-round">
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>FPS Level Blockout Practice</b> - Unreal Engine 4, 2022 - Skills: Game and level design</p>
-
-        <img src="https://justinkrogman.com/images/TwinStickShooter.png" style="width:100%" class="w3-padding-top-64 w3-round">
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>Twin Stick Shooter Prototype</b> - Unreal Engine 4, 2022 - Skills: Blueprint scripting system</p>
-
-        <img src="https://justinkrogman.com/images/CUBOID - Node Programming Portfolio Showcase.png" style="width:100%" class="w3-padding-top-64 w3-round">
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>CUBOID Game Logic, Variables and Player Analytics</b> - Dreams Engine, 2021 - Skills: Game and systems design with node based programming</p>
-      </div>
-
-      <div class="w3-half w3-padding-top-64">
-        <iframe width="100%" height="240px" src="https://www.youtube.com/embed/HAlK5HhV9_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>FORCES Short Film</b> - Blackmagic Camera, 2021 - Skills: Storytelling, directing, visual communication and film production</p>
-        
-        <iframe width="100%" height="240px" src="https://www.youtube.com/embed/i0nUYaJ2tXQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>CUBOID Developer Diary</b> - Dreams Engine, 2021 - Skills: Game, level and systems design</p>
-
-        <iframe src="https://justinkrogman.com/pdfs/CUBOIDGDD.pdf#toolbar=0" width="100%" height="500px" class="w3-paddiing-top-64"></iframe>
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>CUBOID Game Design Document</b> - Microsoft Word, 2021 - Skills: Entertainment game design</p>
-
-        <img src="https://justinkrogman.com/images/NectAR Portfolio Showcase.png" style="width:100%" class="w3-round">
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>NectAR Smartphone Application</b> - Unity Engine, 2021 - Skills: Application design and game research</p>
-                <p class="w3-center w3-round w3-padding w3-cyan">Download It <a href="https://play.google.com/store/apps/details?id=com.archinc.interactivenature.PrototypeOne" target="_blank" class="w3-hover-text-light-gray">Here</a></p>
-
-        <img src="https://justinkrogman.com/images/SUMO AI - State Machine Diagram.png" style="width:100%" class="w3-round">
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>SUMO AI State Machine Diagram</b> - Google Docs, 2021 - Skills: Game and gameplay design</p>
-      </div>
-
-      <div class="w3-half w3-padding-top-64">
-        <img src="https://justinkrogman.com/images/Schiermonnikoog Game Portfolio Showcase.png" style="width:100%" class="w3-round">
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>Schiermonnikoog Island Game</b> - Unity Engine, 2021 - Skills: Game and level design</p>
-
-        <iframe src="https://justinkrogman.com/pdfs/SchiermonnikoogGDD.pdf#toolbar=0" width="100%" height="500px"></iframe>
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>Schiermonnikoog Island Game Design Document</b> - Microsoft Word, 2021 - Skills: Serious game design</p>
-
-        <img src="https://justinkrogman.com/images/Helicopter Prototype Portfolio Showcase.png" style="width:100%" class="w3-round">
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>Helicopter Paramedic Certfication Prototype</b> - Adobe XD, 2021 - Skills: Serious game design and game research</p>
-
-        <iframe src="https://justinkrogman.com/pdfs/HelicopterGDD.pdf#toolbar=0" width="100%" height="500px"></iframe>
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>Helicopter Paramedic Certfication Game Design Document</b> - Microsoft Word, 2021 - Skills: Serious game design</p>
-      </div>
-
-      <div class="w3-fulll w3-padding-top-64">
-        <iframe width="100%" height="480" src="https://www.youtube.com/embed/AenYWim5bKQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>Memories of Spring Song</b> - Dreams Engine, 2021 - Skills: Music Composition</p>
-                <p class="w3-center w3-round w3-padding w3-cyan">Can be Found <a href="https://indreams.me/element/oWryKtnHnTt" target="_blank" class="w3-hover-text-light-gray">Here</a></p>
-
-        <img src="https://justinkrogman.com/images/Little Paradise.jpeg" style="width:100%" class="w3-padding-top-64 w3-round">
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>Little Paradise Environment</b> - Dreams Engine, 2020 - Skills: 3D Modelling, composition and environment design</p>
-                <p class="w3-center w3-round w3-padding w3-cyan">Can be Found <a href="https://indreams.me/dream/maexnncEimd" target="_blank" class="w3-hover-text-light-gray">Here</a></p>
-
-        <img src="https://justinkrogman.com/images/Bonsai Tree.jpeg" style="width:100%" class="w3-padding-top-64 w3-round">
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>Curved Bonsai Tree</b> - Dreams Engine, 2020 - Skills: 3D Modelling and composition</p>
-                <p class="w3-center w3-round w3-padding w3-cyan">Can be Found <a href="https://indreams.me/element/oXrbvUUFbga" target="_blank" class="w3-hover-text-light-gray">Here</a></p>
-
-        <img src="https://justinkrogman.com/images/Misty Mountain Showcase.jpeg" style="width:100%" class="w3-padding-top-64 w3-round">
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>Misty Mountain Environment</b> - Dreams Engine, 2020 - Skills: Composition and environment design</p>
-                <p class="w3-center w3-round w3-padding w3-cyan">Can be Found <a href="https://indreams.me/dream/mHFXhLfMTXX" target="_blank" class="w3-hover-text-light-gray">Here</a></p>
-
-        <img src="https://justinkrogman.com/images/DreamWalk.jpeg" style="width:100%" class="w3-padding-top-64 w3-round">
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>Misty Cave Envirnoment</b> - Dreams Engine, 2020 - Skills: Composition, environment design and scripted gameplay sequences</p>
-                <p class="w3-center w3-round w3-padding w3-cyan">Can be Found <a href="https://indreams.me/dream/mrDNafBBhxp" target="_blank" class="w3-hover-text-light-gray">Here</a></p>
-
-        <iframe width="100%" height="480" src="https://www.youtube.com/embed/RCB-7wyjgQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>Misty Cave Envirnoment</b> - Dreams Engine, 2020 - Skills: Composition, environment design and scripted gameplay sequences</p>
-      </div>
-
-      <div class="w3-half w3-padding-top-64">
-        <img src="https://justinkrogman.com/images/Showcase Template.jpeg" style="width:100%" class="w3-round">
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>Showcase Template Logic Tool</b> - Dreams Engine, 2020 - Skills: Node based programming and scripting</p>
-                <p class="w3-center w3-round w3-padding w3-cyan">Can be Found <a href="https://indreams.me/element/oQQokDkXoEb" target="_blank" class="w3-hover-text-light-gray">Here</a></p>
-
-        <img src="https://justinkrogman.com/images/SPAWN Showase.jpeg" style="width:100%" class="w3-round">
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>SPAWN Character Showcase</b> - Dreams Engine, 2020 - Skills: Composition and environment design</p>
-                <p class="w3-center w3-round w3-padding w3-cyan">Can be Found <a href="https://indreams.me/dream/mkZaJTQRRZw" target="_blank" class="w3-hover-text-light-gray">Here</a></p>
-
-        <img src="https://justinkrogman.com/images/Cat and Mouse Technical Demo.jpeg" style="width:100%" class="w3-round">
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>Cat and Mouse Technical Demo</b> - Dreams Engine, 2020 - Skills: Prototyping, level and game design</p>
-                <p class="w3-center w3-round w3-padding w3-cyan">Can be Found <a href="https://indreams.me/dream/mCudprhqpho" target="_blank" class="w3-hover-text-light-gray">Here</a></p>
-      </div>
-      
-      <div class="w3-half w3-padding-top-64">
-        <img src="https://justinkrogman.com/images/Cat and Mouse Level 1 Prototype.jpeg" style="width:100%" class="w3-round">
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>Cat and Mouse Game Level Design</b> - Dreams Engine, 2020 - Skills: Level and game design</p>
-
-        <img src="https://justinkrogman.com/images/Covid-19 Website.PNG" style="width:100%" class="w3-round">
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>Covid-19 Website</b> - HTML, CSS and API's, 2020 - Skills: Website development and design</p>
-                
-        <img src="https://justinkrogman.com/images/Silk Road Board Game.jpg" style="width:100%" class="w3-round">
-                <p class="w3-center w3-round w3-padding w3-cyan"><b>Silk Road Board Game</b> - Wood and Paper, 2019 - Skills: Analog game design</p>
-      </div>
-
-
-    <!-- End photo grid -->
-    </div>
-
-  <!-- End Portfolio Section -->
-  </div>
-
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i><span class="w3-text-cyan">Groningen</span> - NL</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: <span class="w3-text-cyan">+31 6 42905483</span></p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: <a href="mailto:jkrogman23@gmail.com" class="w3-hover-text-cyan">jkrogman23@gmail.com</a></p>
-    </div><br>
-    <p>Let's get in touch. Send me a message!</p>
-  <!-- End Contact Section -->
-  </div>
-  
-    <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-jumbo">
+<!-- Footer -->
+  <footer class="w3-content w3-justify w3-center w3-padding-64 w3-text-grey w3-jumbo">
     <a href="https://www.linkedin.com/in/justin-krogman/" target="_blank"><i class="fa fa-linkedin-square w3-hover-opacity"></i></a>
 
     <a href="https://www.facebook.com/JustinDouglasKrogman" target="_blank"><i class="fa fa-facebook-square w3-hover-opacity"></i></a>
@@ -304,8 +110,5 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </footer>
 
 <!-- END PAGE CONTENT -->
-</div>
-
-
 </body>
 </html>
