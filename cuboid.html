@@ -29,15 +29,15 @@
 
 <!-- NAVIGATION -->
 
-<nav>
+<nav class="w3-center">
     <div class="w3-bar w3-black">
         <a href="https://justinkrogman.com/index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
     <div class="w3-dropdown-hover w3-mobile">
         <a href="https://justinkrogman.com/portfolio.html"> <button class="w3-button">Portfolio <i class="fa fa-caret-down"></i></button></a>
     <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-        <a href="https://justinkrogman.com/polder.html" class="w3-bar-item w3-button w3-mobile">Polder</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Polder</a>
         <a href="https://justinkrogman.com/odeaanede.html" class="w3-bar-item w3-button w3-mobile">Ode aan Ede</a>
-        <a href="#" class="w3-bar-item w3-button w3-mobile w3-cyan">CUBOID</a>
+        <a href="https://justinkrogman.com/cuboid.html" class="w3-bar-item w3-button w3-mobile w3-cyan">CUBOID</a>
         <a href="https://justinkrogman.com/trainingday.html" class="w3-bar-item w3-button w3-mobile">Training Day</a>
     </div>
     </div>
@@ -48,12 +48,19 @@
 
 <!-- PAGE CONTENT -->
 
-<div class="w3-row-padding ">
+<header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"> Justin Krogman</h1>
+    <p class="w3-text-cyan w3-large">Game Designer</p>
+</header>
 
-    <div class="w3-twothird">
+<div class="w3-row-padding w3-center">
+
+    <div>
+        <h1 class="w3-xxxlarge w3-padding-top-48">CUBOID</h1>
+        <hr style="max-width:900px" class="w3-opacity w3-content">
 
         <!-- SLIDESHOW -->
-        <div class="w3-content w3-padding-top-24" style="max-width:900px;position:relative">
+        <div class="w3-content w3-padding-top-64" style="max-width:900px;position:relative">
             <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/cuboid1.jpeg" style="cursor:pointer;width:100%" onclick="onClick(this)">
             <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/cuboid2.jpg" style="cursor:pointer;width:100%" onclick="onClick(this)">
             <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/cuboid3.jpeg" style="cursor:pointer;width:100%" onclick="onClick(this)">
@@ -62,84 +69,14 @@
             <a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;left:0;" onclick="plusDivs(-1)">❮</a>
             <a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;right:0;" onclick="plusDivs(+1)">❯</a>
         </div>
-
-        <!-- PROJECT INFORMATION -->
-        <h2 class="w3-padding-top-32">Project Details</h2>
-        <table class="w3-table w3-striped w3-bordered w3-border">
-            <thead class="w3-cyan">
-                <th style="width:30%;font-style:italic;">Category</th>
-                <th style="font-style:italic;">Value</th>
-            </thead>
-            <tr>
-                <td style="width:30%">Development Time</td>
-                <td>2021, 3-4 Months</td>
-            </tr>
-            <tr>
-                <td class="w3-text-black">Team Size</td>
-                <td class="w3-text-black">1x Developer</td>
-            </tr>
-            <tr>
-                <td>Client</td>
-                <td>Self Project</td>
-            </tr>
-            <tr>
-                <td class="w3-text-black">Target Platforms</td>
-                <td class="w3-text-black">Playstation 4 and 5 Consoles</td>
-            </tr>
-        </table>
-
-        <h2 class="w3-padding-top-32">Gameplay Details</h2>
-        <table class="w3-table w3-striped w3-bordered w3-border">
-            <thead class="w3-cyan">
-                <th style="width:30%;font-style:italic;">Category</th>
-                <th style="font-style:italic;">Value</th>
-            </thead>
-            <tr>
-                <td>Genre</td>
-                <td>3rd-Person Platformer</td>
-            </tr>
-            <tr>
-                <td class="w3-text-black">Controls System</td>
-                <td class="w3-text-black">Playstation Dualshock and DualSense Controllers</td>
-            </tr>
-            <tr>
-                <td>Target Audience</td>
-                <td>Playstation Gamers Aged 10-40</td>
-            </tr>
-            <tr>
-                <td class="w3-text-black">Game Skills</td>
-                <td class="w3-text-black">Puzzle Solving, Platforming, Quick Reflexes, Leaderboards</td>
-            </tr>
-        </table>
-
-        <h2 class="w3-padding-top-32">Tools</h2>
-        <table class="w3-table w3-striped w3-bordered w3-border">
-            <thead class="w3-cyan">
-                <th style="width:30%;font-style:italic;">Category</th>
-                <th style="font-style:italic;">Value</th>
-            </thead>
-            <tr>
-                <td>Software</td>
-                <td>Dreams, Miro, Trello</td>
-            </tr>
-            <tr>
-                <td class="w3-text-black">Management System</td>
-                <td class="w3-text-black">Agile, Scrum, 2 week sprints</td>
-            </tr>
-            <tr>
-                <td>Development Platform</td>
-                <td>Playstation 4</td>
-            </tr>
-            <tr>
-                <td class="w3-text-black">Role</td>
-                <td class="w3-text-black">Lead Designer and Developer</td>
-            </tr>
-        </table>
     </div>
 
-    <!-- PROCESS DESCRIPTION -->
-    <div class="w3-third">
-        <h1>CUBOID</h1>
+        <!-- PROJECT INFORMATION -->
+
+        <h2 class="w3-padding-top-64">Project Details</h2>
+        <hr style="max-width:600px" class="w3-opacity w3-content">
+        <!-- PROCESS DESCRIPTION -->
+        <div class="w3-center w3-content w3-justify" style="max-width: 600px;">
         <p>CUBOID is a 3rd person isometric platforming game designed for current and next generation consoles.
         The gameplay is a mix between linear and non-linear levels that focus heavily on platforming skills and
         fast-paced reflexes to properly switch and interact with different sets of world geometry, hazards, and
@@ -147,19 +84,96 @@
         <p>CUBOID is a clumsy program lost in a seemingly endless simulation. There appears to be a path ahead,
         but it is fraught with danger. The player finds themselves controlling CUBOID in order to escape the
         simulation one level at a time.</p>
+        </div>
+
+        <!-- PROCESS TABLE -->
+        <table class="w3-center w3-centered w3-content w3-justify w3-table w3-striped w3-bordered w3-border-black" style="max-width: 600px;">
+            <tr>
+                <td class="w3-cyan" style="width:30%">Development Time</td>
+                <td class="w3-light-gray">2021, 3-4 Months</td>
+            </tr>
+            <tr>
+                <td class="w3-cyan">Team Size</td>
+                <td class="w3-text-black">1x Developer</td>
+            </tr>
+            <tr>
+                <td class="w3-cyan">Client</td>
+                <td class="w3-light-gray">Self Project</td>
+            </tr>
+            <tr>
+                <td class="w3-cyan">Target Platform</td>
+                <td class="w3-text-black">Playstation 4 and 5 Consoles</td>
+            </tr>
+        </table>
+
+        <h2 class="w3-padding-top-64">Gameplay Details</h2>
+        <hr style="max-width:600px" class="w3-opacity w3-content">
+        <!-- PROCESS DESCRIPTION -->
+        <div class="w3-center w3-content w3-justify" style="max-width: 600px;">
         <p>Through the experience and excitement of platforming through a collapsing simulation that is full of
         hazards and puzzles, a suspension of disbelief is created wherein the player is able to invest in the main
         character. At the climax of the story, there is a cognitive dissonance established where the player learns
         the world is not what they previously believed.</p>
+        </div>
+        
+        <!-- PROCESS TABLE -->
+        <table class="w3-center w3-centered w3-content w3-justify w3-table w3-striped w3-bordered w3-border-black" style="max-width: 600px;">
+            <tr>
+                <td class="w3-cyan">Genre</td>
+                <td class="w3-light-gray">3rd-Person Platformer</td>
+            </tr>
+            <tr>
+                <td class="w3-cyan">Controls System</td>
+                <td class="w3-text-black">Playstation Dualshock and DualSense Controllers</td>
+            </tr>
+            <tr>
+                <td class="w3-cyan">Target Audience</td>
+                <td class="w3-light-gray">Playstation Gamers Aged 10-40</td>
+            </tr>
+            <tr>
+                <td class="w3-cyan">Game Skills</td>
+                <td class="w3-text-black">Puzzle Solving, Platforming, Quick Reflexes, Leaderboards</td>
+            </tr>
+        </table>
+
+        <h2 class="w3-padding-top-64">Tools</h2>
+        <hr style="max-width:600px" class="w3-opacity w3-content">
+        <!-- PROCESS DESCRIPTION -->
+        <div class="w3-center w3-content w3-justify" style="max-width: 600px;">
         <p>I developed this prototype project to expand both my game and level design skills through the development of a fun platfomer in the Dreams game engine on Playstation. By utilizing standard programming logic in a node based system in Dreams, combined with my own created assets I was able to develop a fully playable prototype for the game. The game is designed to feature twenty unique levels split across four different regions, accessible through the central HUB zone where player scores and analytics are tracked and displayed.</p>
         <p>Due to technical limitations within the Dreams game engine, development of CUBOID has temporarily stopped while I work to recreate the game prototype in Unreal Engine 5.</p>
-    </div>
-
+        </div>
+        
+        <!-- PROCESS TABLE -->
+        <table class="w3-center w3-centered w3-content w3-justify w3-table w3-striped w3-bordered w3-border-black" style="max-width: 600px;">
+            <tr>
+                <td class="w3-cyan">Software</td>
+                <td class="w3-light-gray">Dreams Engine, Miro, Trello</td>
+            </tr>
+            <tr>
+                <td class="w3-cyan">Management System</td>
+                <td class="w3-text-black">Agile, Scrum, 2 Week Sprints</td>
+            </tr>
+            <tr>
+                <td class="w3-cyan">Development Platform</td>
+                <td class="w3-light-gray">Playstation 4 Console</td>
+            </tr>
+            <tr>
+                <td class="w3-cyan">Role</td>
+                <td class="w3-text-black">Lead Designer and Developer</td>
+            </tr>
+        </table>
 </div>
 
+<!-- PROJECT VIDEO -->
+        <h2 class="w3-padding-top-64 w3-center">Walkthrough Video</h2>
+        <hr style="max-width:900px" class="w3-opacity w3-content">
+
+<div class="w3-center w3 w3-content w3-justify">
 <iframe width="100%" height="640px" src="https://www.youtube.com/embed/i0nUYaJ2tXQ" title="YouTube video player"
     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen class="w3-content w3-justify w3-center w3-padding-top-64 w3-padding"></iframe>
+    allowfullscreen class="w3-padding"></iframe>
+</div>
 
 <!-- Footer -->
   <footer class="w3-content w3-justify w3-center w3-padding-64 w3-text-grey w3-jumbo">
@@ -174,6 +188,8 @@
     <p class="w3-medium">Thanks for visiting!  <a href="#" class="w3-hover-text-cyan">Back to Top</a></p>
   </footer>
 <!-- End footer -->
+
+<!-- END PAGE CONTENT -->
 
 <!--Slideshows Script--> 
   <script>
@@ -216,8 +232,6 @@
         captionText.innerHTML = element.alt;
     }
 </script>
-
-<!-- END PAGE CONTENT -->
 
 </body>
 </html>

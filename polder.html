@@ -29,7 +29,7 @@
 
 <!-- NAVIGATION -->
 
-<nav>
+<nav class="w3-center">
     <div class="w3-bar w3-black">
         <a href="https://justinkrogman.com/index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
     <div class="w3-dropdown-hover w3-mobile">
@@ -48,12 +48,19 @@
 
 <!-- PAGE CONTENT -->
 
-<div class="w3-row-padding ">
+<header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"> Justin Krogman</h1>
+    <p class="w3-text-cyan w3-large">Game Designer</p>
+</header>
 
-    <div class="w3-twothird">
+<div class="w3-row-padding w3-center">
+
+    <div>
+        <h1 class="w3-xxxlarge w3-padding-top-48">Polder</h1>
+        <hr style="max-width:900px" class="w3-opacity w3-content">
 
         <!-- SLIDESHOW -->
-        <div class="w3-content w3-padding-top-24" style="max-width:900px;position:relative">
+        <div class="w3-content w3-padding-top-64" style="max-width:900px;position:relative">
             <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder1.png" style="cursor:pointer;width:100%" onclick="onClick(this)">
             <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder2.png" style="cursor:pointer;width:100%" onclick="onClick(this)">
             <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder3.png" style="cursor:pointer;width:100%" onclick="onClick(this)">
@@ -62,106 +69,118 @@
             <a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;left:0;" onclick="plusDivs(-1)">❮</a>
             <a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;right:0;" onclick="plusDivs(+1)">❯</a>
         </div>
+    </div>
 
         <!-- PROJECT INFORMATION -->
-        <h2 class="w3-padding-top-32">Project Details</h2>
-        <table class="w3-table w3-striped w3-bordered w3-border">
-            <thead class="w3-cyan">
-                <th style="width:30%;font-style:italic;">Category</th>
-                <th style="font-style:italic;">Value</th>
-            </thead>
+
+        <h2 class="w3-padding-top-64">Project Details</h2>
+        <hr style="max-width:600px" class="w3-opacity w3-content">
+        <!-- PROCESS DESCRIPTION -->
+        <div class="w3-center w3-content w3-justify" style="max-width: 600px;">
+            <p>Polder is a real-time strategy-building game where the player's primary goal is to settle new
+                villages across the North of The Netherlands and build them up to prosperity. A church acts
+                as the central point of every village and the player must work to develop and defend it from
+                a litany of hazards and natural disasters while efficiently managing resources and funds.</p>
+            <p>The game begins in the 11th century A.D. and will advance roughly fifty years further in
+                time throughout each level or scenario. As time advances, villages will continue to change
+                in style to reflect building methods, materials, and architectural styles of that respective
+                time period while the churches will remain the same to reflect the strong roots in culture
+                and values that they provided to their communities.</p>
+        </div>
+
+        <!-- PROCESS TABLE -->
+        <table class="w3-center w3-centered w3-content w3-justify w3-table w3-striped w3-bordered w3-border-black" style="max-width: 600px;">
             <tr>
-                <td style="width:30%">Development Time</td>
-                <td>2023, 6 Months</td>
+                <td class="w3-cyan" style="width:30%">Development Time</td>
+                <td class="w3-light-gray">2023, 6 Months</td>
             </tr>
             <tr>
-                <td class="w3-text-black">Team Size</td>
+                <td class="w3-cyan">Team Size</td>
                 <td class="w3-text-black">1x Developer</td>
             </tr>
             <tr>
-                <td>Client</td>
-                <td>Indietopia</td>
+                <td class="w3-cyan">Client</td>
+                <td class="w3-light-gray">Indietopia</td>
             </tr>
             <tr>
-                <td class="w3-text-black">Target Platform</td>
+                <td class="w3-cyan">Target Platform</td>
                 <td class="w3-text-black">Oculus Quest 2 VR Headset</td>
             </tr>
         </table>
 
-        <h2 class="w3-padding-top-32">Gameplay Details</h2>
-        <table class="w3-table w3-striped w3-bordered w3-border">
-            <thead class="w3-cyan">
-                <th style="width:30%;font-style:italic;">Category</th>
-                <th style="font-style:italic;">Value</th>
-            </thead>
+        <h2 class="w3-padding-top-64">Gameplay Details</h2>
+        <hr style="max-width:600px" class="w3-opacity w3-content">
+        <!-- PROCESS DESCRIPTION -->
+        <div class="w3-center w3-content w3-justify" style="max-width: 600px;">
+            <p>The core gameplay loop takes place over the course of two different gameplay modes that
+                roughly represent a “round-based” system. In each mode the player focuses on different
+                aspects of either building or maintaining their village.</p>
+            <p>It was important to me to craft a fun and engaging entertainment experience for a majority of users that follows
+                industry standards and best practices for casual games. During gameplay, players learn about the development of
+                churches in the North of The Netherlands and are guided to be more engaged with their current development.
+                Through this, players learn about modern uses that Groningen churches fulfill in order to benefit society and
+                develop an improved view of churches in the North of The Netherlands.</p>
+        </div>
+        
+        <!-- PROCESS TABLE -->
+        <table class="w3-center w3-centered w3-content w3-justify w3-table w3-striped w3-bordered w3-border-black" style="max-width: 600px;">
             <tr>
-                <td>Genre</td>
-                <td>Casual Godlike Real-Time Strategy Citybuilder</td>
+                <td class="w3-cyan">Genre</td>
+                <td class="w3-light-gray">Casual Godlike Real-Time Strategy Citybuilder</td>
             </tr>
             <tr>
-                <td class="w3-text-black">Controls System</td>
+                <td class="w3-cyan">Controls System</td>
                 <td class="w3-text-black">Oculus Rift VR Controllers</td>
             </tr>
             <tr>
-                <td>Target Audience</td>
-                <td>Dutch Casual Gamers Aged 20-50</td>
+                <td class="w3-cyan">Target Audience</td>
+                <td class="w3-light-gray">Dutch Casual Gamers Aged 20-50</td>
             </tr>
             <tr>
-                <td class="w3-text-black">Game Skills</td>
+                <td class="w3-cyan">Game Skills</td>
                 <td class="w3-text-black">Strategy, Resource Management, Terraforming</td>
             </tr>
         </table>
 
-        <h2 class="w3-padding-top-32">Tools</h2>
-        <table class="w3-table w3-striped w3-bordered w3-border">
-            <thead class="w3-cyan">
-                <th style="width:30%;font-style:italic;">Category</th>
-                <th style="font-style:italic;">Value</th>
-            </thead>
+        <h2 class="w3-padding-top-64">Tools</h2>
+        <hr style="max-width:600px" class="w3-opacity w3-content">
+        <!-- PROCESS DESCRIPTION -->
+        <div class="w3-center w3-content w3-justify" style="max-width: 600px;">
+            <p>Aside from those goals, my development of this project aimed to launch Indietopia's first commercial game under a
+                new BV branch and expand the company's portfolio. This has also allowed me to further develop and improve my
+                practical skills as an Unreal Engine designer and developer to a more professional level.</p>
+        </div>
+        
+        <!-- PROCESS TABLE -->
+        <table class="w3-center w3-centered w3-content w3-justify w3-table w3-striped w3-bordered w3-border-black" style="max-width: 600px;">
             <tr>
-                <td>Software</td>
-                <td>GitHub, Unreal Engine 5.1.1, Miro, ClickUp</td>
+                <td class="w3-cyan">Software</td>
+                <td class="w3-light-gray">GitHub, Unreal Engine 5.1.1, Miro, ClickUp</td>
             </tr>
             <tr>
-                <td class="w3-text-black">Management System</td>
+                <td class="w3-cyan">Management System</td>
                 <td class="w3-text-black">Agile, Scrum, 1 Week Sprints</td>
             </tr>
             <tr>
-                <td>Development Platform</td>
-                <td>Personal Laptop, Windows 11</td>
+                <td class="w3-cyan">Development Platform</td>
+                <td class="w3-light-gray">Personal Laptop, Windows 11</td>
             </tr>
             <tr>
-                <td class="w3-text-black">Role</td>
+                <td class="w3-cyan">Role</td>
                 <td class="w3-text-black">Lead Designer and Developer</td>
             </tr>
         </table>
-    </div>
-
-    <!-- PROCESS DESCRIPTION -->
-    <div class="w3-third">
-        <h1>Polder</h1>
-        <p>Polder is a real-time strategy-building game where the player's primary goal is to settle new
-        villages across the North of The Netherlands and build them up to prosperity. A church acts
-        as the central point of every village and the player must work to develop and defend it from
-        a litany of hazards and natural disasters while efficiently managing resources and funds.</p>
-        <p>The game begins in the 11th century A.D. and will advance roughly fifty years further in
-        time throughout each level or scenario. As time advances, villages will continue to change
-        in style to reflect building methods, materials, and architectural styles of that respective
-        time period while the churches will remain the same to reflect the strong roots in culture
-        and values that they provided to their communities.</p>
-        <p>The core gameplay loop takes place over the course of two different gameplay modes that
-        roughly represent a “round-based” system. In each mode the player focuses on different
-        aspects of either building or maintaining their village.</p>
-        <p>It was important to me to craft a fun and engaging entertainment experience for a majority of users that follows
-        industry standards and best practices for casual games. During gameplay, players learn about the development of churches in the North of The Netherlands and are guided to be more engaged with their current development. Through this, players learn about modern uses that Groningen churches fulfill in order to benefit society and develop an improved view of churches in the North of The Netherlands.</p>
-        <p>Aside from those goals, my development of this project aimed to launch Indietopia's first commercial game under a new BV branch and expand the company's portfolio. This has also allowed me to further develop and improve my practical skills as an Unreal Engine designer and developer to a more professional level.</p>
-    </div>
-
 </div>
 
+<!-- PROJECT VIDEO -->
+        <h2 class="w3-padding-top-64 w3-center">Walkthrough Video</h2>
+        <hr style="max-width:900px" class="w3-opacity w3-content">
+
+<div class="w3-center w3 w3-content w3-justify">
 <iframe width="100%" height="640px" src="https://www.youtube.com/embed/WGG5sDJrijs" title="YouTube video player"
     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen class="w3-content w3-justify w3-center w3-padding-top-64 w3-padding"></iframe>
+    allowfullscreen class="w3-padding"></iframe>
+</div>
 
 <!-- Footer -->
   <footer class="w3-content w3-justify w3-center w3-padding-64 w3-text-grey w3-jumbo">
@@ -176,6 +195,8 @@
     <p class="w3-medium">Thanks for visiting!  <a href="#" class="w3-hover-text-cyan">Back to Top</a></p>
   </footer>
 <!-- End footer -->
+
+<!-- END PAGE CONTENT -->
 
 <!--Slideshows Script--> 
   <script>
@@ -218,8 +239,6 @@
         captionText.innerHTML = element.alt;
     }
 </script>
-
-<!-- END PAGE CONTENT -->
 
 </body>
 </html>
