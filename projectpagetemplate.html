@@ -28,7 +28,7 @@
 
 <!-- NAVIGATION -->
 <div>
-    <nav class="w3-center">
+    <nav class="w3-center" id="home">
         <div class="w3-bar w3-black w3-opacity-min">
             <a href="https://justinkrogman.com" class="w3-bar-item w3-button w3-mobile w3-cyan">Justin Krogman | Game Designer</a>
             <div class="w3-dropdown-hover w3-mobile">
@@ -48,27 +48,45 @@
 </div>
 
 <!-- HEADER -->
-<div>
-    <header class="w3-container w3-padding-32 w3-center" id="home">
-        <!--<h1 class="w3-jumbo"> Justin Krogman</h1>
-        <p class="w3-text-cyan w3-large">Game Designer</p>-->
+<div id="header">
+    <header class="w3-container w3-center w3-padding-top-24">
+        <!-- PROJECT NAME -->
+        <h1 class="w3-jumbo">Project Title</h1>
+        <p class="w3-text-cyan w3-large">Project Subtitle</p>
     </header>
 </div>
 
 <!-- BODY CONTENT -->
-<div class="w3-row-padding w3-center">
+<div class="w3-row-padding w3-center" id="body">
 
     <!-- PAGE CONTENT -->
     <!-- INTRO & DESIGN CONTEXT -->
-    <div class="w3-content" style="max-width:1000px;position:relative">
-        <!-- PROJECT NAME -->
-        <div>
-            <h1 class="w3-xxxlarge w3-padding-top-48">Project Name Here</h1>
-        </div>
-
+    <div class="w3-content w3-padding-top-24" id="designcontext" style="max-width:1000px;position:relative">
         <!-- INTRO GIF / VIDEO -->
         <div class="w3-row-padding" style="max-width:1000px;position:relative">
             <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder.gif" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+        </div>
+        <hr style="max-width:1000px" class="w3-opacity w3-content">
+
+        <!-- PAGE CATEGORY NAVIGATION -->
+        <div class="w3-row-padding w3-padding-top-24" id="pagenavigation" style="max-width:1000px;position:relative">
+            <div class="w3-half">
+                <!-- NAVIGATION TITLE -->
+                <h1 class="w3-left-align">On This Page</h1>
+                <div class="w3-left-align" style="list-style-type: none;">
+                    <li><a href="#designcontext" class="w3-mobile" style="font-style:italic;text-decoration:none"><h3>Introduction and Design Context</h3></a></li>
+                    <li><a href="#preproduction" class="w3-mobile" style="font-style:italic;text-decoration:none"><h3>Pre-Production</h3></a></li>
+                    <li><a href="#programming" class="w3-mobile" style="font-style:italic;text-decoration:none"><h3>Programming and Scripting</h3></a></li>
+                    <li><a href="#production" class="w3-mobile" style="font-style:italic;text-decoration:none"><h3>Production and Development</h3></a></li>
+                    <li><a href="#designphilosophy" class="w3-mobile" style="font-style:italic;text-decoration:none"><h3>Design Philosophy</h3></a></li>
+                    <li><a href="#postmortem" class="w3-mobile" style="font-style:italic;text-decoration:none"><h3>Post-Mortem</h3></a></li>
+                    <li><a href="#demovideo" class="w3-mobile" style="font-style:italic;text-decoration:none"><h3>Playthrough Video</h3></a></li>
+                </div>
+            </div>
+            <!-- NAVIGATION PHOTO -->
+            <div class="w3-half">
+                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/Polder1.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+            </div>
         </div>
 
         <hr style="max-width:1000px" class="w3-opacity w3-content">
@@ -84,23 +102,54 @@
                         <!-- PROJECT DETAILS -->
                         <h2>Project Details</h2>
                         <!-- TABLE INFORMATION -->
-                        <table class="w3-center w3-centered w3-content w3-justify w3-table w3-striped w3-border-black"
-                            style="max-width: 600px">
+                        <table class="w3-center w3-centered w3-content w3-justify w3-table w3-striped w3-border-black" style="max-width: 600px">
                             <tr>
                                 <td class="w3-cyan" style="border-top-left-radius:25%">Development Time</td>
                                 <td class="w3-light-gray" style="border-top-right-radius:25%">Year and Dev Duration</td>
                             </tr>
                             <tr>
                                 <td class="w3-cyan">Team Size</td>
-                                <td class="w3-text-black">x Developer</td>
+                                <td class="w3-text-black">x Developer Count</td>
+                            </tr>
+                            <tr>
+                                <td class="w3-cyan">Role</td>
+                                <td class="w3-light-gray">Role Here</td>
                             </tr>
                             <tr>
                                 <td class="w3-cyan">Client</td>
-                                <td class="w3-light-gray">Client Name Here</td>
+                                <td class="w3-text-black">Client Name Here</td>
+                            </tr>
+                            <tr>
+                                <td class="w3-cyan">Genre</td>
+                                <td class="w3-light-gray">Genre Here</td>
+                            </tr>
+                            <tr>
+                                <td class="w3-cyan">Controls System</td>
+                                <td class="w3-text-black">Game Controller Here</td>
+                            </tr>
+                            <tr>
+                                <td class="w3-cyan">Target Audience</td>
+                                <td class="w3-light-gray">Target Audience Here</td>
+                            </tr>
+                            <tr>
+                                <td class="w3-cyan">Game Skills</td>
+                                <td class="w3-text-black">Player Skills Here</td>
+                            </tr>
+                            <tr>
+                                <td class="w3-cyan">Software</td>
+                                <td class="w3-light-gray">Software Used Here</td>
+                            </tr>
+                            <tr>
+                                <td class="w3-cyan">Management System</td>
+                                <td class="w3-text-black">Agile / Scrum / Sprint Info Here</td>
+                            </tr>
+                            <tr>
+                                <td class="w3-cyan">Development Platform</td>
+                                <td class="w3-light-gray">Dev Hardware / Platform Here</td>
                             </tr>
                             <tr>
                                 <td class="w3-cyan" style="border-bottom-left-radius:25%">Target Platform</td>
-                                <td class="w3-text-black" style="border-bottom-right-radius:25%;">Platform Name Here</td>
+                                <td class="w3-text-black" style="border-bottom-right-radius:25%">Platform Name Here</td>
                             </tr>
                         </table>
                     </div>
@@ -109,14 +158,34 @@
                         <h2>Inspirations</h2>
                         <li class="w3-margin-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit expedita magnam non? Minus voluptatibus ipsa tempora, temporibus voluptate sequi. A iure temporibus obcaecati mollitia tenetur natus distinctio, quibusdam aliquid pariatur.</li>
                         <li class="w3-margin-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit expedita magnam non? Minus voluptatibus ipsa tempora, temporibus voluptate sequi. A iure temporibus obcaecati mollitia tenetur natus distinctio, quibusdam aliquid pariatur.</li>
+                        <li class="w3-margin-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit expedita magnam non? Minus voluptatibus ipsa tempora, temporibus voluptate sequi. A iure temporibus obcaecati mollitia tenetur natus distinctio, quibusdam aliquid pariatur.</li>
+                        <!-- DOWNLOAD GDD BUTTON -->
+                        <button class="w3-button w3-light-grey w3-padding-large w3-section">
+                            <a href="https://justinkrogman.com/pdfs/PolderGDD.pdf" target="_blank" class="w3-hover-text-cyan"><i class="fa fa-download"></i> Download Game Design Document</a>
+                        </button>
                     </div>
                 </div>
 
             <hr style="max-width:1000px" class="w3-opacity w3-content">
 
-            <!-- OVERVIEW PHOTO -->
-            <div class="w3-row-padding">
-                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/Polder1.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+            <!-- OVERVIEW SLIDESHOW -->
+            <div class="w3-row-padding w3-padding-top-24">
+                <!-- SLIDESHOW -->
+                <div class="w3-content" style="max-width:1000px;position:relative">
+                    <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/polder.gif" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder1.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder2.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder10.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder3.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder4.jpg" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder8.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder9.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder5.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder6.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder7.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <a class="w3-button w3-hover-dark-grey" style="position:absolute;top:50%;left:0;" onclick="plusDivs(-1)">❮</a>
+                    <a class="w3-button w3-hover-dark-grey" style="position:absolute;top:50%;right:0;" onclick="plusDivs(+1)">❯</a>
+                </div>
                 <p class="w3-content w3-small" style="max-width:600px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
             </div>
 
@@ -137,7 +206,7 @@
     <hr style="max-width:1000px" class="w3-opacity w3-content">
 
     <!-- PRE-PRODUCTION -->
-    <div class="w3-content" style="max-width:1000px;position:relative">
+    <div class="w3-content" id="preproduction" style="max-width:1000px;position:relative">
         <!-- TITLE -->
         <h1>Pre-Production</h1>
         <div class="w3-row-padding w3-padding-top-32">
@@ -155,10 +224,8 @@
                 <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
             </div>
         </div>
-        <!-- ICON -->
-        <i class="w3-xxlarge w3-animate-opacity fa fa-arrow-right"></i>
         <!-- BEFORE & AFTER PHOTOS -->
-        <div class="w3-row-padding">
+        <div class="w3-row-padding w3-padding-top-24">
             <div class="w3-half">
                 <img class="w3-animate-opacity" src="https://justinkrogman.com/images/Polder2.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
                 <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
@@ -173,7 +240,7 @@
     <hr style="max-width:1000px" class="w3-opacity w3-content">
     
     <!-- PROGRAMMING & SCRIPTING -->
-    <div class="w3-content" style="max-width:1000px;position:relative">
+    <div class="w3-content" id="programming" style="max-width:1000px;position:relative">
         <!-- TITLE -->
         <h1>Programming and Scripting</h1>
         <p class="w3-content" style="max-width:600px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quia ipsa veritatis excepturi cum possimus, aut aliquid eos, ipsum unde consectetur. <b>Hic asperiores laboriosam quos suscipit</b>, voluptatibus quisquam id enim?</p>
@@ -251,7 +318,7 @@
     <hr style="max-width:1000px" class="w3-opacity w3-content">
 
     <!-- PRODUCTION & DEVELOPMENT -->
-    <div class="w3-content" style="max-width:1000px;position:relative">
+    <div class="w3-content" id="production" style="max-width:1000px;position:relative">
         <!-- TITLE -->
         <h1>Production and Development</h1>
         <p class="w3-content" style="max-width:600px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quia ipsa veritatis excepturi cum possimus, aut aliquid eos, ipsum unde consectetur. <b>Hic asperiores laboriosam quos suscipit</b>, voluptatibus quisquam id enim?</p>
@@ -317,7 +384,7 @@
                 </div>
             </div>
             <!-- ITERATIONS CONTINUED -->
-            <div class="w3-row-padding">
+            <div class="w3-row-padding w3-padding-top-24">
                 <div class="w3-half w3-left-align">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolor in repellat aliquid ipsum amet voluptas cupiditate laborum iste dolorum, optio esse incidunt quidem aperiam officiis rerum distinctio aut molestiae?</p>
                     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sint optio libero corrupti eligendi debitis consequuntur alias repellendus rem, porro nesciunt eius voluptatum quis nemo mollitia pariatur, ducimus adipisci eveniet.</li>
@@ -336,7 +403,7 @@
     <hr style="max-width:1000px" class="w3-opacity w3-content">
     
     <!-- DESIGN PHILOSOPHY -->
-    <div class="w3-content" style="max-width:1000px;position:relative">
+    <div class="w3-content" id="designphilosophy" style="max-width:1000px;position:relative">
         <!-- PHILOSOPHY SUMMARY -->
         <h1>Design Philosophy</h1>
         <p class="w3-content" style="max-width:600px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quia ipsa veritatis excepturi cum possimus, aut aliquid eos, ipsum unde consectetur. <b>Hic asperiores laboriosam quos suscipit</b>, voluptatibus quisquam id enim?</p>
@@ -408,7 +475,7 @@
     <hr style="max-width:1000px" class="w3-opacity w3-content">
     
     <!-- POST MORTEM & RETROSPECTIVE -->
-    <div class="w3-content" style="max-width:1000px;position:relative">
+    <div class="w3-content" id="postmortem" style="max-width:1000px;position:relative">
         <!-- POST MORTEM -->
         <h1>Post Mortem</h1>
         <div class="w3-row-padding w3-padding-top-32 w3-left-align">
@@ -429,7 +496,7 @@
     <hr style="max-width:1000px" class="w3-opacity w3-content">
 
     <!-- PLAYTHROUGH VIDEO OR TRAILER -->
-    <div class="w3-content" style="position:relative">
+    <div class="w3-content" id="demovideo" style="position:relative">
         <h1>Walkthrough Video</h1>
         <!-- VIDEO -->
         <div class="w3-row w3-padding-top-32">
@@ -441,7 +508,7 @@
 
     <hr style="max-width:1000px" class="w3-opacity w3-content">
 
-    <!-- NEW SEGMENT -->
+    <!-- NEW SEGMENT TEMPLATE -->
     <div class="w3-content" style="max-width:1000px;position:relative">
         <!-- TITLE -->
         <h1>NEW SEGMENT TITLE</h1>
@@ -449,125 +516,15 @@
     </div>
 
     <hr style="max-width:1000px" class="w3-opacity w3-content">
-    
-    <!-- OLD - SLIDESHOW -->
-    <div class="w3-content" style="max-width:1000px;position:relative">
-        <h1>OLD Slideshow Title</h1>
-        <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/polder.gif" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-        <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder1.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-        <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder2.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-        <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder10.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-        <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder3.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-        <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder4.jpg" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-        <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder8.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-        <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder9.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-        <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder5.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-        <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder6.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-        <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder7.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-        
-        <a class="w3-button w3-hover-dark-grey" style="position:absolute;top:50%;left:0;" onclick="plusDivs(-1)">❮</a>
-        <a class="w3-button w3-hover-dark-grey" style="position:absolute;top:50%;right:0;" onclick="plusDivs(+1)">❯</a>
-    </div>
-
-    <!-- OLD - PROJECT INFORMATION TABLES AND DESCRIPTIONS-->
-    <div>
-        <!-- TITLE -->
-        <h1 class="w3-padding-top-64">OLD Project Details</h1>
-        <hr style="max-width:600px" class="w3-opacity w3-content">
-        <!-- DESCRIPTION -->
-        <div class="w3-center w3-content w3-justify" style="max-width: 600px;">
-            <p>Project concept overview here.</p>
-            <p>More project concept description here.</p>
-        </div>
-        <!-- TABLE -->
-        <table class="w3-center w3-centered w3-content w3-justify w3-table w3-striped w3-bordered w3-border-black" style="max-width: 600px;">
-            <tr>
-                <td class="w3-cyan">Development Time</td>
-                <td class="w3-light-gray">Year and Dev Duration</td>
-            </tr>
-            <tr>
-                <td class="w3-cyan">Team Size</td>
-                <td class="w3-text-black">x Developer</td>
-            </tr>
-            <tr>
-                <td class="w3-cyan">Client</td>
-                <td class="w3-light-gray">Client Name Here</td>
-            </tr>
-            <tr>
-                <td class="w3-cyan">Target Platform</td>
-                <td class="w3-text-black">Platform Name Here</td>
-            </tr>
-        </table>
-
-        <!-- TITLE -->
-        <h1 class="w3-padding-top-64">OLD Gameplay Details</h1>
-        <hr style="max-width:600px" class="w3-opacity w3-content">
-        <!-- DESCRIPTION -->
-        <div class="w3-center w3-content w3-justify" style="max-width: 600px;">
-            <p>Gameplay details description.</p>
-            <p>More gameplay details. Describe motivations and process for designing gameplay.</p>
-        </div>
-        <!-- TABLE -->
-        <table class="w3-center w3-centered w3-content w3-justify w3-table w3-striped w3-bordered w3-border-black" style="max-width: 600px;">
-            <tr>
-                <td class="w3-cyan">Genre</td>
-                <td class="w3-light-gray">Genre Here</td>
-            </tr>
-            <tr>
-                <td class="w3-cyan">Controls System</td>
-                <td class="w3-text-black">Game Controller Here</td>
-            </tr>
-            <tr>
-                <td class="w3-cyan">Target Audience</td>
-                <td class="w3-light-gray">Target Audience Here</td>
-            </tr>
-            <tr>
-                <td class="w3-cyan">Game Skills</td>
-                <td class="w3-text-black">Player Skills Here</td>
-            </tr>
-        </table>
-        <!-- DOWNLOAD GDD BUTTON -->
-        <button class="w3-button w3-light-grey w3-padding-large w3-section">
-        <a href="https://justinkrogman.com/pdfs/PolderGDD.pdf" target="_blank" class="w3-hover-text-cyan"><i
-                class="fa fa-download"></i> Download Game Design Document</a>
-        </button>
-
-        <!-- TITLE -->
-        <h1 class="w3-padding-top-64">OLD Tools</h1>
-        <hr style="max-width:600px" class="w3-opacity w3-content">
-        <!-- DESCRIPTION -->
-        <div class="w3-center w3-content w3-justify" style="max-width: 600px;">
-            <p>Description of tools here and general project development flow. Talk about motivations for creating project.</p>
-        </div>
-        <!-- TABLE -->
-        <table class="w3-center w3-centered w3-content w3-justify w3-table w3-striped w3-bordered w3-border-black" style="max-width: 600px;">
-            <tr>
-                <td class="w3-cyan">Software</td>
-                <td class="w3-light-gray">Software Used Here</td>
-            </tr>
-            <tr>
-                <td class="w3-cyan">Management System</td>
-                <td class="w3-text-black">Agile/ Scrum/ Sprint Info Here</td>
-            </tr>
-            <tr>
-                <td class="w3-cyan">Development Platform</td>
-                <td class="w3-light-gray">Dev Hardware/ Platform Here</td>
-            </tr>
-            <tr>
-                <td class="w3-cyan">Role</td>
-                <td class="w3-text-black">Role Here</td>
-            </tr>
-        </table>
-    </div>
 
     <!-- Footer -->
-    <div>
+    <div id="footer">
         <footer class="w3-content w3-justify w3-center w3-justify w3-center w3-padding-64 w3-text-grey w3-jumbo">
             <a href="https://www.linkedin.com/in/justin-krogman/" target="_blank"><i class="fa fa-linkedin-square w3-hover-opacity"></i></a>
             <a href="https://www.facebook.com/JustinDouglasKrogman" target="_blank"><i class="fa fa-facebook-square w3-hover-opacity"></i></a>
             <a href="https://twitter.com/liberator23" target="_blank"><i class="fa fa-twitter-square w3-hover-opacity"></i></a>
             <a href="mailto:jkrogman23@gmail.com" target="_blank"><i class="fa fa-envelope-square w3-hover-opacity"></i></a>
-            <p class="w3-medium">Thanks for visiting! <a href="#" class="w3-hover-text-cyan">Back to Top</a></p>
+            <p class="w3-medium">Thanks for visiting! <a href="#home" class="w3-hover-text-cyan">Back to Top</a></p>
         </footer>
     </div>
 </div>
@@ -575,7 +532,7 @@
 <!-- END PAGE CONTENT -->
 
 <!-- SCRIPTS -->
-<div>
+<div id="scripts">
     <!-- SLIDESHOWS --> 
     <script>
         var slideIndex = 1;
