@@ -52,6 +52,11 @@
 <!-- START PAGE CONTENT -->
 <body class="w3-theme-d5">
 
+<!-- ANIMATED BACKGROUND -->
+<!--<div id="large-header">
+    <canvas id="demo-canvas"></canvas>
+</div>-->
+
 <!-- NAVIGATION -->
 <div>
     <nav class="w3-center" id="home">
@@ -71,11 +76,6 @@
     </nav>
 </div>
 
-<!-- ANIMATED BACKGROUND -->
-<!--<div id="large-header">
-    <canvas id="demo-canvas"></canvas>
-</div>-->
-
 <!-- HEADER -->
 <div id="header">
     <header class="w3-container w3-center w3-padding-top-24">
@@ -90,24 +90,24 @@
 
     <!-- PAGE CONTENT -->
     <!-- INTRO & DESIGN CONTEXT -->
-    <div class="w3-content w3-padding-top-24" id="designcontext" style="max-width:1000px;position:relative">
+    <div class="w3-content w3-padding-top-24" id="intro" style="max-width:1000px;position:relative">
         <!-- INTRO GIF / VIDEO -->
         <div class="w3-row-padding" style="max-width:1000px;position:relative">
             <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder.gif" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
         </div>
         <hr style="max-width:1000px" class="w3-opacity w3-content">
-
         <!-- PAGE CATEGORY NAVIGATION -->
         <div class="w3-row-padding w3-padding-top-24" id="pagenavigation" style="max-width:1000px;position:relative">
             <div class="w3-half">
                 <!-- NAVIGATION TITLE -->
                 <h1 class="w3-left-align">On This Page</h1>
                 <div class="w3-left-align" style="list-style-type:none;color:lightblue">
-                    <li><a href="#designcontext" class="w3-mobile w3-hover-text-white" style="font-style:italic;text-decoration:none"><h3>Introduction and Design Context</h3></a></li>
+                    <li><a href="#designcontext" class="w3-mobile w3-hover-text-white" style="font-style:italic;text-decoration:none"><h3>Design Context</h3></a></li>
                     <li><a href="#preproduction" class="w3-mobile w3-hover-text-white" style="font-style:italic;text-decoration:none"><h3>Pre-Production</h3></a></li>
                     <li><a href="#programming" class="w3-mobile w3-hover-text-white" style="font-style:italic;text-decoration:none"><h3>Programming and Scripting</h3></a></li>
                     <li><a href="#production" class="w3-mobile w3-hover-text-white" style="font-style:italic;text-decoration:none"><h3>Production and Development</h3></a></li>
                     <li><a href="#designphilosophy" class="w3-mobile w3-hover-text-white" style="font-style:italic;text-decoration:none"><h3>Design Philosophy</h3></a></li>
+                    <li><a href="#testing" class="w3-mobile w3-hover-text-white" style="font-style:italic;text-decoration:none"><h3>Testing</h3></a></li>
                     <li><a href="#postmortem" class="w3-mobile w3-hover-text-white" style="font-style:italic;text-decoration:none"><h3>Post-Mortem</h3></a></li>
                     <li><a href="#demovideo" class="w3-mobile w3-hover-text-white" style="font-style:italic;text-decoration:none"><h3>Playthrough Video</h3></a></li>
                 </div>
@@ -121,79 +121,103 @@
         <hr style="max-width:1000px" class="w3-opacity w3-content">
 
         <!-- DESIGN CONTEXT -->
-        <div class="w3-row" style="max-width:1000px;position:relative">
+        <div class="w3-row" id="designcontext" style="max-width:1000px;position:relative">
             <!-- SUMMARY -->
-            <h1>Project Summary</h1>
-            <p class="w3-content" style="max-width:600px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quia ipsa veritatis excepturi cum possimus, aut aliquid eos, ipsum unde consectetur. <b>Hic asperiores laboriosam quos suscipit</b>, voluptatibus quisquam id enim?</p>
-                <div class="w3-row-padding w3-padding-top-32">
-                    <!-- DETAILS TABLE -->
-                    <div class="w3-half">
-                        <!-- PROJECT DETAILS -->
-                        <h2>Project Details</h2>
-                        <!-- TABLE INFORMATION -->
-                        <table class="w3-center w3-centered w3-content w3-justify w3-table w3-striped w3-border-black" style="max-width: 600px">
-                            <tr>
-                                <td class="w3-cyan" style="border-top-left-radius:25%">Development Time</td>
-                                <td class="w3-light-gray" style="border-top-right-radius:25%">Year and Dev Duration</td>
-                            </tr>
-                            <tr>
-                                <td class="w3-cyan">Team Size</td>
-                                <td class="w3-text-black">x Developer Count</td>
-                            </tr>
-                            <tr>
-                                <td class="w3-cyan">Role</td>
-                                <td class="w3-light-gray">Role Here</td>
-                            </tr>
-                            <tr>
-                                <td class="w3-cyan">Client</td>
-                                <td class="w3-text-black">Client Name Here</td>
-                            </tr>
-                            <tr>
-                                <td class="w3-cyan">Genre</td>
-                                <td class="w3-light-gray">Genre Here</td>
-                            </tr>
-                            <tr>
-                                <td class="w3-cyan">Controls System</td>
-                                <td class="w3-text-black">Game Controller Here</td>
-                            </tr>
-                            <tr>
-                                <td class="w3-cyan">Target Audience</td>
-                                <td class="w3-light-gray">Target Audience Here</td>
-                            </tr>
-                            <tr>
-                                <td class="w3-cyan">Game Skills</td>
-                                <td class="w3-text-black">Player Skills Here</td>
-                            </tr>
-                            <tr>
-                                <td class="w3-cyan">Software</td>
-                                <td class="w3-light-gray">Software Used Here</td>
-                            </tr>
-                            <tr>
-                                <td class="w3-cyan">Management System</td>
-                                <td class="w3-text-black">Agile / Scrum / Sprint Info Here</td>
-                            </tr>
-                            <tr>
-                                <td class="w3-cyan">Development Platform</td>
-                                <td class="w3-light-gray">Dev Hardware / Platform Here</td>
-                            </tr>
-                            <tr>
-                                <td class="w3-cyan" style="border-bottom-left-radius:25%">Target Platform</td>
-                                <td class="w3-text-black" style="border-bottom-right-radius:25%">Platform Name Here</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <!-- INSPIRATIONS LIST -->
-                    <div class="w3-half">
-                        <h2>Inspirations</h2>
-                        <li class="w3-margin-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit expedita magnam non? Minus voluptatibus ipsa tempora, temporibus voluptate sequi. A iure temporibus obcaecati mollitia tenetur natus distinctio, quibusdam aliquid pariatur.</li>
-                        <li class="w3-margin-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit expedita magnam non? Minus voluptatibus ipsa tempora, temporibus voluptate sequi. A iure temporibus obcaecati mollitia tenetur natus distinctio, quibusdam aliquid pariatur.</li>
-                        <li class="w3-margin-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit expedita magnam non? Minus voluptatibus ipsa tempora, temporibus voluptate sequi. A iure temporibus obcaecati mollitia tenetur natus distinctio, quibusdam aliquid pariatur.</li>
-                        <!-- DOWNLOAD GDD BUTTON -->
-                        <button class="w3-button w3-light-grey w3-padding-large w3-section">
-                            <a href="https://justinkrogman.com/pdfs/PolderGDD.pdf" target="_blank" class="w3-hover-text-cyan"><i class="fa fa-download"></i> Download Game Design Document</a>
-                        </button>
+            <h1>Design Context</h1>
+            <div class="w3-left-align">
+                <h2>Project Summary</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quia ipsa veritatis excepturi cum possimus, aut aliquid eos, ipsum unde consectetur. <b>Hic asperiores laboriosam quos suscipit</b>, voluptatibus quisquam id enim?</p>
+                <h2>Game Pitch</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quia ipsa veritatis excepturi cum possimus, aut aliquid eos, ipsum unde consectetur. <b>Hic asperiores laboriosam quos suscipit</b>, voluptatibus quisquam id enim?</p>
+            </div>
+            <div>
+                <h2>Goals</h2>
+                <div class="w3-half">
+                    <h3>Internal</h3>
+                    <div class="w3-left-align">
+                        <li class="w3-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ullam est magnam ex explicabo, eum ea perspiciatis, quisquam illum autem, reprehenderit repudiandae.</li>
+                        <li class="w3-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ullam est magnam ex explicabo, eum ea perspiciatis, quisquam illum autem, reprehenderit repudiandae.</li>
+                        <li class="w3-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ullam est magnam ex explicabo, eum ea perspiciatis, quisquam illum autem, reprehenderit repudiandae.</li>
                     </div>
                 </div>
+                <div class="w3-half">
+                    <h3>External</h3>
+                    <div class="w3-left-align">
+                    <li class="w3-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ullam est magnam ex explicabo, eum ea perspiciatis, quisquam illum autem, reprehenderit repudiandae.</li>
+                    <li class="w3-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ullam est magnam ex explicabo, eum ea perspiciatis, quisquam illum autem, reprehenderit repudiandae.</li>
+                    <li class="w3-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ullam est magnam ex explicabo, eum ea perspiciatis, quisquam illum autem, reprehenderit repudiandae.</li>
+                </div>
+                </div>
+            </div>
+            <div class="w3-row-padding w3-padding-top-32">
+                <!-- DETAILS TABLE -->
+                <div class="w3-half">
+                    <!-- PROJECT DETAILS -->
+                    <h2>Project Details</h2>
+                    <!-- TABLE INFORMATION -->
+                    <table class="w3-center w3-centered w3-content w3-justify w3-table w3-striped w3-border-black" style="max-width: 600px">
+                        <tr>
+                            <td class="w3-cyan" style="border-top-left-radius:25%">Development Time</td>
+                            <td class="w3-light-gray" style="border-top-right-radius:25%">Year and Dev Duration</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-cyan">Team Size</td>
+                            <td class="w3-text-black">x Developer Count</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-cyan">Role</td>
+                            <td class="w3-light-gray">Role Here</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-cyan">Client</td>
+                            <td class="w3-text-black">Client Name Here</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-cyan">Genre</td>
+                            <td class="w3-light-gray">Genre Here</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-cyan">Controls System</td>
+                            <td class="w3-text-black">Game Controller Here</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-cyan">Target Audience</td>
+                            <td class="w3-light-gray">Target Audience Here</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-cyan">Game Skills</td>
+                            <td class="w3-text-black">Player Skills Here</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-cyan">Software</td>
+                            <td class="w3-light-gray">Software Used Here</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-cyan">Management System</td>
+                            <td class="w3-text-black">Agile / Scrum / Sprint Info Here</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-cyan">Development Platform</td>
+                            <td class="w3-light-gray">Dev Hardware / Platform Here</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-cyan" style="border-bottom-left-radius:25%">Target Platform</td>
+                            <td class="w3-text-black" style="border-bottom-right-radius:25%">Platform Name Here</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- INSPIRATIONS LIST -->
+                <div class="w3-half">
+                    <h2>Inspirations</h2>
+                    <li class="w3-left-align w3-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit expedita magnam non? Minus voluptatibus ipsa tempora, temporibus voluptate sequi. A iure temporibus obcaecati mollitia tenetur natus distinctio, quibusdam aliquid pariatur.</li>
+                    <li class="w3-left-align w3-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit expedita magnam non? Minus voluptatibus ipsa tempora, temporibus voluptate sequi. A iure temporibus obcaecati mollitia tenetur natus distinctio, quibusdam aliquid pariatur.</li>
+                    <li class="w3-left-align w3-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit expedita magnam non? Minus voluptatibus ipsa tempora, temporibus voluptate sequi. A iure temporibus obcaecati mollitia tenetur natus distinctio, quibusdam aliquid pariatur.</li>
+                    <!-- DOWNLOAD GDD BUTTON -->
+                    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+                        <a href="https://justinkrogman.com/pdfs/PolderGDD.pdf" target="_blank" class="w3-hover-text-cyan"><i class="fa fa-download"></i> Download Game Design Document</a>
+                    </button>
+                </div>
+            </div>
 
             <hr style="max-width:1000px" class="w3-opacity w3-content">
 
@@ -223,10 +247,10 @@
             <!-- DESIGN CHALLENGE -->
             <div class="w3-content">
                 <h1>Design Challenge</h1>
-                <div class="w3-content" style="max-width:600px;">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                <div class="w3-content" style="max-width:800px;">
+                    <p class="w3-padding">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                    <p class="w3-padding">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                    <p class="w3-padding">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
                 </div>
             </div>
         </div>
@@ -263,6 +287,13 @@
                 <img class="w3-animate-opacity" src="https://justinkrogman.com/images/Polder7.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
                 <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
             </div>
+        </div>
+        <!-- DESIGN SOLUTIONS -->
+        <div class="w3-row-padding w3-padding-top-32 w3-left-align">
+            <h2>Design Solutions</h2>
+            <li class="w3-padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tenetur nemo, at qui possimus quasi placeat pariatur maiores illo harum dolorem aspernatur magni laudantium culpa modi? Aperiam natus veritatis vel.</li>
+            <li class="w3-padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tenetur nemo, at qui possimus quasi placeat pariatur maiores illo harum dolorem aspernatur magni laudantium culpa modi? Aperiam natus veritatis vel.</li>
+            <li class="w3-padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tenetur nemo, at qui possimus quasi placeat pariatur maiores illo harum dolorem aspernatur magni laudantium culpa modi? Aperiam natus veritatis vel.</li>
         </div>
     </div>
 
@@ -335,11 +366,11 @@
         </div>
         <!-- TECHNICAL CHALLENGES -->
             <div class="w3-row-padding w3-padding-top-24">
-                <div>
-                    <h2>Technical Challenges</h2>
-                    <li class="w3-content w3-padding" style="max-width: 800px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repudiandae minus cumque iste quod, voluptatibus incidunt molestiae. Quisquam totam distinctio maxime laboriosam eius quidem non ipsa dolorum. Tenetur, necessitatibus deleniti!</li>
-                    <li class="w3-content w3-padding" style="max-width: 800px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repudiandae minus cumque iste quod, voluptatibus incidunt molestiae. Quisquam totam distinctio maxime laboriosam eius quidem non ipsa dolorum. Tenetur, necessitatibus deleniti!</li>
-                    <li class="w3-content w3-padding" style="max-width: 800px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repudiandae minus cumque iste quod, voluptatibus incidunt molestiae. Quisquam totam distinctio maxime laboriosam eius quidem non ipsa dolorum. Tenetur, necessitatibus deleniti!</li>
+                <h2>Technical Challenges</h2>
+                <div class="w3-content" style="max-width:800px;">
+                    <p class="w3-padding">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                    <p class="w3-padding">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                    <p class="w3-padding">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
                 </div>
             </div>
     </div>
@@ -408,16 +439,16 @@
                 <div class="w3-half w3-left-align">
                     <!-- ITERATIONS -->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolor in repellat aliquid ipsum amet voluptas cupiditate laborum iste dolorum, optio esse incidunt quidem aperiam officiis rerum distinctio aut molestiae?</p>
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, necessitatibus reprehenderit porro alias blanditiis qui possimus vero sequi velit ex rerum doloribus mollitia, harum fugit officia magnam nesciunt asperiores id?</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, necessitatibus reprehenderit porro alias blanditiis qui possimus vero sequi velit ex rerum doloribus mollitia, harum fugit officia magnam nesciunt asperiores id?</li>
+                    <li class="w3-padding">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, necessitatibus reprehenderit porro alias blanditiis qui possimus vero sequi velit ex rerum doloribus mollitia, harum fugit officia magnam nesciunt asperiores id?</li>
+                    <li class="w3-padding">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, necessitatibus reprehenderit porro alias blanditiis qui possimus vero sequi velit ex rerum doloribus mollitia, harum fugit officia magnam nesciunt asperiores id?</li>
                 </div>
             </div>
             <!-- ITERATIONS CONTINUED -->
             <div class="w3-row-padding w3-padding-top-24">
                 <div class="w3-half w3-left-align">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolor in repellat aliquid ipsum amet voluptas cupiditate laborum iste dolorum, optio esse incidunt quidem aperiam officiis rerum distinctio aut molestiae?</p>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sint optio libero corrupti eligendi debitis consequuntur alias repellendus rem, porro nesciunt eius voluptatum quis nemo mollitia pariatur, ducimus adipisci eveniet.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsa accusamus repudiandae vero provident voluptatibus consectetur incidunt quia iure assumenda illo eveniet expedita minus pariatur fugiat itaque architecto, nostrum a.</li>
+                    <li class="w3-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sint optio libero corrupti eligendi debitis consequuntur alias repellendus rem, porro nesciunt eius voluptatum quis nemo mollitia pariatur, ducimus adipisci eveniet.</li>
+                    <li class="w3-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsa accusamus repudiandae vero provident voluptatibus consectetur incidunt quia iure assumenda illo eveniet expedita minus pariatur fugiat itaque architecto, nostrum a.</li>
                 </div>
                 <!-- ITERATIONS PHOTO -->
                 <div class="w3-half">
@@ -460,9 +491,9 @@
         <div class="w3-row-padding w3-padding-top-32">
             <div class="w3-left-align">
                 <p>Some of the other techniques used here include:</p>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatum doloremque sunt excepturi quis earum iure illum ullam iste dignissimos cumque, velit ratione perspiciatis eum illo ut? Vel, quibusdam autem?</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam animi nulla iusto adipisci placeat dolorum, molestiae nemo quisquam veritatis aperiam excepturi ex culpa itaque molestias doloremque sint! Officia, dicta ex.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil numquam ipsam tempora ipsum perspiciatis eaque atque exercitationem explicabo mollitia deleniti dolor ducimus in accusamus commodi a reprehenderit similique, aspernatur cumque.</li>
+                <li class="w3-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatum doloremque sunt excepturi quis earum iure illum ullam iste dignissimos cumque, velit ratione perspiciatis eum illo ut? Vel, quibusdam autem?</li>
+                <li class="w3-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam animi nulla iusto adipisci placeat dolorum, molestiae nemo quisquam veritatis aperiam excepturi ex culpa itaque molestias doloremque sint! Officia, dicta ex.</li>
+                <li class="w3-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil numquam ipsam tempora ipsum perspiciatis eaque atque exercitationem explicabo mollitia deleniti dolor ducimus in accusamus commodi a reprehenderit similique, aspernatur cumque.</li>
             </div>
         </div>
         <!-- DESIGN PHILOSOPHY 2 -->
@@ -502,11 +533,46 @@
     </div>
 
     <hr style="max-width:1000px" class="w3-opacity w3-content">
+
+    <!-- TESTING -->
+    <div class="w3-content" id="testing" style="max-width:1000px;position:relative">
+        <!-- TITLE -->
+        <h1>Testing</h1>
+        <div class="w3-row-padding w3-padding-top-32">
+            <div class="w3-half w3-left-align">
+                <!-- TESTING METHODOLOGY -->
+                <h2>Methodology</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi repudiandae beatae commodi nulla aliquam ea aspernatur eligendi culpa facilis cupiditate. Eaque deleniti officiis sit totam molestiae molestias enim maiores ducimus?</p>
+                <!-- RESULTS SUMMARY -->
+                <h2>Results</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum veniam accusantium sint hic repudiandae aliquid alias ullam aliquam, fugiat recusandae nostrum accusamus iusto nesciunt? Necessitatibus architecto et enim repellendus expedita.</p>
+            </div>
+            <!-- PRE-PRODUCTION GIF OR PHOTO -->
+            <div class="w3-half">
+                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder.gif" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+            </div>
+        </div>
+        <!-- TESTING PHOTOS -->
+        <div class="w3-row-padding w3-padding-top-24">
+            <div class="w3-half">
+                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/Polder2.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+            </div>
+            <div class="w3-half">
+                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/Polder7.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+            </div>
+        </div>
+    </div>
+
+    <hr style="max-width:1000px" class="w3-opacity w3-content">
     
     <!-- POST MORTEM & RETROSPECTIVE -->
     <div class="w3-content" id="postmortem" style="max-width:1000px;position:relative">
         <!-- POST MORTEM -->
         <h1>Post-Mortem</h1>
+        <!-- WHAT I WOULD DO DIFFERENTLY -->
         <div class="w3-row-padding w3-padding-top-32 w3-left-align">
             <h2>What Would I Do Differently Today?</h2>
             <div class="w3-half">
@@ -519,6 +585,25 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, hic dignissimos. Quae accusantium velit iusto consectetur maiores dolorum repudiandae ipsam provident cum corporis esse explicabo, est delectus. Rem, iure asperiores.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sapiente modi nam ex ipsa iste aspernatur saepe. Ipsa laborum, aliquid libero saepe rerum ipsam. Nemo perspiciatis blanditiis omnis neque dignissimos.</p>
             </div>
+        </div>
+        <!-- LEARNING LESSONS -->
+        <div class="w3-row-padding w3-padding-top-32 w3-left-align">
+            <h2>Learning Lessons</h2>
+            <li class="w3-padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tenetur nemo, at qui possimus quasi placeat pariatur maiores illo harum dolorem aspernatur magni laudantium culpa modi? Aperiam natus veritatis vel.</li>
+            <li class="w3-padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tenetur nemo, at qui possimus quasi placeat pariatur maiores illo harum dolorem aspernatur magni laudantium culpa modi? Aperiam natus veritatis vel.</li>
+            <li class="w3-padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tenetur nemo, at qui possimus quasi placeat pariatur maiores illo harum dolorem aspernatur magni laudantium culpa modi? Aperiam natus veritatis vel.</li>
+        </div>
+        <!-- MAJOR ACCOMPLISHMENTS -->
+        <div class="w3-row-padding w3-padding-top-32 w3-left-align">
+            <h2>Major Accomplishments</h2>
+            <li class="w3-padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tenetur nemo, at qui possimus quasi placeat pariatur maiores illo harum dolorem aspernatur magni laudantium culpa modi? Aperiam natus veritatis vel.</li>
+            <li class="w3-padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tenetur nemo, at qui possimus quasi placeat pariatur maiores illo harum dolorem aspernatur magni laudantium culpa modi? Aperiam natus veritatis vel.</li>
+            <li class="w3-padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tenetur nemo, at qui possimus quasi placeat pariatur maiores illo harum dolorem aspernatur magni laudantium culpa modi? Aperiam natus veritatis vel.</li>
+        </div>
+        <!-- POST-MORTEM GIF -->
+        <div class="w3-row-padding w3-padding-top-32">
+            <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder.gif" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+            <p class="w3-content w3-small" style="max-width:600px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
         </div>
     </div>
 
