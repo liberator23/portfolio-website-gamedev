@@ -87,15 +87,12 @@
   <div class="w3-content w3-padding-top-24" id="welcome" style="max-width:1000px;position:relative">
     <div class="w3-row-padding">
       <div class="w3-half">
-        <img class="w3-image w3-circle w3-animate-zoom" src="https://justinkrogman.com/images/self_image1.jpg"
-          width="200" onclick="onClick(this)">
+        <img class="w3-image w3-circle w3-animate-zoom" src="https://justinkrogman.com/images/self_image1.jpg" width="200" onclick="onClick(this)">
       </div>
       <div class="w3-half">
         <!-- TITLE -->
         <h1 class="w3-text-cyan">Hello, welcome to my website!</h1>
-        <p class="w3-content" style="max-width:600px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-          quia ipsa veritatis excepturi cum possimus, aut aliquid eos, ipsum unde consectetur. <b>Hic asperiores
-            laboriosam quos suscipit</b>, voluptatibus quisquam id enim?</p>
+        <p class="w3-content" style="max-width:600px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quia ipsa veritatis excepturi cum possimus, aut aliquid eos, ipsum unde consectetur. <b>Hic asperiores laboriosam quos suscipit</b>, voluptatibus quisquam id enim?</p>
       </div>
     </div>
   </div>
@@ -109,22 +106,22 @@
         <!-- NAVIGATION TITLE -->
         <h1 class="w3-left-align">On This Page</h1>
         <div class="w3-left-align" style="list-style-type:none;color:lightblue">
-          <li><a href="#introdescription" class="w3-mobile w3-hover-text-white"
-              style="font-style:italic;text-decoration:none">
-              <h3>My Work For Hire</h3>
-            </a></li>
-          <li><a href="#lifetimeline" class="w3-mobile w3-hover-text-white"
-              style="font-style:italic;text-decoration:none">
-              <h3>Skills Breakdown</h3>
-            </a></li>
-          <li><a href="#skillsbreakdown" class="w3-mobile w3-hover-text-white"
-              style="font-style:italic;text-decoration:none">
-              <h3>Pricing Breakdown</h3>
-            </a></li>
-            <li><a href="#skillsbreakdown" class="w3-mobile w3-hover-text-white"
-              style="font-style:italic;text-decoration:none">
-              <h3>Contact Details</h3>
-            </a></li>
+          <li><a href="#introdescription" class="w3-mobile w3-hover-text-white" style="font-style:italic;text-decoration:none">
+              <h3>My Work For Hire</h3></a>
+          </li>
+          <li><a href="#resume" class="w3-mobile w3-hover-text-white" style="font-style:italic;text-decoration:none">
+              <h3>Resume</h3></a>
+          </li>
+          <li><a href="#lifetimeline" class="w3-mobile w3-hover-text-white" style="font-style:italic;text-decoration:none">
+              <h3>Skills Breakdown</h3></a>
+          </li>
+          <li><a href="#skillsbreakdown" class="w3-mobile w3-hover-text-white" style="font-style:italic;text-decoration:none">
+              <h3>Pricing Breakdown</h3></a>
+          </li>
+          <li><a href="#skillsbreakdown" class="w3-mobile w3-hover-text-white" style="font-style:italic;text-decoration:none">
+              <h3>Contact Details</h3></a>
+            
+          </li>
         </div>
       </div>
       <!-- NAVIGATION PHOTO -->
@@ -297,5 +294,44 @@
 <!-- End footer -->
 
 <!-- END PAGE CONTENT -->
+
+<!-- SCRIPTS -->
+<div id="scripts">
+  <!-- SLIDESHOWS -->
+  <script>
+    var slideIndex = 1;
+    function plusDivs(n) {
+      slideIndex = slideIndex + n;
+      showDivs(slideIndex);
+    }
+    function showDivs(n) {
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length };
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+    }
+    showDivs(1);
+  </script>
+  <!-- MODAL FULL SIZE IMAGE CLICK -->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  <!-- MODAL IMAGE GALLERY -->
+  <script>
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+  </script>
+</div>
 </body>
 </html>
