@@ -7,6 +7,12 @@ body {
     z-index: 2;
 }
 
+nav {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
 h1,h2,h3,h4,h5,h6 {
     font-family: "Montserrat", sans-serif;
     z-index: 2;
@@ -22,9 +28,14 @@ h1,h2,h3,h4,h5,h6 {
     z-index: 2;
 }
 
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+/* MEDIA CALLS */
+/* Remove margins from "page content" on small screens. Add extra padding for navigation spacing. */
+@media only screen and (max-width: 600px) {
+    #main {margin-left: 0}
+    #header{padding-top: 25%}
+}
 
+/* NOT CURRENTLY USED */
 /*#large-header {
     position: relative;
     width: 100%;
