@@ -301,20 +301,23 @@
     <div class="w3-content" id="programming" style="max-width:1000px;position:relative">
         <!-- TITLE -->
         <h1>Programming and Scripting</h1>
-        <p class="w3-content" style="max-width:800px;">The Dreams game engine utilises visual scripting and node based logic to achieve the majority of its programming functionality with a strong focus on inputs and outputs bound by “wires” to represent communication paths. It supports common boolean operators, if-else statements, keyframes that can act as function returns, timelines that can be used for scripted sequences, and gadgets that act as function libraries.</p>
+        <p class="w3-content" style="max-width:800px;">The Dreams game engine utilises visual scripting and node based logic to achieve the majority of its programming functionality with a strong focus on inputs and outputs bound by “wires” to represent communication paths. It supports common boolean operators, if-else statements, keyframes that can act as function returns, timelines that can be used for scripted sequences, gadgets that act as function libraries, and more.</p>
         <!-- GAME MECHANIC GIFS -->
         <div class="w3-row-padding w3-padding-top-32">
             <div class="w3-third">
                 <img class="w3-animate-opacity" src="https://justinkrogman.com/images/CUBOID - Node Programming Portfolio Showcase.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">These “gadgets” contain the majority of the game logic, including variables for managing the core gameplay loop and overall game progression. Local variables track level progression and the colour switching mechanic, which are overwritten on level restart, exit, or completion. Global variables track game progression from level completions, and update both the highest score and fastest times achieved per level individually.</p>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Score variables of the same type are added together when all five levels in a region of the HUB world have been completed for the total region scores. (E.G: Your high score from levels 1-5 is added together, and shown in the HUB world as your Region 1 High Score. The same is true for your fastest level completion times.)</p>
             </div>
             <div class="w3-third">
                 <img class="w3-animate-opacity" src="https://justinkrogman.com/images/cuboid_colourswitchingsystem.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">These variables, selectors, and if statements control the functionality of the switching mechanic. When player input is detected, variable values are modified respective to each colour switching set allowing keyframes to be activated and deactivated in a highly performant manner for the Dreams engine.</p>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">I included a randomiser that runs one time at level start for each colour set, ensuring that the starting composition of selected colours is always randomised.</p>
             </div>
             <div class="w3-third">
                 <img class="w3-animate-opacity" src="https://justinkrogman.com/images/cuboid_turretlogic.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Turret logic is very straightforward. There is a spherical collision zone around each turret that checks for player collision. When detected, the turret will rotate on its horizontal axis to face the player and begin emitting projectiles in that direction. Each projectile has a sphere around it emitting an outward force to push the player away from and off of platforms.</p>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Flame turrets have a box collision zone that will put the player in a death state when collided with, and a single rotator that can be enabled or disabled as well as set to rotate on any specific axis.</p>
             </div>
         </div>
         <!-- MAIN GAME MECHANIC -->
@@ -340,21 +343,15 @@
             <div class="w3-half w3-left-align">
                 <!-- METRICS -->
                 <h2>Metrics</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolor in repellat aliquid ipsum amet voluptas cupiditate laborum iste dolorum, optio esse incidunt quidem aperiam officiis rerum distinctio aut molestiae?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repudiandae minus cumque iste quod, voluptatibus incidunt molestiae. Quisquam totam distinctio maxime laboriosam eius quidem non ipsa dolorum. Tenetur, necessitatibus deleniti!</p>
+                <p>The two key metrics of CUBOID are that of the cubes, and the player itself. Each cube is exactly 2m squared, the character is slightly shorter than half of a cube at about 0.85m in height. These metrics combined with utilising a grid snap feature in the Dreams engine allow for levels to be quickly composed and tested. Based on the characters jump and double jump height, I was able to establish the minimum and maximum spacings for platforming gameplay with relative ease.</p>
+                <p>This is demonstrated clearly in level 1 of the game, where spacing between platforms is slightly lower than the maximum allowable distance to teach players the metrics of platforming gameplay through an approachable and low difficulty experience.</p>
             </div>
         </div>
         <!-- MAIN GAME MECHANIC DEMO VIDEO -->
         <div class="w3-row-padding w3-padding-top-32">
             <h2>Level 1 - Colour Switching Demo</h2>
-            <iframe width="100%" height="640px" src="https://justinkrogman.com/videos/cuboid_level1demo.mp4" title="Video Player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:4%"></iframe>
-            <!-- <iframe width="100%" height="640px" src="https://www.youtube.com/embed/WGG5sDJrijs" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:4%"></iframe> -->
+            <iframe width="100%" height="553px" src="https://justinkrogman.com/videos/cuboid_level1demo.mp4" title="Video Player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:4%"></iframe>
         </div>
-        <!-- MAIN GAME MECHANIC EMBEDDED BLUEPRINT -->
-        <!-- <div class="w3-row-padding w3-padding-top-32">
-            <h2>Game Mechanic Blueprint Code</h2>
-            <iframe src="https://blueprintue.com/render/pvxhzahf/" title="Game Mechanic Blueprint Code" scrolling="no" allowfullscreen style="width:100%;height:700px;border:none;"></iframe>
-        </div> -->
         <!-- EXTRA GAME MECHANIC -->
         <div class="w3-row-padding w3-padding-top-32">
             <div class="w3-half w3-left-align">
