@@ -320,13 +320,13 @@
         <!-- MAIN GAME MECHANIC -->
         <div class="w3-row-padding w3-padding-top-32">
             <div class="w3-half w3-left-align">
-                <h2>Main Game Mechanic</h2>
+                <h2>Colour Switching</h2>
                 <p>The player has access to three sets of colours that can be switched between. One set (black and white) controls the colour of the player character itself and allows the player to collect collectables of that corresponding colour. The other two sets (red and blue, green and orange) relate to world geometry and hazards of the same corresponding colours, effectively creating a “two worlds mechanic”.</p>
                 <p>When the player swaps between sets, one of the colours is hidden with only a dotted outline of the geometry visible creating the basis for the core gameplay loop wherein the player must utilise quick reflexes and spatial recognition to successfully platform through the levels of the game while avoiding surrounding hazards.</p>
             </div>
             <!-- MAIN GAME MECHANIC GIF -->
             <div class="w3-half">
-                <iframe width="100%" height="268px" src="https://justinkrogman.com/videos/cuboid_colourswitching.mp4" title="Video Player" frameborder="0" allow="autoplay; muted; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:4%"></iframe>
+                <iframe width="100%" height="268px" src="https://justinkrogman.com/videos/cuboid_colourswitching.mp4" title="Video Player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:4%"></iframe>
                 <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">This logic was incredibly easy to script and test in the Dreams engine by using a variable and keyframe to track the players switching input for each colour. When the correct player input is detected through the controller actor, one of the variables in a colour set is set to 0 while the other is set to 1. Using an if statement, the variable is checked which then activates and deactivates the relevant keyframes which control visibility and collision.</p>
             </div>
         </div>
@@ -346,8 +346,9 @@
         </div>
         <!-- MAIN GAME MECHANIC DEMO VIDEO -->
         <div class="w3-row-padding w3-padding-top-32">
-            <h2>Game Mechanic Demo</h2>
-            <iframe width="100%" height="640px" src="https://www.youtube.com/embed/WGG5sDJrijs" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:4%"></iframe>
+            <h2>Level 1 - Colour Switching Demo</h2>
+            <iframe width="100%" height="640px" src="https://justinkrogman.com/videos/cuboid_level1demo.mp4" title="Video Player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:4%"></iframe>
+            <!-- <iframe width="100%" height="640px" src="https://www.youtube.com/embed/WGG5sDJrijs" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:4%"></iframe> -->
         </div>
         <!-- MAIN GAME MECHANIC EMBEDDED BLUEPRINT -->
         <!-- <div class="w3-row-padding w3-padding-top-32">
@@ -357,13 +358,13 @@
         <!-- EXTRA GAME MECHANIC -->
         <div class="w3-row-padding w3-padding-top-32">
             <div class="w3-half w3-left-align">
-                <h2>Extra Game Mechanic</h2>
+                <h2>Hazards and Obstacles</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolor in repellat aliquid ipsum amet voluptas cupiditate laborum iste dolorum, optio esse incidunt quidem aperiam officiis rerum distinctio aut molestiae?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repudiandae minus cumque iste quod, voluptatibus incidunt molestiae. Quisquam totam distinctio maxime laboriosam eius quidem non ipsa dolorum. Tenetur, necessitatibus deleniti!</p>
             </div>
             <!-- EXTRA GAME MECHANIC GIF -->
             <div class="w3-half">
-                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder.gif" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                <iframe width="100%" height="268px" src="https://justinkrogman.com/videos/cuboid_obstaclesandhazards.mp4" title="Video Player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:4%"></iframe>
                 <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
             </div>
         </div>
