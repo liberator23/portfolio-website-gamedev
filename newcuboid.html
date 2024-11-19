@@ -338,12 +338,12 @@
             <!-- METRICS PHOTO -->
             <div class="w3-half">
                 <img class="w3-animate-opacity" src="https://justinkrogman.com/images/cuboid_metrics.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">It was very important to have strictly enforceable metrics to stay aligned with the project goal of ensuring highly accurate platforming gameplay with clear collision on world geometry. These metrics are displayed using the “ruler” tool within the Dreams engine.</p>
             </div>
             <div class="w3-half w3-left-align">
                 <!-- METRICS -->
                 <h2>Metrics</h2>
-                <p>The two key metrics of CUBOID are that of the cubes, and the player itself. Each cube is exactly 2m squared, the character is slightly shorter than half of a cube at about 0.85m in height. These metrics combined with utilising a grid snap feature in the Dreams engine allow for levels to be quickly composed and tested. Based on the characters jump and double jump height, I was able to establish the minimum and maximum spacings for platforming gameplay with relative ease.</p>
+                <p>The two key metrics of CUBOID are that of the cubes, and the player itself. Each cube is exactly 2m cubed, the character is slightly shorter than half of a cube at about 0.85m in height. These metrics combined with utilising a grid snap feature in the Dreams engine allow for levels to be quickly composed and tested. Based on the characters jump and double jump height, I was able to establish the minimum and maximum spacings for platforming gameplay with relative ease.</p>
                 <p>This is demonstrated clearly in level 1 of the game, where spacing between platforms is slightly lower than the maximum allowable distance to teach players the metrics of platforming gameplay through an approachable and low difficulty experience.</p>
             </div>
         </div>
@@ -356,22 +356,23 @@
         <div class="w3-row-padding w3-padding-top-32">
             <div class="w3-half w3-left-align">
                 <h2>Hazards and Obstacles</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolor in repellat aliquid ipsum amet voluptas cupiditate laborum iste dolorum, optio esse incidunt quidem aperiam officiis rerum distinctio aut molestiae?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repudiandae minus cumque iste quod, voluptatibus incidunt molestiae. Quisquam totam distinctio maxime laboriosam eius quidem non ipsa dolorum. Tenetur, necessitatibus deleniti!</p>
+                <p>To establish an ebb and flow within the core gameplay loop of platforming while switching colour sets, I built several obstacles and hazards. The differentiating factor between the two being the level of resistance they produce for the player in terms of level completion. Obstacles take the form of sinking and rising platforms that are outside of the players controllable colour sets so that players must engage with them.</p>
+                <p>Hazards can directly impede the player resulting in character death and level failure and take the form of turrets that track the players position and flame hazards that can be stationary or rotating. All hazards are connected to the player's colour switching sets.</p>
             </div>
             <!-- EXTRA GAME MECHANIC GIF -->
             <div class="w3-half">
                 <video controls width="100%" height="268px" src="https://justinkrogman.com/videos/cuboid_obstaclesandhazards.mp4" style="border-radius:4%"></video>
-                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Rising and sinking cube obstacles simply check for player collision before linearly interpolating between two points. Turret hazards track the players position and emit projectiles that themselves emit a spherical outward force to push players away from and off of geometry. Flame hazards also check for player collision in a box volume sized around the flame particle effect, and will instantly kill the player. Flame hazards can rotate at a fixed speed and on any axis.</p>
             </div>
         </div>
         <!-- TECHNICAL CHALLENGES -->
             <div class="w3-row-padding w3-padding-top-24">
                 <h2>Technical Challenges</h2>
                 <div class="w3-content" style="max-width:800px;">
-                    <p class="w3-padding">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
-                    <p class="w3-padding">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
-                    <p class="w3-padding">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                    <p class="w3-padding" style="font-style: italic">The majority of the technical challenges that I faced during development revolve around the limitations of the Dreams engine itself. Despite being an incredibly robust and accessible engine, some technical burdens take a significant deal of effort to overcome through optimisation and limited both the scope and creative freedom I was able to pursue.</p>
+                    <p class="w3-padding">The first challenge is that there is a hard limit of twenty levels that can be included in a singular package within the engine, which forced me to compromise on scope early on. This resulted in the decision to have only twenty levels in the game that each take three to five minutes to complete, when I had originally intended to support hundreds of levels in varying lengths and sizes.</p>
+                    <p class="w3-padding">The second major challenge was overcoming the performance limitations imposed per 3D space / level in the engine. In total, the logical costs of the game are incredibly low because I used a single variable and keyframe for each switched colour, and the rest of the gameplay logic is controlled through standard boolean operators and variables which are also very low cost. By duplicating geometry such as all cubes which are derived from the same simple mesh and combining them with painted outlines when invisible, rendering costs were significantly reduced. However this was not enough to build levels to the scale and complexity that I desired. In the end this wound up being the real limiting factor, I could only place around one thousand cubes in a level before hitting a rendering bottleneck that the engine could not reconcile.</p>
+                    <p class="w3-padding">The final major technical challenge that I faced was that the Dreams engine is effectively both a game engine and social network with a shared but closed asset economy for all users. This means that users can easily share assets between each other, with included support for asymmetrical multiplayer leaderboards. However, it also means that no assets, projects, games, or other materials can be directly exported or packaged from within the engine itself into an executable file. This significantly reduced my ability to conduct playtesting, and effectively eliminated the concept of ever releasing the project as a commercial title.</p>
                 </div>
             </div>
     </div>
