@@ -383,31 +383,31 @@
     <div class="w3-content" id="production" style="max-width:1000px;position:relative">
         <!-- TITLE -->
         <h1>Production and Development</h1>
-        <p class="w3-content" style="max-width:600px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quia ipsa veritatis excepturi cum possimus, aut aliquid eos, ipsum unde consectetur. <b>Hic asperiores laboriosam quos suscipit</b>, voluptatibus quisquam id enim?</p>
+        <p class="w3-content" style="max-width:600px;">The majority of prototype production took place over the course of roughly three weeks, including completing all of aforementioned programming and scripting.</p>
         <!-- DEVELOPMENT GIFS -->
         <div>
             <div class="w3-row-padding w3-padding-top-32">
                 <div class="w3-half">
                     <img class="w3-animate-opacity" src="https://justinkrogman.com/images/cuboid_iteration1.jpg"
                     style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-                    <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                    <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">I began by building the base cube shapes for platforming geometry, as well as the spherical turrets and collectables. I focused on establishing forms for the visual style as well as getting all of the colour set switching mechanics implemented, with no other game functionality built other than the player character being able to walk around and double jump.</p>
                 </div>
                 <div class="w3-half">
                     <img class="w3-animate-opacity" src="https://justinkrogman.com/images/cuboid_iteration2.jpg"
                     style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-                    <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                    <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">I moved on to building the functionality of the turrets to be able to track the players position and fire projectiles, as well as the flame turrets to be able to kill the player when collided with. This required adding some additional logic to handle the failure state within levels, so I wound up building systems to reset the level on player death as well as to detect when the player fell too far below the level geometry to also result in level failure.</p>
                 </div>
             </div>
             <div class="w3-row-padding">
                 <div class="w3-half">
                     <img class="w3-animate-opacity" src="https://justinkrogman.com/images/cuboid_iteration3.jpeg"
                     style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-                    <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                    <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">The next step was to build the remaining functionality for level progression including transitioning between levels, handling the success state, tracking variables such as score and completion time, restricting player movement to the starting block until the start countdown has completed, and building a level intro cutscene sequence. I decided to add in a layer of abstraction to unlock the final exit so that players can’t just skip past all of the level content, this took the form of five gems that must be collected before the level exit can be activated.</p>
                 </div>
                 <div class="w3-half">
                     <img class="w3-animate-opacity" src="https://justinkrogman.com/images/cuboid_levelpipeline.jpeg"
                     style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-                    <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                    <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Finally, I consolidated all of the aforementioned systems into a singular level building kit. This kit contains all of the core game logic, variables, geometry, hazards and obstacles, music and sound effects, cutscene scripts, and level progression systems combined into a fairly performant and modular system. I established a pipeline for myself to begin building all of the game content levels and HUB world using this kit.</p>
                 </div>
             </div>
         </div>
@@ -420,11 +420,11 @@
             <div class="w3-row-padding">
                 <div class="w3-half">
                     <img class="w3-animate-opacity" src="https://justinkrogman.com/images/cuboid_blockoutmap.jpg" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-                    <p class="w3-content w3-small" style="max-width:400px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                    <p class="w3-content w3-small" style="max-width:400px;font-style: italic;color:lightblue;">To begin to understand interesting level design patterns to challenge players with, I blocked out two test levels in the same environment, one linear and one with nonlinear but symmetrical segments. I also experimented with having slanted geometry for the player to slide down to see how I could also challenge quick reaction times within the core gameplay loop. These blockouts were very quick and easy to develop with elements from the level building kit I established by simply duplicating the base cubes over and over again.</p>
                 </div>
                 <div class="w3-half">
                     <img class="w3-animate-opacity" src="https://justinkrogman.com/images/cuboid_annotatedmap.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-                    <p class="w3-content w3-small" style="max-width:400px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                    <p class="w3-content w3-small" style="max-width:400px;font-style: italic;color:lightblue;">I created an annotated map from these blockouts to further identify several level design patterns that could be explored to a higher degree of fidelity. From this I was able to establish some of the core patterns that I used in my final iterations of the game, as well as how I could incorporate more puzzle solving elements into levels through spatial awareness of multicoloured chunks of cubes that require players to discern the only correct path forward via the colour switching mechanic.</p>
                 </div>
             </div>
         </div>
