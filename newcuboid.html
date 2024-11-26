@@ -484,38 +484,37 @@
                 <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">The final segment of the level requires players to consistently jump between increasingly elevated platforms while switching both geometry and player colour sets to progress to the end zone and collect points collectables at the same time.</p>
             </div>
         </div>
-        <!-- DESIGN PHILOSOPHY 1 DEMO VIDEO -->
-        <!-- <div class="w3-row w3-padding-top-32">
+        <!-- DESIGN PHILOSOPHY 1 DEMO GIF -->
+        <div class="w3-row w3-padding-top-32">
             <div class="w3-content">
-                <iframe width="100%" height="640px" src="https://www.youtube.com/embed/WGG5sDJrijs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:4%"></iframe>
+                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/cuboid_laddereddesign.gif" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
             </div>
-        </div> -->
+        </div>
         <!-- EXTRA DESIGN PHILOSOPHY 1 INFORMATION -->
-        <div class="w3-row-padding w3-padding-top-32">
+        <div class="w3-row-padding">
             <div class="w3-left-align">
                 <p>Some of the other techniques used here include:</p>
                 <li class="w3-padding">Vistas are established in the introductory cutscene, to give the player a preview of the most significant level elements before they encounter them and create tension.</li>
                 <li class="w3-padding">Leading lines from expressive cube forms guide the player to the end zone without additional instruction or guidance.</li>
-                <li class="w3-padding">Replayability from player agency towards level objectives via the minor branching path at the level start, players must choose between setting a faster completion time or higher points score in their run. Attaining the highest points score requires minimal backtracking on that branched path, not enough to cause frustration, but enough so that both objectives cannot be completed in one level playthrough.</li>
+                <li class="w3-padding">Replayability supported by player agency from level objectives via the minor branching path at the level start. Players must choose between setting a faster completion time or higher points score in their run. Attaining the highest points score requires minimal backtracking on that branched path, not enough to cause frustration, but enough so that both objectives cannot be completed in one level playthrough.</li>
             </div>
         </div>
         <!-- DESIGN PHILOSOPHY 2 -->
         <div class="w3-row-padding w3-padding-top-32">
             <div class="w3-half w3-left-align">
-                <h2>Philosophy 2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolor in repellat aliquid ipsum amet voluptas cupiditate laborum iste dolorum, optio esse incidunt quidem aperiam officiis rerum distinctio aut molestiae?</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et quod esse natus corporis quos soluta. Exercitationem aspernatur sapiente at veniam aut enim voluptatum inventore, quia nesciunt quisquam quam placeat odit.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illum, cumque, pariatur nam doloremque incidunt nostrum assumenda obcaecati placeat soluta nemo possimus similique ab sapiente, suscipit sit laborum voluptatibus quidem!</p>
+                <h2>Accessibility In Game Flow</h2>
+                <p>Something that’s always been a pain point for me in games is when accessibility isn’t layered directly into general game flow, especially in games where objectives will inherently require players to engage with levels or challenges repeatedly to pursue high scores or completion times. After a certain point, a player will be able to recognise that they have made a mistake and won’t be able to set a new high score, and need a way to quickly reset their gameplay environment in as few interactions as possible. This ensures that these resets are accessible without being accidentally triggered during regular gameplay.</p>
+                <p>To accommodate this, I built two reset methods into the player controller to ensure that players can always reset levels or attempt others quickly without needing to navigate through unneeded user interfaces. Holding right on the directional pad for three seconds immediately resets the current level, and holding left will return the player to the HUB world.</p>
             </div>
             <!-- PHILOSOPHY PHOTO -->
             <div class="w3-half">
-                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/cuboid_metaprogression.jpeg" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/cuboid_metaprogression.gif" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Aside from this, I created a set of analytics that track the most significant metrics of the overall game design. These analytics are shown in the HUB world and are not inherently tied to rewards in any way. The objective of these metrics is to add greater value to the players game experience, and translate the qualitative experience of player effort into a quantitative metric showcasing the merit of their efforts in a clear and digestible format.</p>
             </div>
         </div>
         <!-- PHILOSOPHY 2 GIF -->
         <div class="w3-row-padding w3-padding-top-32">
-            <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder.gif" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+            <img class="w3-animate-opacity" src="https://justinkrogman.com/images/cuboid_controls.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
             <p class="w3-content w3-small" style="max-width:600px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
         </div>
         <!-- DESIGN PHILOSOPHY 3 -->
@@ -527,7 +526,7 @@
             </div>
             <div class="w3-half w3-left-align">
                 <!-- PHILOSOPHY 3 -->
-                <h2>Philosophy 3</h2>
+                <h2>Difficulty Curve</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolor in repellat aliquid ipsum amet voluptas cupiditate laborum iste dolorum, optio esse incidunt quidem aperiam officiis rerum distinctio aut molestiae?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repudiandae minus cumque iste quod, voluptatibus incidunt molestiae. Quisquam totam distinctio maxime laboriosam eius quidem non ipsa dolorum. Tenetur, necessitatibus deleniti!</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quaerat, est, eligendi porro quidem distinctio fugit quas vero autem consequatur velit impedit tempore voluptate, perspiciatis asperiores animi repellat incidunt molestias.</p>
