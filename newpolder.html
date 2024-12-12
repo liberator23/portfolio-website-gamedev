@@ -264,42 +264,44 @@
             <div class="w3-half w3-left-align">
                 <!-- BRAINSTORMING -->
                 <h2>Brainstorming</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi repudiandae beatae commodi nulla aliquam ea aspernatur eligendi culpa facilis cupiditate. Eaque deleniti officiis sit totam molestiae molestias enim maiores ducimus?</p>
+                <p>To begin extrapolating the design challenges into a workable concept to start prototyping from, I quickly established a moodboard to analyse how both The Netherlands could be visually represented with its intricate layout of canals, Weirde, and Polders as well as how a world for a virtual reality strategy game could be composed. From this brainstorming it immediately became clear that hexagonal grids were a common implementation for strategy games, and provided many benefits for managing gameplay elements over traditional square grids such as clear diagonal movement and more accurate distance measurements, clearly establishing circular zones of tile radiuses, and making terrain maps look more natural and visually pleasing.</p>
                 <!-- PAPER DESIGN -->
                 <h2>Paper Design</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum veniam accusantium sint hic repudiandae aliquid alias ullam aliquam, fugiat recusandae nostrum accusamus iusto nesciunt? Necessitatibus architecto et enim repellendus expedita.</p>
+                <p>Before beginning prototyping, I always create several flowcharts and diagrams to develop a first iteration of the core gameplay loop and overall software architecture. This significantly streamlines my process while building game systems in-engine, and allows me to solve design challenges early on before any technical debt is established.</p>
             </div>
             <!-- PRE-PRODUCTION GIF OR PHOTO -->
             <div class="w3-half">
                 <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_moodboard.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">When creating the moodboard for Polder, I aimed to establish a clear visual style from a selection of real-world examples of the Dutch landscape and then unify this vision with examples of popular Real-Time Strategy games that have established industry standards for the genre.</p>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Alongside this, I always focus on setting up a few colour palettes to narrow down the artistic style I will pursue for my games. In this case, I focused on a more stylised art style to complement a hexagonal grid and chose palettes focused on natural tones for the environment contrasted against muted but vibrant primary colours for gameplay structures.</p>
             </div>
         </div>
         <!-- BEFORE & AFTER PHOTOS -->
         <div class="w3-row-padding w3-padding-top-24">
             <div class="w3-half">
                 <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_tile_synergy.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">To promote a greater level of depth and strategy when building the players civilisation, I established a scalable synergy system for placed structures to interact with one another. Each building type provides statistical benefits to other structures in the radius, with diminishing returns the further away the structures are from one another.</p>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">To make this system more approachable for the target audience of casual gamers, I split up the synergy levels into clearly distinguishable zones representable with coloured areas of the hexagon tiled grid in world space.</p>
             </div>
             <div class="w3-half">
                 <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_software_architecture.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Because one of the project's main goals is to be primarily played as a virtual reality title, I needed to understand how users would navigate through the overall game software in virtual reality itself. I created a software architecture flowchart to establish where I would need to build 3D physicalized spaces and menu panels for game and menu navigation, and where the actual core gameplay loop would take place.</p>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">During this process I also established a retention loop secondary to the game's story progression in the form of narratively focused collectables and dioramas of the player's towns from each completed campaign level. Note: If the flowchart text is difficult to read, I recommend opening the image in a new tab.</p>
             </div>
         </div>
         <div class="w3-row-padding w3-padding-top-24">
-            <div class="w3-half">
-                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_simple_core_gameplay_loop.png"
-                    style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor
-                    sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores,
-                    nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
-            </div>
             <div class="w3-half">
                 <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_core_gameplay_loop.png"
                     style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
                 <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor
                     sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores,
                     nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+            </div>
+            <div class="w3-half">
+                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_simple_core_gameplay_loop.png"
+                    style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">I created this simplified core gameplay loop diagram to summarise the full core gameplay loop flowchart to clients and stakeholders that are less design oriented, and to more easily convey how the build and play round based system would loop through itself during the progression of a single campaign level.</p>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">During the build mode time is paused so that players can analyse and strategize in an approachable and casual manner with lots of breathing room, and during the play mode time is active and the player must witness the results of their actions established in the preceding build mode. This loops ten times in a given level, with each loop representing five years of historical progression in time for a total of fifty years of time per campaign level.</p>
             </div>
         </div>
         <!-- DESIGN SOLUTIONS -->
@@ -380,6 +382,7 @@
         <div class="w3-row-padding w3-padding-top-32">
             <h2>Game Mechanic Demo</h2>
             <video class="videoplayer" controls width="100%" height="553px" src="https://justinkrogman.com/videos/polder_terraforming_and_resource_costs.mp4" style="border-radius:4%"></video>
+            <p class="w3-content w3-small" style="max-width:600px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
         </div>
         <!-- MAIN GAME MECHANIC EMBEDDED BLUEPRINT -->
         <div class="w3-row-padding w3-padding-top-32">
@@ -530,6 +533,7 @@
         <div class="w3-row w3-padding-top-32">
             <div class="w3-content">
                 <video class="videoplayer" controls width="100%" height="553px" src="https://justinkrogman.com/videos/polder_hexgrid_procedural_generation.mp4" style="border-radius:4%"></video>
+                <p class="w3-content w3-small" style="max-width:600px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
             </div>
         </div>
         <!-- EXTRA DESIGN PHILOSOPHY 1 INFORMATION -->
@@ -661,6 +665,7 @@
         <div class="w3-row w3-padding-top-32">
             <div class="w3-content">
                 <iframe width="100%" height="640px" src="https://www.youtube.com/embed/WGG5sDJrijs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:4%"></iframe>
+                <p class="w3-content w3-small" style="max-width:600px;font-style: italic;color:lightblue;">Circa - July 12th, 2023</p>
             </div>
         </div>
     </div>
