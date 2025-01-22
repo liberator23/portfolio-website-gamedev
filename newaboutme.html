@@ -45,6 +45,17 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/style.css">
+
+  <!--  SCRIPTS -->
+  <!--  JAVASCRIPT -->
+  <script src="scripts/default_slideshow.js"></script>
+  <script src="scripts/automatic_slideshow.js"></script>
+  <script src="scripts/indicated_slideshow.js"></script>
+  <script src="scripts/modal_image_zoom.js"></script>
+  <!-- ANIMATED BACKGROUND -->
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
 </head>
 
 <!-- Welcome to my Website! If you're reading this, you've found an easter egg! Congrats! -->
@@ -216,39 +227,50 @@
 
 <!-- SCRIPTS -->
 <div id="scripts">
-  <!-- SLIDESHOWS --> 
+  <!-- SLIDESHOWS -->
   <script>
     var slideIndex = 1;
-    function plusDivs(n) {
-    slideIndex = slideIndex + n;
     showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
     }
+
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
     function showDivs(n) {
-    var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = x.length };
-    for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("w3-white", "");
+      }
+      x[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += "w3-white";
     }
-    x[slideIndex - 1].style.display = "block";
-    }
-    showDivs(1);
   </script>
   <!-- MODAL FULL SIZE IMAGE CLICK -->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
     <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
     <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
+      <img id="img01" class="w3-image" style="width:100%">
       <p id="caption"></p>
     </div>
   </div>
   <!-- MODAL IMAGE GALLERY -->
   <script>
     function onClick(element) {
-    document.getElementById("img01").src = element.src;
-    document.getElementById("modal01").style.display = "block";
-    var captionText = document.getElementById("caption");
-    captionText.innerHTML = element.alt;
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
     }
   </script>
 </div>
