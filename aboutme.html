@@ -1,176 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Justin Krogman - Game Designer</title>
-    <link rel="icon" type="image/x-icon" href="https://justinkrogman.com/images/Portfolio Website Favicon.png">
-    
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+  <!--  META Tags -->
+  <!--  Default -->
+  <title>Justin Krogman | About Me</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An about me page for Game Designer Justin Krogman including a description of his character, history of his life, and a breakdown of his Game Design and Development skills.">
+  <link rel="icon" type="image/x-icon" href="https://justinkrogman.com/images/Portfolio Website Favicon.png">
+  <link rel="author" href="https://justinkrogman.com/aboutme"/>
+  <link rel="canonical" href="https://justinkrogman.com/aboutme"/>
+  <!--  Google -->
+  <meta itemprop="name" content="Justin Krogman | About Me">
+  <meta itemprop="image" content="https://justinkrogman.com/images/Portfolio Website Favicon.png">
+  <meta itemprop="description" content="An about me page for Game Designer Justin Krogman including a description of his character, history of his life, and a breakdown of his Game Design and Development skills.">
+  <!--  Facebook -->
+  <meta property="og:title" content="Justin Krogman | About Me">
+  <meta property="og:site_name" content="Justin Krogman | Game Designer">
+  <meta property="og:url" content="https://justinkrogman.com/aboutme">
+  <meta property="og:see_also" content="https://justinkrogman.com">
+  <meta property="og:image" content="https://justinkrogman.com/images/Portfolio Website Favicon.png">
+  <meta property="og:description" content="An about me page for Game Designer Justin Krogman including a description of his character, history of his life, and a breakdown of his Game Design and Development skills.">
+  <meta property="og:type" content="article"/>
+    <meta property="article:published_time" content=""/>
+    <meta property="article:modified_time" content=""/>
+    <meta property="article:expiration_time" content=""/>
+    <meta property="article:author" content="https://justinkrogman.com/aboutme"/>
+    <meta property="article:section" content="Game Design"/>
+    <meta property="article:tag" content="Game"/>
+    <meta property="article:tag" content="Design">
+    <meta property="article:tag" content="Development">
+    <meta property="article:tag" content="Designer">
+  <!--  Twitter -->
+  <meta name="twitter:title" content="Justin Krogman | About Me">
+  <meta name="twitter:url" content="https://justinkrogman.com/aboutme">
+  <meta name="twitter:image" content="https://justinkrogman.com/images/Portfolio Website Favicon.png">
+  <meta name="twitter:image:alt" content="Website Favicon Image">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:description" content="An about me page for Game Designer Justin Krogman including a description of his character, history of his life, and a breakdown of his Game Design and Development skills.">
+  <!--  CSS and W3CSS Library -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!--  SCRIPTS -->
+  <!--  JAVASCRIPT -->
+  <script src="scripts/default_slideshow.js"></script>
+  <script src="scripts/automatic_slideshow.js"></script>
+  <script src="scripts/indicated_slideshow.js"></script>
+  <script src="scripts/modal_image_zoom.js"></script>
+  <!-- ANIMATED BACKGROUND -->
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
 </head>
 
-<!--Welcome to my Website! If you're reading this, you've found an easter egg! Congrats!-->
-<!-- Beginning of Page Content and Navigation-->
+<!-- Welcome to my Website! If you're reading this, you've found an easter egg! Congrats! -->
+<!-- START PAGE CONTENT -->
+<body class="w3-theme-d5" id="home">
 
-<body class="w3-black">
+  <!-- ANIMATED BACKGROUND -->
+  <!--<div id="large-header">
+      <canvas id="demo-canvas"></canvas>
+  </div>-->
 
 <!-- NAVIGATION -->
-
-<nav class="w3-center">
-  <div class="w3-bar w3-black w3-opacity-min">
-    <a href="https://justinkrogman.com" class="w3-bar-item w3-button w3-mobile">Home</a>
-    <div class="w3-dropdown-hover w3-mobile">
-      <button class="w3-button">Portfolio <i class="fa fa-caret-down"></i></button>
-      <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-        <a href="https://justinkrogman.com/polder" class="w3-bar-item w3-button w3-mobile">Polder</a>
-        <a href="https://justinkrogman.com/odeaanede" class="w3-bar-item w3-button w3-mobile">Ode aan
-          Ede</a>
-        <a href="https://justinkrogman.com/cuboid" class="w3-bar-item w3-button w3-mobile">CUBOID</a>
-        <a href="https://justinkrogman.com/trainingday" class="w3-bar-item w3-button w3-mobile">Training
-          Day</a>
-        <a href="https://justinkrogman.com/portfolio" class="w3-bar-item w3-button w3-mobile">Portfolio
-          Archive</a>
-      </div>
-    </div>
-    <a href="#" class="w3-bar-item w3-button w3-mobile w3-cyan">About Me</a>
-    <a href="https://justinkrogman.com/contact" class="w3-bar-item w3-button w3-mobile">Contact</a>
-  </div>
-</nav>
-
-<!-- PAGE CONTENT -->
-<header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-  <h1 class="w3-jumbo"> Justin Krogman</h1>
-  <p class="w3-text-cyan w3-large">Game Designer</p>
-</header>
-
-<div class="w3-container w3-center w3-text-light-grey w3-padding-32">
-<h1> About Me</h1>
-<img src="https://justinkrogman.com/images/self_image1.jpg" alt="https://justinkrogman.com/images/animal_head_assignment2.png" class="w3-image w3-circle w3-animate-zoom w3-padding-top-32" width="600" height="600">
+<div>
+    <nav class="w3-center">
+        <div class="w3-bar w3-black w3-opacity-min w3-hover-opacity-off">
+            <a href="https://justinkrogman.com" class="w3-bar-item w3-button w3-mobile w3-theme-d1">Justin Krogman | Game Designer</a>
+            <div class="w3-dropdown-hover w3-mobile">
+                <button class="w3-button">Portfolio <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+                    <a href="https://justinkrogman.com/underconstruction" class="w3-bar-item w3-button w3-mobile">Ode aan Ede</a>
+                    <a href="https://justinkrogman.com/underconstruction" class="w3-bar-item w3-button w3-mobile">Polder</a>
+                    <a href="https://justinkrogman.com/cuboid" class="w3-bar-item w3-button w3-mobile">CUBOID</a>
+                </div>
+            </div>
+            <a href="#home" class="w3-bar-item w3-button w3-mobile w3-cyan">About Me</a>
+            <a href="https://justinkrogman.com/contact" class="w3-bar-item w3-button w3-mobile">Contact</a>
+        </div>
+    </nav>
 </div>
 
-<!-- About Section -->
-
-  <div class="w3-container w3-center w3-text-light-grey w3-padding-32" id="about">
-    <h2 class="w3-text-light-grey">Welcome</h2>
-    <hr style="max-width:600px" class="w3-content w3-justify w3-opacity">
-
-      <div class="w3-content w3-justify w3-cyan w3-round w3-padding" style="max-width:600px">
-    <p>I'm a dual Canadian-German citizen and Technical Game Designer trying to push the boundaries of interactive entertainment. I hold a BSc in Communication and Multimedia Design from Hanze University of Applied Sciences, with a major in Game Design and a minor in Medialism. My graduation assignment was nominated for the best student project of 2023 at Hanze UAS. I specialize in systems, level, and technical game design.</p>
-    <p>I am an analytical and curious creative, with strong communication and problem solving skills. I enjoy the unique challenges presented by the game design process, and look forward to developing my own games as I continue to hone my skills.</p>
-    <p>When it comes to playing games, I am a fan of RPGs, action-adventures, tactical first-person shooters, survival-crafters, and co-operative focused multiplayer games. I love learning about the inner workings of game systems while I play and explore them! I'm the kind of person that will happily spend over an hour in a character creator obsessing over all of the minuscule details.</p>
-    <p>When I'm not creating new games and experiences, I enjoy going bouldering, playing airsoft, going
-    snowboarding, travelling, and of course playing video games!</p>
-</div>
-        <!-- My Story Timeline -->
-
-    <h3 class="w3-padding-24 w3-padding-top-64 w3-text-light-grey">My Story</h3>
-    <hr style="max-width:600px" class="w3-content w3-justify w3-opacity">
-
-<div class="w3-container w3-text-light-grey w3-padding-32">
-    <img src="https://justinkrogman.com/images/young_image2.jpg" alt="Avatar" class="w3-content w3-justify w3-circle w3-margin-right w3-hover-opacity" style="width:100px">
-    <p><span class="w3-large w3-margin-right w3-text-cyan">Early Life</span> 1995-2011</p>
-    <p class="w3-content w3-justify w3-cyan w3-round w3-padding" style="max-width:600px">As a child I was exposed to video games on the Nintendo 64 through my sisters playing games like Mario Party and GoldenEye 007. I continued to enjoy video games from many genres and developed a strong passion for the medium.</p><br>
-    
-    <img src="https://justinkrogman.com/images/electric_image2.jpg" alt="Avatar" class="w3-content w3-justify w3-circle w3-margin-right w3-hover-opacity" style="width:100px">
-    <p><span class="w3-large w3-margin-right w3-text-cyan">First Career</span> 2012-2017</p>
-    <p class="w3-content w3-justify w3-cyan w3-round w3-padding" style="max-width:600px">I became a commerical Electrician and pursued an apprenticeship for four and a half years, eventually becoming a fully licensed and endorsed Red Seal Journeyman Electrician.</p>
-
-    <img src="https://justinkrogman.com/images/self_image2.jpg" alt="Avatar" class="w3-content w3-justify w3-circle w3-margin-right w3-hover-opacity" style="width:100px">
-    <p><span class="w3-large w3-margin-right w3-text-cyan">Reflection</span> 2018</p>
-    <p class="w3-content w3-justify w3-cyan w3-round w3-padding" style="max-width:600px">I began to think about what I really wanted to do going forward in my life. I realized that I loved games and the experiences they convey.</p>
-
-    <img src="https://justinkrogman.com/images/self_image1.jpg" alt="Avatar" class="w3-content w3-justify w3-circle w3-margin-right w3-hover-opacity" style="width:100px">
-    <p><span class="w3-large w3-margin-right w3-text-cyan">Changes</span> 2019-2021</p>
-    <p class="w3-content w3-justify w3-cyan w3-round w3-padding" style="max-width:600px">I made the decision to move across the globe to The Netherlands and begin my education in game design at Hanze University of Applied Sciences, inspired and motivated to pursue my dream to become a game designer.</p>
-
-    <img src="https://justinkrogman.com/images/self_image3.png" alt="Avatar" class="w3-content w3-justify w3-circle w3-margin-right w3-hover-opacity" style="width:100px">
-    <p><span class="w3-content w3-justify w3-large w3-margin-right w3-text-cyan">Building Skills</span> 2022-2023</p>
-    <p class="w3-content w3-justify w3-cyan w3-round w3-padding" style="max-width:600px">I successfully completed the first three years of my Bachelors Degree in Communication and Multimedia Design at Hanze UAS, with a major in Game Design and a minor in Medialism. I was also able to successfully complete an internship at Dutch publishing studio Indietopia, giving me valuable industry experience and preparing me for the final year of my degree program. With this experience, I planned to enter the games industry after graduating in the summer of 2023.</p>
-
-    <img src="https://justinkrogman.com/images/Justin-2.jpg" alt="Avatar"
-    class="w3-content w3-justify w3-circle w3-margin-right w3-hover-opacity" style="width:100px">
-    <p><span class="w3-content w3-justify w3-large w3-margin-right w3-text-cyan">Current Life</span> 2023 and Beyond</p>
-    <p class="w3-content w3-justify w3-cyan w3-round w3-padding" style="max-width:600px">I have graduated and successfully completed my Bachelor of Science in Communication and Multimedia Design at Hanze UAS, with a major in Game
-    Design and a minor in Medialism. During the final year of my studies I was hired as a Junior Developer by Dutch publishing studio
-    Indietopia. While working at Indietopia I have functioned as the lead designer and developer on multiple commercial Unreal Engine projects focused in the Dutch cultural sector, while also coaching several groups of interns. I am currently seeking a mentor while I focus on improving my skills and continuing professional development.</p>
+<!-- HEADER -->
+<div id="header">
+    <header class="w3-container w3-center w3-padding-top-64">
+        <!-- PAGE NAME -->
+        <h1 class="w3-jumbo">About Me</h1>
+    </header>
 </div>
 
-        <!-- Skills Breakdown Chart-->
-
-    <h3 class="w3-padding-16 w3-padding-top-64 w3-text-light-grey">Skills Breakdown</h3>
-    <hr style="max-width:600px" class="w3-content w3-justify w3-opacity">
-
-    <p class="w3-wide">Systems Design</p>
-    <div class="w3-white w3-center w3-content w3-justify" style="max-width: 600px;">
-      <div class="w3-cyan" style="height:28px;width:50%">
-        <p class=" w3-text-white w3-right-align w3-margin">Intermediate Level</p></div>
-    </div>
-
-    <p class="w3-wide">Game Documentation</p>
-    <div class="w3-white w3-center w3-content w3-justify" style="max-width: 600px;">
-      <div class="w3-cyan" style="height:28px;width:50%">
-        <p class="w3-text-white w3-right-align w3-margin">Intermediate Level</p></div>
-    </div>
-
-    <p class="w3-wide">Technical Game Design</p>
-    <div class="w3-white w3-center w3-content w3-justify" style="max-width: 600px;">
-      <div class="w3-cyan" style="height:28px;width:30%">
-        <p class="w3-text-white w3-right-align w3-margin">Junior Level</p></div>
-    </div>
-
-    <p class="w3-wide">Level Design</p>
-    <div class="w3-white w3-center w3-content w3-justify" style="max-width: 600px;">
-      <div class="w3-cyan" style="height:28px;width:30%">
-        <p class="w3-text-white w3-right-align w3-margin">Junior Level</p></div>
-    </div><br>
-    
-    <div class="w3-row w3-padding-16 w3-section w3-light-grey w3-center w3-content w3-justify" style="max-width: 600px;">
-
-      <div class="w3-quarter w3-section w3-padidng">
-        <span class="w3-xlarge">2+</span><br>
-        Years of Professional Experience (4 Years as a student)
+<!-- BODY CONTENT -->
+<div class="w3-row-padding w3-center" id="body">
+  
+  <!-- PAGE CONTENT -->
+  <!-- WELCOME -->
+  <div class="w3-content w3-padding-top-24" id="welcome" style="max-width:1000px;position:relative">
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <img class="w3-image w3-circle w3-animate-zoom" src="https://justinkrogman.com/images/self_image1.jpg" width="200" onclick="onClick(this)">
       </div>
-
-      <div class="w3-quarter w3-section w3-padding">
-        <span class="w3-xlarge">25+</span><br>
-        Game Projects Completed
-      </div>
-
-      <div class="w3-quarter w3-section w3-padding">
-        <span class="w3-xlarge">15+</span><br>
-        Happy Clients
-      </div>
-
-      <div class="w3-quarter w3-section w3-padding">
-        <span class="w3-xlarge">3000+</span><br>
-        Hours of Unreal Engine Experience
+      <div class="w3-half">
+        <!-- TITLE -->
+        <h1 class="w3-text-cyan">Hello, welcome to my website!</h1>
+        <p class="w3-content" style="max-width:600px;">On these pages you can find additional content such as my life story, a breakdown of my Game Design, Game Development,
+        and Electrical skills, information and pricing about the contract and freelance work I offer, and how you can contact me
+        through social media and private correspondence.</p>
       </div>
     </div>
-
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <a href="https://justinkrogman.com/documents/JustinKrogman_CV_GameDesigner_2024.pdf" target="_blank" class="w3-hover-text-cyan"><i class="fa fa-download"></i> Download Resume</a>
-    </button>
-    
   </div>
 
-<!-- Footer -->
-  <footer class="w3-content w3-justify w3-center w3-justify w3-center w3-padding-64 w3-text-grey w3-jumbo">
-    <a href="https://www.linkedin.com/in/justin-krogman/" target="_blank"><i class="fa fa-linkedin-square w3-hover-opacity"></i></a>
+  <hr style="max-width:1000px" class="w3-opacity w3-content">
 
-    <a href="https://www.facebook.com/JustinDouglasKrogman" target="_blank"><i class="fa fa-facebook-square w3-hover-opacity"></i></a>
+  <!-- PAGE CATEGORY NAVIGATION -->
+  <div class="w3-content w3-padding-top-24" id="pagenavigation" style="max-width:1000px;position:relative">
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <!-- NAVIGATION TITLE -->
+        <h1 class="w3-left-align">On This Page</h1>
+          <div class="w3-left-align" style="list-style-type:none;color:lightblue">
+            <li><a href="#introdescription" class="w3-mobile w3-hover-text-white" style="font-style:italic;text-decoration:underline"><h3>Introduction</h3></a></li>
+            <li><a href="#lifetimeline" class="w3-mobile w3-hover-text-white" style="font-style:italic;text-decoration:underline"><h3>My Story</h3></a></li>
+          </div>
+      </div>
+      <!-- NAVIGATION PHOTO -->
+      <div class="w3-half">
+        <img class="w3-animate-opacity" src="https://justinkrogman.com/images/Portfolio Website Favicon.png" style="cursor:pointer;border-radius:4%" onclick="onClick(this)">
+      </div>
+    </div>
+  </div>
 
-    <a href="https://twitter.com/liberator23" target="_blank"><i class="fa fa-twitter-square w3-hover-opacity"></i></a>
+  <hr style="max-width:1000px" class="w3-opacity w3-content">
 
-    <a href="mailto:jkrogman23@gmail.com" target="_blank"><i class="fa fa-envelope-square w3-hover-opacity"></i></a>
+  <!-- INTRO DESCRIPTION -->
+  <div class="w3-content" id="introdescription" style="max-width:1000px;position:relative">
+    <div class="w3-row-padding w3-padding-top-32">
+      <!-- SELF PHOTOS -->
+      <div class="w3-half">
+        <img class="w3-animate-opacity" src="https://justinkrogman.com/images/self_image4.jpg" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+        <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Hanze University of Applied Sciences Graduation - 2023</p>
+        <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Groningen - The Netherlands</p>
+      </div>
+      <div class="w3-half w3-left-align">
+        <h2>Who Am I?</h2>
+        <p>I'm a dual Canadian-German citizen and Game Designer pushing the boundaries of interactive entertainment. I hold a BSc in Communication and Multimedia Design from Hanze University of Applied Sciences, with a major in Game Design and a minor in Medialism. My graduation assignment "Polder" was nominated for the best student project of 2023 at Hanze UAS. I specialise in technical, systems, and level design.</p>
+        <p>As an analytical and pragmatic creative with strong communication and problem solving skills, I enjoy the unique challenges presented by the game design and development processes. I've worked both as an indie developer and with international multidisciplinary teams to deliver outstanding games and digital experiences. I am also a fully certified and endorsed Red Seal Journeyman Electrician.</p>
+        <p>When it comes to playing games, I am a fan of RPGs, action-adventures, tactical first-person shooters, survival-crafters, and co-operative focused multiplayer games to name a few. I love learning about the inner workings of game systems and mechanics while I play and explore them! I'm the kind of person that will happily spend over an hour in a character creator obsessing over all of the minuscule details.</p>
+        <p>When I'm not creating new games and experiences, I enjoy going bouldering, playing airsoft, camping, going snowboarding, travelling, and of course playing video games!</p>
+      </div>
+    </div>
+  </div>
 
-    <p class="w3-medium">Thanks for visiting!  <a href="#" class="w3-hover-text-cyan">Back to Top</a></p>
-  </footer>
-<!-- End footer -->
+  <hr style="max-width:1000px" class="w3-opacity w3-content">
+
+  <!-- LIFE TIMELINE -->
+  <div class="w3-content" id="lifetimeline" style="max-width:1000px;position:relative">
+    <div class="w3-row-padding w3-padding-top-32">
+      <!-- TITLE -->
+      <h1>My Story</h1>
+      <!-- TIMELINE ITEMS -->
+      <div class="w3-row-padding w3-padding-top-24">
+        <img class="w3-image w3-circle w3-animate-zoom" src="https://justinkrogman.com/images/young_image2.jpg" style="cursor:pointer" width="200" onclick="onClick(this)">
+        <h3 class="w3-text-cyan">Early Life</h3>
+        <h4>1995 - 2011</h4>
+        <p>Born in the foothills of the Rocky Mountains, early life was rife with cold winters and short summers. As a child I was first introduced to video games from my father and sisters playing games like Mario Party and GoldenEye 007 on the Nintendo 64. At around the age of seven my father gave me my first game console, the PlayStation 2, fully cementing my love for the medium. I continued to enjoy video games from many genres and gaming consoles over the following years and developed a strong passion for them. For around five years I lived in various parts of the Bay Area of California, exposing me to many new cultures and facets of life.
+        </p>
+      </div>
+      <div class="w3-row-padding w3-padding-top-24">
+        <img class="w3-image w3-circle w3-animate-zoom" src="https://justinkrogman.com/images/electric_image2.jpg" style="cursor:pointer" width="200" onclick="onClick(this)">
+        <h3 class="w3-text-cyan">First Career</h3>
+        <h4>2012 - 2017</h4>
+        <p>I graduated highschool with a focus on art, theatre production, and multimedia design as well as several Imperial Oil awards in mathematics. I became an Electrician focused in commercial construction and pursued an apprenticeship for four and a half years, eventually becoming a fully licensed and endorsed Red Seal Journeyman Electrician.</p>
+      </div>
+      <div class="w3-row-padding w3-padding-top-24">
+        <img class="w3-image w3-circle w3-animate-zoom" src="https://justinkrogman.com/images/self_image2.jpg" style="cursor:pointer" width="200" onclick="onClick(this)">
+        <h3 class="w3-text-cyan">Reflection</h3>
+        <h4>2018</h4>
+        <p>I began to think about what I really wanted to do going forward in my life, and what things had inspired me the most in my journey so far. I realised that I loved games and the experiences they convey more than being an Electrician, and that I had experiences and stories of my own to tell. After a trip to Europe, I was inspired to obtain my dual Canadian - German citizenship and began to search for universities with Game Design programs across Canada and Europe.</p>
+      </div>
+      <div class="w3-row-padding w3-padding-top-24">
+        <img class="w3-image w3-circle w3-animate-zoom" src="https://justinkrogman.com/images/self_image1.jpg" style="cursor:pointer" width="200" onclick="onClick(this)">
+        <h3 class="w3-text-cyan">An Oversea Odyssey</h3>
+        <h4>2019 - 2021</h4>
+        <p>I made the decision to move away from Canada across the globe to The Netherlands and begin my education in game design at Hanze University of Applied Sciences, inspired and motivated to pursue my dream to become a Game Designer. Having been only the second time that I lived outside of Canada, I was exposed to significantly more cultures and sources of inspiration in my life.</p>
+      </div>
+      <div class="w3-row-padding w3-padding-top-24">
+        <img class="w3-image w3-circle w3-animate-zoom" src="https://justinkrogman.com/images/self_image3.png" style="cursor:pointer" width="200" onclick="onClick(this)">
+        <h3 class="w3-text-cyan">Building Skills</h3>
+        <h4>2022 - 2023</h4>
+        <p>I successfully completed the first three years of my Bachelors Degree in Communication and Multimedia Design at Hanze UAS, with a major in Game Design and a minor in Medialism. I completed an internship as a Game Designer at Dutch publishing studio Indietopia, giving me valuable industry experience and preparing me for the final year of my degree program. With this experience, I planned to enter the games industry after graduating in the summer of 2023.</p>
+      </div>
+      <div class="w3-row-padding w3-padding-top-24">
+        <img class="w3-image w3-circle w3-animate-zoom" src="https://justinkrogman.com/images/self_image4.jpg" style="cursor:pointer" width="200" onclick="onClick(this)">
+        <h3 class="w3-text-cyan">Graduation</h3>
+        <h4>2023</h4>
+        <p>I graduated and successfully completed my Bachelor of Science in Communication and Multimedia Design at Hanze UAS, with a major in Game Design and a minor in Medialism. During the final year of my studies I was hired as a Junior Developer by Dutch publishing studio Indietopia. While working at Indietopia I functioned as the lead designer and developer on multiple commercial Unreal Engine projects focused in the Dutch cultural sector, while also coaching several groups of interns at a post-secondary level and guiding them in day to day work.</p>
+      </div>
+      <div class="w3-row-padding w3-padding-top-24">
+        <img class="w3-image w3-circle w3-animate-zoom" src="https://justinkrogman.com/images/Justin-2.jpg" style="cursor:pointer" width="200" onclick="onClick(this)">
+        <h3 class="w3-text-cyan">Current Life</h3>
+        <h4>2024 and Beyond</h4>
+        <p>After almost two years of work at Indietopia, I was affected by layoffs that many other game industry professionals have faced during a period of instability in the industry. I am currently developing two games in Unreal Engine 5, one individually and one with a small multidisciplinary team. During this time, I am also seeking a mentor while I focus on improving my skills and continuing professional development to prepare for my next career opportunity in the games industry. I am actively searching for <b>Junior Game Designer</b> and <b>Junior Technical Game Designer</b> roles based in Canada and the European Union.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr style="max-width:1000px" class="w3-opacity w3-content">
+
+  <!-- FOOTER -->
+  <div id="footer">
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-jumbo">
+      <a href="https://www.linkedin.com/in/justin-krogman/" target="_blank"><i class="fa fa-linkedin-square w3-hover-opacity"></i></a>
+      <a href="https://www.facebook.com/JustinDouglasKrogman" target="_blank"><i class="fa fa-facebook-square w3-hover-opacity"></i></a>
+      <a href="https://twitter.com/liberator23" target="_blank"><i class="fa fa-twitter-square w3-hover-opacity"></i></a>
+      <a href="mailto:jkrogman23@gmail.com" target="_blank"><i class="fa fa-envelope-square w3-hover-opacity"></i></a>
+      <p class="w3-medium">Thanks for visiting! <a href="#home" class="w3-hover-text-cyan">Back to Top</a></p>
+    </footer>
+  </div>
+</div>
 
 <!-- END PAGE CONTENT -->
+
+<!-- SCRIPTS -->
+<div id="scripts">
+  <!-- SLIDESHOWS -->
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("w3-white", "");
+      }
+      x[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += "w3-white";
+    }
+  </script>
+  <!-- MODAL FULL SIZE IMAGE CLICK -->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image" style="width:100%">
+      <p id="caption"></p>
+    </div>
+  </div>
+  <!-- MODAL IMAGE GALLERY -->
+  <script>
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+  </script>
+</div>
 </body>
 </html>

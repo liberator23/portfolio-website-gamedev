@@ -1,253 +1,772 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--  META Tags -->
+    <!--  Default -->
+    <title>Justin Krogman | Polder</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Justin Krogman - Game Designer</title>
+    <meta name="description" content="A Game Design portfolio project page about the game Polder, created by Game Designer Justin Krogman.">
     <link rel="icon" type="image/x-icon" href="https://justinkrogman.com/images/Portfolio Website Favicon.png">
-    
+    <link rel="author" href="https://justinkrogman.com/aboutme"/>
+    <link rel="canonical" href="https://justinkrogman.com/polder"/>
+    <!--  Google -->
+    <meta itemprop="name" content="Justin Krogman | Polder">
+    <meta itemprop="image" content="https://justinkrogman.com/images/Portfolio Website Favicon.png">
+    <meta itemprop="description" content="A Game Design portfolio project page about the game Polder, created by Game Designer Justin Krogman.">
+    <!--  Facebook -->
+    <meta property="og:title" content="Justin Krogman | Polder">
+    <meta property="og:site_name" content="Justin Krogman | Game Designer">
+    <meta property="og:url" content="https://justinkrogman.com/polder">
+    <meta property="og:see_also" content="https://justinkrogman.com">
+    <meta property="og:image" content="https://justinkrogman.com/images/Portfolio Website Favicon.png">
+    <meta property="og:description" content="A Game Design portfolio project page about the game Polder, created by Game Designer Justin Krogman.">
+    <meta property="og:type" content="article"/>
+        <meta property="article:published_time" content=""/>
+        <meta property="article:modified_time" content=""/>
+        <meta property="article:expiration_time" content=""/>
+        <meta property="article:author" content="https://justinkrogman.com/aboutme"/>
+        <meta property="article:section" content="Game Design"/>
+        <meta property="article:tag" content="Game"/>
+        <meta property="article:tag" content="Design">
+        <meta property="article:tag" content="Development">
+        <meta property="article:tag" content="Designer">
+    <!--  Twitter -->
+    <meta name="twitter:title" content="Justin Krogman | Polder">
+    <meta name="twitter:url" content="https://justinkrogman.com/polder">
+    <meta name="twitter:image" content="https://justinkrogman.com/images/Portfolio Website Favicon.png">
+    <meta name="twitter:image:alt" content="Website Favicon Image">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="A Game Design portfolio project page about the game Polder, created by Game Designer Justin Krogman.">
+    <!--  CSS and W3CSS Library -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/style.css">
+
+    <!--  SCRIPTS -->
+    <!--  JAVASCRIPT -->
+    <script src="scripts/default_slideshow.js"></script>
+    <script src="scripts/automatic_slideshow.js"></script>
+    <script src="scripts/indicated_slideshow.js"></script>
+    <script src="scripts/modal_image_zoom.js"></script>
+    <!-- ANIMATED BACKGROUND -->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
 </head>
 
-<!--Welcome to my Website! If you're reading this, you've found an easter egg! Congrats!-->
-<!-- Beginning of Page Content and Navigation-->
+<!-- Welcome to my Website! If you're reading this, you've found an easter egg! Congrats! -->
+<!-- START PAGE CONTENT -->
+<body class="w3-theme-d5" id="home">
 
-<body class="w3-black">
+<!-- ANIMATED BACKGROUND -->
+<!--<div id="large-header">
+    <canvas id="demo-canvas"></canvas>
+</div>-->
 
 <!-- NAVIGATION -->
+<div>
+    <nav class="w3-center">
+        <div class="w3-bar w3-black w3-opacity-min w3-hover-opacity-off">
+            <a href="https://justinkrogman.com" class="w3-bar-item w3-button w3-mobile w3-theme-d1">Justin Krogman | Game Designer</a>
+            <div class="w3-dropdown-hover w3-mobile">
+                <button class="w3-button">Portfolio <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+                    <a href="https://justinkrogman.com/odeaanede" class="w3-bar-item w3-button w3-mobile">Ode aan Ede</a>
+                    <a href="#home" class="w3-bar-item w3-button w3-mobile w3-cyan">Polder</a>
+                    <a href="https://justinkrogman.com/cuboid" class="w3-bar-item w3-button w3-mobile">CUBOID</a>
+                </div>
+            </div>
+            <a href="https://justinkrogman.com/aboutme" class="w3-bar-item w3-button w3-mobile">About Me</a>
+            <a href="https://justinkrogman.com/contact" class="w3-bar-item w3-button w3-mobile">Contact</a>
+        </div>
+    </nav>
+</div>
 
-<nav class="w3-center">
-    <div class="w3-bar w3-black w3-opacity-min">
-        <a href="https://justinkrogman.com" class="w3-bar-item w3-button w3-mobile">Home</a>
-        <div class="w3-dropdown-hover w3-mobile">
-            <button class="w3-button">Portfolio <i class="fa fa-caret-down"></i></button>
-            <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-                <a href="#" class="w3-bar-item w3-button w3-mobile w3-cyan">Polder</a>
-                <a href="https://justinkrogman.com/odeaanede" class="w3-bar-item w3-button w3-mobile">Ode aan
-                    Ede</a>
-                <a href="https://justinkrogman.com/cuboid" class="w3-bar-item w3-button w3-mobile">CUBOID</a>
-                <a href="https://justinkrogman.com/trainingday" class="w3-bar-item w3-button w3-mobile">Training
-                    Day</a>
-                <a href="https://justinkrogman.com/portfolio" class="w3-bar-item w3-button w3-mobile">Portfolio
-                    Archive</a>
+<!-- HEADER -->
+<div id="header">
+    <header class="w3-container w3-center w3-padding-top-64">
+        <!-- PROJECT NAME -->
+        <h1 class="w3-jumbo">Polder</h1>
+        <h3 class="w3-text-cyan">A VR Godlike Strategic City-Builder</h3>
+    </header>
+</div>
+
+<!-- BODY CONTENT -->
+<div class="w3-row-padding w3-center" id="body">
+
+    <!-- PAGE CONTENT -->
+    <!-- INTRO & DESIGN CONTEXT -->
+    <div class="w3-content w3-padding-top-24" id="intro" style="max-width:1000px;position:relative">
+        <!-- INTRO GIF / VIDEO -->
+        <div class="w3-row-padding" style="max-width:1000px;position:relative">
+            <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_procedural_generation.gif" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+        </div>
+        <hr style="max-width:1000px" class="w3-opacity w3-content">
+        <!-- PAGE CATEGORY NAVIGATION -->
+        <div class="w3-row-padding w3-padding-top-24" id="pagenavigation">
+            <div class="w3-twothird">
+                <!-- NAVIGATION TITLE -->
+                <h1 class="w3-left-align">On This Page</h1>
+                <div class="w3-left-align" style="list-style-type:none;color:lightblue">
+                    <li><a href="#designcontext" class="w3-mobile w3-hover-text-white" style="font-style:italic;text-decoration:underline"><h3>Design Context</h3></a></li>
+                    <p style="color: white;">The context surrounding why this project was designed, what challenges it aimed to solve, and for whom.</p>
+                    <li><a href="#preproduction" class="w3-mobile w3-hover-text-white" style="font-style:italic;text-decoration:underline"><h3>Pre-Production</h3></a></li>
+                    <p style="color: white;">Initial design work based on the established context, including design diagrams and flowcharts.</p>
+                    <li><a href="#programming" class="w3-mobile w3-hover-text-white" style="font-style:italic;text-decoration:underline"><h3>Programming and Scripting</h3></a></li>
+                    <p style="color: white;">The in-engine technical work that went into the project's development, with specific focus towards technical design as well as both systems and gameplay programming.</p>
+                    <li><a href="#production" class="w3-mobile w3-hover-text-white" style="font-style:italic;text-decoration:underline"><h3>Production and Development</h3></a></li>
+                    <p style="color: white;">The process of developing the project from initial design work to a playable experience in-engine.</p>
+                    <li><a href="#designphilosophy" class="w3-mobile w3-hover-text-white" style="font-style:italic;text-decoration:underline"><h3>Design Philosophy</h3></a></li>
+                    <p style="color: white;">The fundamental philosophy and reasoning behind my design choices.</p>
+                    <li><a href="#testing" class="w3-mobile w3-hover-text-white" style="font-style:italic;text-decoration:underline"><h3>Testing</h3></a></li>
+                    <p style="color: white;">The methodologies used to test the project, as well as the results of those tests.</p>
+                    <li><a href="#postmortem" class="w3-mobile w3-hover-text-white" style="font-style:italic;text-decoration:underline"><h3>Post-Mortem</h3></a></li>
+                    <p style="color: white;">A breakdown of what I learned through the development of this project as well as its challenges, successes, and
+                    failures.</p>
+                    <li><a href="#demovideo" class="w3-mobile w3-hover-text-white" style="font-style:italic;text-decoration:underline"><h3>Playthrough Video</h3></a></li>
+                    <p style="color: white;">A playthrough video of the final project.</p>
+                </div>
+            </div>
+            <!-- NAVIGATION PHOTO -->
+            <div class="w3-third">
+                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/Portfolio Website Favicon.png" style="cursor:pointer;border-radius:4%" onclick="onClick(this)">
             </div>
         </div>
-        <a href="https://justinkrogman.com/aboutme" class="w3-bar-item w3-button w3-mobile">About Me</a>
-        <a href="https://justinkrogman.com/contact" class="w3-bar-item w3-button w3-mobile">Contact</a>
-    </div>
-</nav>
 
-<!-- PAGE CONTENT -->
+        <hr style="max-width:1000px" class="w3-opacity w3-content">
 
-<header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"> Justin Krogman</h1>
-    <p class="w3-text-cyan w3-large">Game Designer</p>
-</header>
+        <!-- DESIGN CONTEXT -->
+        <div class="w3-row" id="designcontext" style="max-width:1000px;position:relative">
+            <!-- SUMMARY -->
+            <h1>Design Context</h1>
+            <div class="w3-left-align">
+                <h2>Project Summary</h2>
+                <p>Polder is a godlike strategic city-building game where the player's primary goal is to settle new villages across the North of The Netherlands and build them up to prosperity. A church acts as the central point of every village and the player must work to develop and defend it from a litany of hazards and natural disasters while efficiently managing resources and funds.</p>
+                <h2>Game Pitch</h2>
+                <p>The year is 1000 A.D. and a new frontier is being settled across Northern Europe. Through a myriad of wetlands and swamps, a fierce battle against the unpredictable North Sea is being waged by the first settlers of these lands. Rise up, take control, and become the deity of this new civilisation.</p>
+            </div>
+            <div>
+                <h2>Goals</h2>
+                <div class="w3-half">
+                    <h3>Internal</h3>
+                    <div class="w3-left-align">
+                        <li class="w3-padding">Experience a fun and engaging casual entertainment game that follows industry standards and best practices for casual games and VR titles.</li>
+                        <li class="w3-padding">Players learn about the development of churches in the North of The Netherlands and Dutch history overall, and are more engaged with their current development.</li>
+                        <li class="w3-padding">Players learn about modern uses that religiously unaffiliated (secular) churches fulfill in order to benefit society, and develop an improved view of these churches in the North of The Netherlands.</li>
+                    </div>
+                </div>
+                <div class="w3-half">
+                    <h3>External</h3>
+                    <div class="w3-left-align">
+                    <li class="w3-padding">Create a prototype to launch Indietopias first commercial game under a new BV branch, use this product to leverage the company's expanded portfolio to generate commercial profit.</li>
+                    <li class="w3-padding">Further develop and improve my practical hard skills in Unreal Engine for game development, technical and systems game design, and technical art towards a professional level for a junior game designer.</li>
+                    <li class="w3-padding">Promote Indietopia as an innovative and creative game studio, and create excellent work for the company to showcase to future clients and investors within the games industry.</li>
+                </div>
+                </div>
+            </div>
+            <div class="w3-row-padding w3-padding-top-32">
+                <!-- DETAILS TABLE -->
+                <div class="w3-half">
+                    <!-- PROJECT DETAILS -->
+                    <h2>Project Details</h2>
+                    <!-- TABLE INFORMATION -->
+                    <table class="w3-center w3-centered w3-content w3-justify w3-table w3-striped w3-border-black" style="max-width: 600px">
+                        <tr>
+                            <td class="w3-cyan" style="border-top-left-radius:25%">Development Time</td>
+                            <td class="w3-light-gray" style="border-top-right-radius:25%">2023, 6 Months</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-cyan">Team Size</td>
+                            <td class="w3-text-black">1x Developer</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-cyan">Role</td>
+                            <td class="w3-light-gray">Lead Designer and Developer</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-cyan">Clients</td>
+                            <td class="w3-text-black">Indietopia, The Groningen Historic Churches Foundation</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-cyan">Genre</td>
+                            <td class="w3-light-gray">Casual Godlike Strategic City-Builder</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-cyan">Controls System</td>
+                            <td class="w3-text-black">Oculus Rift VR Controllers</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-cyan">Target Audience</td>
+                            <td class="w3-light-gray">Dutch Casual Gamers Aged 20-50</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-cyan">Game Skills</td>
+                            <td class="w3-text-black">Strategic Resource Management, Building, Action</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-cyan">Software</td>
+                            <td class="w3-light-gray">Unreal Engine 5.1.1, GitHub, Miro, ClickUp</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-cyan">Management System</td>
+                            <td class="w3-text-black">Agile and Scrum in 1 Week Sprints</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-cyan">Development Platform</td>
+                            <td class="w3-light-gray">PC, Windows 11</td>
+                        </tr>
+                        <tr>
+                            <td class="w3-cyan" style="border-bottom-left-radius:25%">Target Platform</td>
+                            <td class="w3-text-black" style="border-bottom-right-radius:25%">PC, Oculus Quest 2 VR Headset</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- INSPIRATIONS LIST -->
+                <div class="w3-half">
+                    <h2>Inspirations</h2>
+                    <li class="w3-left-align w3-padding">Traditional real-time strategy games such as Age of Empires II, Sid Meier's Civilization franchise, and Halo Wars 2. Godlike strategy games such as Populous: The Beginning, Black and White 2, and From Dust. Finally, strategy games in the “casual” market such as Northguard and Bad North. </li>
+                    <li class="w3-left-align w3-padding">Dutch mythology, folklore, technology, and period specific trends are some of the primary sources of inspiration for gameplay materials and overall worldbuilding. Examples are Ravens, “White Wives” (mists in farm fields), The “Sacred Tree”, “Wierde” and “Terpen” (constructed mounds), grain storage systems, “Sarries Huts” (Northern Dutch tax collector huts), farms and farmhouses, water holes and more. These subjects and styles changed and developed over time based on what was fashionable or acceptable throughout Dutch history.</li>
+                    <li class="w3-left-align w3-padding">The history of the development of churches across the North of the Netherlands and their cultural impact on modern day Dutch society. Aside from this, the growing movement of secularism in The Netherlands that has led to a significant decline of the usage of these churches, and how The Groningen Historical Churches Foundation is now maintaining these historically significant spaces as secular community centers.</li>
+                    <!-- DOWNLOAD GDD BUTTON -->
+                    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+                        <a href="https://justinkrogman.com/documents/PolderGDD.pdf" target="_blank" class="w3-hover-text-cyan"><i class="fa fa-download"></i> Download Game Design Document</a>
+                    </button>
+                </div>
+            </div>
 
-<div class="w3-row-padding w3-center">
+            <hr style="max-width:1000px" class="w3-opacity w3-content">
 
-    <div>
-        <h1 class="w3-xxxlarge w3-padding-top-48">Polder</h1>
-        <hr style="max-width:900px" class="w3-opacity w3-content">
+            <!-- OVERVIEW SLIDESHOW -->
+            <div class="w3-row-padding w3-padding-top-12">
+                <h1>Slideshow</h1>
+                <!-- SLIDESHOW -->
+                <div class="w3-content" style="max-width:1000px;position:relative">
+                    <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/polder_procedural_generation.gif" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder1.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder2.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder5.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder6.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder7.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder12.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder13.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder14.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder15.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <!-- SLIDESHOW CONTROLS -->
+                    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                        <a class="w3-button w3-round-xxlarge w3-black w3-hover-cyan w3-hover-text-white" style="position:absolute;top:0%;left:0;" onclick="plusDivs(-1)">❮</a>
+                        <a class="w3-button w3-round-xxlarge w3-black w3-hover-cyan w3-hover-text-white" style="position:absolute;top:0%;right:0;" onclick="plusDivs(+1)">❯</a>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-cyan " style="cursor:pointer;height:20px;width:20px;padding-top:6px;padding-left:8px;" onclick="currentDiv(1)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-cyan " style="cursor:pointer;height:20px;width:20px;padding-top:6px;padding-left:8px;" onclick="currentDiv(2)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-cyan " style="cursor:pointer;height:20px;width:20px;padding-top:6px;padding-left:8px;" onclick="currentDiv(3)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-cyan " style="cursor:pointer;height:20px;width:20px;padding-top:6px;padding-left:8px;" onclick="currentDiv(4)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-cyan " style="cursor:pointer;height:20px;width:20px;padding-top:6px;padding-left:8px;" onclick="currentDiv(5)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-cyan " style="cursor:pointer;height:20px;width:20px;padding-top:6px;padding-left:8px;" onclick="currentDiv(6)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-cyan " style="cursor:pointer;height:20px;width:20px;padding-top:6px;padding-left:8px;" onclick="currentDiv(7)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-cyan " style="cursor:pointer;height:20px;width:20px;padding-top:6px;padding-left:8px;" onclick="currentDiv(8)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-cyan " style="cursor:pointer;height:20px;width:20px;padding-top:6px;padding-left:8px;" onclick="currentDiv(9)"></span>
+                        <span class="w3-badge demo w3-border w3-transparent w3-hover-cyan " style="cursor:pointer;height:20px;width:20px;padding-top:6px;padding-left:8px;" onclick="currentDiv(10)"></span>
+                    </div>
+                </div>
+                <p class="w3-content w3-small" style="max-width:600px;font-style: italic;color:lightblue">A collection of in-editor and in-game images featuring game levels, 3D model assets, prototype testing levels, design diagrams and flowcharts, and several generations of the procedural hexagon grid using different seeds and parameters.</p>
+            </div>
 
-        <!-- SLIDESHOW -->
-        <div class="w3-content w3-padding-top-64" style="max-width:900px;position:relative">
-            <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/polder.gif" style="cursor:pointer;width:100%" onclick="onClick(this)">
-            <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder1.png" style="cursor:pointer;width:100%" onclick="onClick(this)">
-            <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder2.png" style="cursor:pointer;width:100%" onclick="onClick(this)">
-            <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder10.png" style="cursor:pointer;width:100%" onclick="onClick(this)">
-            <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder3.png" style="cursor:pointer;width:100%" onclick="onClick(this)">
-            <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder4.jpg" style="cursor:pointer;width:100%" onclick="onClick(this)">
-            <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder11.png" style="cursor:pointer;width:100%" onclick="onClick(this)">
-            <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder8.png" style="cursor:pointer;width:100%" onclick="onClick(this)">
-            <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder9.png" style="cursor:pointer;width:100%" onclick="onClick(this)">
-            <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder5.png" style="cursor:pointer;width:100%" onclick="onClick(this)">
-            <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder6.png" style="cursor:pointer;width:100%" onclick="onClick(this)">
-            <img class="mySlides w3-animate-opacity" src="https://justinkrogman.com/images/Polder7.png" style="cursor:pointer;width:100%" onclick="onClick(this)">
-        
-            <a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;left:0;" onclick="plusDivs(-1)">❮</a>
-            <a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;right:0;" onclick="plusDivs(+1)">❯</a>
+            <hr style="max-width:1000px" class="w3-opacity w3-content">
+
+            <!-- DESIGN CHALLENGE -->
+            <div class="w3-content">
+                <h1>Design Challenge</h1>
+                <div class="w3-content" style="max-width:800px;">
+                    <p class="w3-padding">The primary design challenge was to design and develop a prototype of a casual “real-time strategy godlike city-building” entertainment game about the topics of “Polders”, “Weirde”, “Groningen Churches”, and churches in the North of The Netherlands. This prototype should incorporate cutting edge technologies and current industry trends like virtual reality hardware, a physics sandbox, and a strong narrative single-player experience.</p>
+                    <p class="w3-padding">To accommodate the goals and opportunities of both clients, Indietopia would like to have a playable prototype of the game created that can be used to secure full funding for the project. The intention of the prototype is to be used as the basis for future development of a full scale entertainment game to produce commercial profits for both Indietopia and The Groningen Historic Churches Foundation, and should establish a clear core gameplay loop and meta-progression cycle to be iterated upon and fully fleshed out during the development of the full game.</p>
+                    <p class="w3-padding">Improve the public image and awareness of the social benefits of the secular churches owned by The Groningen Historic Churches Foundation through behavioural motivation via persuasive design to the segment of the Dutch population that currently engage with casual games and may have an existing interest in Dutch history and the history of Dutch land reclamation.</p>
+                </div>
+            </div>
         </div>
     </div>
 
-        <!-- PROJECT INFORMATION -->
+    <hr style="max-width:1000px" class="w3-opacity w3-content">
 
-        <h2 class="w3-padding-top-64">Project Details</h2>
-        <hr style="max-width:600px" class="w3-opacity w3-content">
-        <!-- PROCESS DESCRIPTION -->
-        <div class="w3-center w3-content w3-justify" style="max-width: 600px;">
-            <p>Polder is a real-time strategy-building game where the player's primary goal is to settle new
-                villages across the North of The Netherlands and build them up to prosperity. A church acts
-                as the central point of every village and the player must work to develop and defend it from
-                a litany of hazards and natural disasters while efficiently managing resources and funds.</p>
-            <p>The game begins in the 11th century A.D. and will advance roughly fifty years further in
-                time throughout each level or scenario. As time advances, villages will continue to change
-                in style to reflect building methods, materials, and architectural styles of that respective
-                time period while the churches will remain the same to reflect the strong roots in culture
-                and values that they provided to their communities.</p>
-                <p>Polder was nominated for the best graduation assignment of 2023 at Hanze University of Applied Sciences.</p>
+    <!-- PRE-PRODUCTION -->
+    <div class="w3-content" id="preproduction" style="max-width:1000px;position:relative">
+        <!-- TITLE -->
+        <h1>Pre-Production</h1>
+        <div class="w3-row-padding w3-padding-top-32">
+            <div class="w3-half w3-left-align">
+                <!-- BRAINSTORMING -->
+                <h2>Brainstorming</h2>
+                <p>To begin extrapolating the design challenges into a workable concept to start prototyping from, I quickly established a moodboard to analyse how both The Netherlands could be visually represented with its intricate layout of canals, Weirde, and Polders as well as how a world for a virtual reality strategy game could be composed. From this brainstorming it immediately became clear that hexagonal grids were a common implementation for strategy games, and provided many benefits for managing gameplay elements over traditional square grids such as clear diagonal movement and more accurate distance measurements, clearly establishing circular zones of tile radiuses, and making terrain maps look more natural and visually pleasing.</p>
+                <!-- PAPER DESIGN -->
+                <h2>Paper Design</h2>
+                <p>Before beginning prototyping, I always create several flowcharts and diagrams to develop a first iteration of the core gameplay loop and overall software architecture. This significantly streamlines my process while building game systems in-engine, and allows me to solve design challenges early on before any technical debt is established.</p>
+            </div>
+            <!-- PRE-PRODUCTION GIF OR PHOTO -->
+            <div class="w3-half">
+                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_moodboard.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">When creating the moodboard for Polder, I aimed to establish a clear visual style from a selection of real-world examples of the Dutch landscape and then unify this vision with examples of popular Real-Time Strategy games that have established industry standards for the genre.</p>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Alongside this, I always focus on setting up a few colour palettes to narrow down the artistic style I will pursue for my games. In this case, I focused on a more stylised art style to complement a hexagonal grid and chose palettes focused on natural tones for the environment contrasted against muted but vibrant primary colours for gameplay structures.</p>
+            </div>
         </div>
+        <!-- BEFORE & AFTER PHOTOS -->
+        <div class="w3-row-padding w3-padding-top-24">
+            <div class="w3-half">
+                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_tile_synergy.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">To promote a greater level of depth and strategy when building the players civilisation, I established a scalable synergy system for placed structures to interact with one another. Each building type provides statistical benefits to other structures in the radius, with diminishing returns the further away the structures are from one another.</p>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">To make this system more approachable for the target audience of casual gamers, I split up the synergy levels into clearly distinguishable zones representable with coloured areas of the hexagon tiled grid in world space.</p>
+            </div>
+            <div class="w3-half">
+                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_software_architecture.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Because one of the project's main goals is to be primarily played as a virtual reality title, I needed to understand how users would navigate through the overall game software in virtual reality itself. I created a software architecture flowchart to establish where I would need to build 3D physicalized spaces and menu panels for game and menu navigation, and where the actual core gameplay loop would take place.</p>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">During this process I also established a retention loop secondary to the game's story progression in the form of narratively focused collectables and dioramas of the player's towns from each completed campaign level. Note: If the flowchart text is difficult to read, <b>I recommend opening the image in a new tab</b>.</p>
+            </div>
+        </div>
+        <div class="w3-row-padding w3-padding-top-24">
+            <div class="w3-half">
+                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_simple_core_gameplay_loop.png"
+                    style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">I created this simplified core gameplay loop diagram to summarise the full core gameplay loop flowchart to clients and stakeholders that are less design oriented, and to more easily convey how the build and play round based system would loop through itself during the progression of a single campaign level.</p>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">During the build mode time is paused so that players can analyse and strategize in an approachable and casual manner with lots of breathing room, and during the play mode time is active and the player must witness the results of their actions established in the preceding build mode. This loops ten times in a given level, with each loop representing five years of historical progression in time for a total of fifty years of time per campaign level.</p>
+            </div>
+            <div class="w3-half">
+                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_core_gameplay_loop.png"
+                    style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Note: If the flowchart text is difficult to read, <b>I recommend opening the image in a new tab</b>.</p>
+            </div>
+        </div>
+        <!-- DESIGN SOLUTIONS -->
+        <div class="w3-row-padding w3-padding-top-32 w3-left-align">
+            <h2>Design Solutions</h2>
+            <li class="w3-padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tenetur nemo, at qui possimus quasi placeat pariatur maiores illo harum dolorem aspernatur magni laudantium culpa modi? Aperiam natus veritatis vel.</li>
+            <li class="w3-padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tenetur nemo, at qui possimus quasi placeat pariatur maiores illo harum dolorem aspernatur magni laudantium culpa modi? Aperiam natus veritatis vel.</li>
+            <li class="w3-padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tenetur nemo, at qui possimus quasi placeat pariatur maiores illo harum dolorem aspernatur magni laudantium culpa modi? Aperiam natus veritatis vel.</li>
+        </div>
+    </div>
 
-        <!-- PROCESS TABLE -->
-        <table class="w3-center w3-centered w3-content w3-justify w3-table w3-striped w3-bordered w3-border-black" style="max-width: 600px;">
-            <tr>
-                <td class="w3-cyan" style="width:30%">Development Time</td>
-                <td class="w3-light-gray">2023, 6 Months</td>
-            </tr>
-            <tr>
-                <td class="w3-cyan">Team Size</td>
-                <td class="w3-text-black">1x Developer</td>
-            </tr>
-            <tr>
-                <td class="w3-cyan">Client</td>
-                <td class="w3-light-gray">Indietopia</td>
-            </tr>
-            <tr>
-                <td class="w3-cyan">Target Platform</td>
-                <td class="w3-text-black">Oculus Quest 2 VR Headset</td>
-            </tr>
-        </table>
+    <hr style="max-width:1000px" class="w3-opacity w3-content">
+    
+    <!-- PROGRAMMING & SCRIPTING -->
+    <div class="w3-content" id="programming" style="max-width:1000px;position:relative">
+        <!-- TITLE -->
+        <h1>Programming and Scripting</h1>
+        <p class="w3-content" style="max-width:800px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quia ipsa veritatis excepturi cum possimus, aut aliquid eos, ipsum unde consectetur. <b>Hic asperiores laboriosam quos suscipit</b>, voluptatibus quisquam id enim?</p>
+        <!-- GAME MECHANIC GIFS -->
+        <div class="w3-row-padding w3-padding-top-32">
+            <div class="w3-third">
+                <iframe src="https://blueprintue.com/render/nzg8_iiy/" title="Game Mechanic Blueprint Code" scrolling="no" allowfullscreen style="width:100%;height:200px;border:none;"></iframe>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+            </div>
+            <div class="w3-third">
+                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_controls_diagram.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+            </div>
+            <div class="w3-third">
+                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_procedural_trees.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+            </div>
+        </div>
+        <!-- MAIN GAME MECHANIC -->
+        <div class="w3-row-padding w3-padding-top-32">
+            <div class="w3-half w3-left-align">
+                <h2>Main Game Mechanic</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolor in repellat aliquid ipsum amet voluptas cupiditate laborum iste dolorum, optio esse incidunt quidem aperiam officiis rerum distinctio aut molestiae?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repudiandae minus cumque iste quod, voluptatibus incidunt molestiae. Quisquam totam distinctio maxime laboriosam eius quidem non ipsa dolorum. Tenetur, necessitatibus deleniti!</p>
+            </div>
+            <!-- MAIN GAME MECHANIC GIF -->
+            <div class="w3-half">
+                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_terraforming.gif" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+            </div>
+        </div>
+        <!-- METRICS -->
+        <div class="w3-row-padding w3-padding-top-32">
+            <!-- METRICS PHOTO -->
+            <div class="w3-half">
+                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_metrics.gif" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+            </div>
+            <div class="w3-half w3-left-align">
+                <!-- METRICS -->
+                <h2>Metrics</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolor in repellat aliquid ipsum amet voluptas cupiditate laborum iste dolorum, optio esse incidunt quidem aperiam officiis rerum distinctio aut molestiae?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repudiandae minus cumque iste quod, voluptatibus incidunt molestiae. Quisquam totam distinctio maxime laboriosam eius quidem non ipsa dolorum. Tenetur, necessitatibus deleniti!</p>
+            </div>
+        </div>
+        <div class="w3-row-padding w3-padding-top-24">
+            <div class="w3-half">
+                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_rendering_performance_graph.png"
+                style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor
+                sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores,
+                nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum. 375x375 Hexagon Grid = 140,625 Hexagon Tile Instanced Static Meshes.</p>
+            </div>
+            <div class="w3-half">
+                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_rendering_performance_scene.png"
+                style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor
+                sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores,
+                nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum. 375x375 Hexagon Grid = 140,625 Hexagon Tile Instanced Static Meshes.</p>
+            </div>
+        </div>
+        <!-- MAIN GAME MECHANIC DEMO VIDEO -->
+        <div class="w3-row-padding w3-padding-top-32">
+            <h2>Game Mechanic Demo</h2>
+            <video class="videoplayer" controls width="100%" height="553px" src="https://justinkrogman.com/videos/polder_terraforming_and_resource_costs.mp4" style="border-radius:4%"></video>
+            <p class="w3-content w3-small" style="max-width:600px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+        </div>
+        <!-- MAIN GAME MECHANIC EMBEDDED BLUEPRINT -->
+        <div class="w3-row-padding w3-padding-top-32">
+            <h2>Hexagon Grid Construction Script Blueprint Code</h2>
+            <iframe src="https://blueprintue.com/render/-hku5h55/" title="Game Mechanic Blueprint Code" scrolling="no" allowfullscreen style="width:100%;height:650px;border:none;"></iframe>
+            <p class="w3-content w3-small" style="max-width:600px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+        </div>
+        <!-- EXTRA GAME MECHANIC -->
+        <div class="w3-row-padding w3-padding-top-32">
+            <div class="w3-half w3-left-align">
+                <h2>Extra Game Mechanic</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolor in repellat aliquid ipsum amet voluptas cupiditate laborum iste dolorum, optio esse incidunt quidem aperiam officiis rerum distinctio aut molestiae?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repudiandae minus cumque iste quod, voluptatibus incidunt molestiae. Quisquam totam distinctio maxime laboriosam eius quidem non ipsa dolorum. Tenetur, necessitatibus deleniti!</p>
+            </div>
+            <!-- EXTRA GAME MECHANIC GIF -->
+            <div class="w3-half">
+                <video class="videoplayer" controls width="100%" height="268px" src="https://justinkrogman.com/videos/polder_resource_generation.mp4" style="border-radius:4%"></video>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+            </div>
+        </div>
+        <!-- EXTRA GAME MECHANIC EMBEDDED BLUEPRINT -->
+        <div class="w3-row-padding w3-padding-top-32">
+            <h2>Resource System Blueprint Code</h2>
+            <iframe src="https://blueprintue.com/render/b1pkgl5d/" title="Game Mechanic Blueprint Code" scrolling="no"
+                allowfullscreen style="width:100%;height:650px;border:none;"></iframe>
+            <p class="w3-content w3-small" style="max-width:600px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit
+                amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum
+                veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+        </div>
+        <!-- TECHNICAL CHALLENGES -->
+            <div class="w3-row-padding w3-padding-top-24">
+                <h2>Technical Challenges</h2>
+                <div class="w3-content" style="max-width:800px;">
+                    <p class="w3-padding">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                    <p class="w3-padding">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                    <p class="w3-padding">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                </div>
+            </div>
+    </div>
 
-        <h2 class="w3-padding-top-64">Gameplay Details</h2>
-        <hr style="max-width:600px" class="w3-opacity w3-content">
-        <!-- PROCESS DESCRIPTION -->
-        <div class="w3-center w3-content w3-justify" style="max-width: 600px;">
-            <p>The core gameplay loop takes place over the course of two different gameplay modes that
-                roughly represent a “round-based” system. In each mode the player focuses on different
-                aspects of either building or maintaining their village.</p>
-            <p>It was important to me to craft a fun and engaging entertainment experience for a majority of users that follows
-                industry standards and best practices for casual games. During gameplay, players learn about the development of
-                churches in the North of The Netherlands and are guided to be more engaged with their current development.
-                Through this, players learn about modern uses that Groningen churches fulfill in order to benefit society and
-                develop an improved view of churches in the North of The Netherlands.</p>
+    <hr style="max-width:1000px" class="w3-opacity w3-content">
+
+    <!-- PRODUCTION & DEVELOPMENT -->
+    <div class="w3-content" id="production" style="max-width:1000px;position:relative">
+        <!-- TITLE -->
+        <h1>Production and Development</h1>
+        <p class="w3-content" style="max-width:600px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quia ipsa veritatis excepturi cum possimus, aut aliquid eos, ipsum unde consectetur. <b>Hic asperiores laboriosam quos suscipit</b>, voluptatibus quisquam id enim?</p>
+        <!-- DEVELOPMENT GIFS -->
+        <div>
+            <div class="w3-row-padding w3-padding-top-32">
+                <div class="w3-half">
+                    <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_development_progress_1.png"
+                    style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                </div>
+                <div class="w3-half">
+                    <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_development_progress_2.png"
+                    style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                </div>
+            </div>
+            <div class="w3-row-padding">
+                <div class="w3-half">
+                    <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_development_progress_3.png"
+                    style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                </div>
+                <div class="w3-half">
+                    <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_development_progress_4.png"
+                    style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                </div>
+            </div>
         </div>
         
-        <!-- PROCESS TABLE -->
-        <table class="w3-center w3-centered w3-content w3-justify w3-table w3-striped w3-bordered w3-border-black" style="max-width: 600px;">
-            <tr>
-                <td class="w3-cyan">Genre</td>
-                <td class="w3-light-gray">Casual Godlike Real-Time Strategy Citybuilder</td>
-            </tr>
-            <tr>
-                <td class="w3-cyan">Controls System</td>
-                <td class="w3-text-black">Oculus Rift VR Controllers</td>
-            </tr>
-            <tr>
-                <td class="w3-cyan">Target Audience</td>
-                <td class="w3-light-gray">Dutch Casual Gamers Aged 20-50</td>
-            </tr>
-            <tr>
-                <td class="w3-cyan">Game Skills</td>
-                <td class="w3-text-black">Strategy, Resource Management, Terraforming</td>
-            </tr>
-        </table>
+        <!-- BLOCKOUT -->
+        <div class="w3-padding-top-32">
+            <!-- BLOCKOUT -->
+            <h2>Blockout</h2>
+            <!-- PHOTOS -->
+            <div class="w3-row-padding">
+                <div class="w3-half">
+                    <img class="w3-animate-opacity" src="https://justinkrogman.com/images/Polder1.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <p class="w3-content w3-small" style="max-width:400px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                </div>
+                <div class="w3-half">
+                    <img class="w3-animate-opacity" src="https://justinkrogman.com/images/Polder6.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <p class="w3-content w3-small" style="max-width:400px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                </div>
+            </div>
+        </div>
 
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-        <a href="https://justinkrogman.com/documents/PolderGDD.pdf" target="_blank" class="w3-hover-text-cyan"><i
-                class="fa fa-download"></i> Download Game Design Document</a>
-    </button>
-
-        <h2 class="w3-padding-top-64">Tools</h2>
-        <hr style="max-width:600px" class="w3-opacity w3-content">
-        <!-- PROCESS DESCRIPTION -->
-        <div class="w3-center w3-content w3-justify" style="max-width: 600px;">
-            <p>Aside from those goals, my development of this project aimed to launch Indietopia's first commercial game under a
-                new BV branch and expand the company's portfolio. This has also allowed me to further develop and improve my
-                practical skills as an Unreal Engine designer and developer to a more professional level.</p>
+        <!-- ITERATIONS -->
+        <div class="w3-padding-top-32">
+            <h2>Iterations</h2>
+            <div class="w3-row-padding">
+            <!-- ITERATIONS PHOTO -->
+                <div class="w3-half">
+                    <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_iteration_1.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                </div>
+                <div class="w3-half w3-left-align">
+                    <!-- ITERATIONS -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolor in repellat aliquid ipsum amet voluptas cupiditate laborum iste dolorum, optio esse incidunt quidem aperiam officiis rerum distinctio aut molestiae?</p>
+                    <li class="w3-padding">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, necessitatibus reprehenderit porro alias blanditiis qui possimus vero sequi velit ex rerum doloribus mollitia, harum fugit officia magnam nesciunt asperiores id?</li>
+                    <li class="w3-padding">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, necessitatibus reprehenderit porro alias blanditiis qui possimus vero sequi velit ex rerum doloribus mollitia, harum fugit officia magnam nesciunt asperiores id?</li>
+                </div>
+            </div>
+            <!-- ITERATIONS CONTINUED -->
+            <div class="w3-row-padding w3-padding-top-24">
+                <div class="w3-half w3-left-align">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolor in repellat aliquid ipsum amet voluptas cupiditate laborum iste dolorum, optio esse incidunt quidem aperiam officiis rerum distinctio aut molestiae?</p>
+                    <li class="w3-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sint optio libero corrupti eligendi debitis consequuntur alias repellendus rem, porro nesciunt eius voluptatum quis nemo mollitia pariatur, ducimus adipisci eveniet.</li>
+                    <li class="w3-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsa accusamus repudiandae vero provident voluptatibus consectetur incidunt quia iure assumenda illo eveniet expedita minus pariatur fugiat itaque architecto, nostrum a.</li>
+                </div>
+                <!-- ITERATIONS PHOTO -->
+                <div class="w3-half">
+                    <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_iteration_2.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                    <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                </div>
+            </div>
         </div>
         
-        <!-- PROCESS TABLE -->
-        <table class="w3-center w3-centered w3-content w3-justify w3-table w3-striped w3-bordered w3-border-black" style="max-width: 600px;">
-            <tr>
-                <td class="w3-cyan">Software</td>
-                <td class="w3-light-gray">GitHub, Unreal Engine 5.1.1, Miro, ClickUp</td>
-            </tr>
-            <tr>
-                <td class="w3-cyan">Management System</td>
-                <td class="w3-text-black">Agile, Scrum, 1 Week Sprints</td>
-            </tr>
-            <tr>
-                <td class="w3-cyan">Development Platform</td>
-                <td class="w3-light-gray">PC, Windows 11</td>
-            </tr>
-            <tr>
-                <td class="w3-cyan">Role</td>
-                <td class="w3-text-black">Lead Designer and Developer</td>
-            </tr>
-        </table>
+    </div>
+
+    <hr style="max-width:1000px" class="w3-opacity w3-content">
+    
+    <!-- DESIGN PHILOSOPHY -->
+    <div class="w3-content" id="designphilosophy" style="max-width:1000px;position:relative">
+        <!-- PHILOSOPHY SUMMARY -->
+        <h1>Design Philosophy</h1>
+        <p class="w3-content" style="max-width:600px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quia ipsa veritatis excepturi cum possimus, aut aliquid eos, ipsum unde consectetur. <b>Hic asperiores laboriosam quos suscipit</b>, voluptatibus quisquam id enim?</p>
+        <!-- DESIGN PHILOSOPHY 1 -->
+        <div class="w3-row-padding w3-padding-top-32">
+            <div class="w3-half w3-left-align">
+                <h2>Replayability and Procedural Generation</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolor in repellat aliquid ipsum amet voluptas cupiditate laborum iste dolorum, optio esse incidunt quidem aperiam officiis rerum distinctio aut molestiae?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et quod esse natus corporis quos soluta. Exercitationem aspernatur sapiente at veniam aut enim voluptatum inventore, quia nesciunt quisquam quam placeat odit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illum, cumque, pariatur nam doloremque incidunt nostrum assumenda obcaecati placeat soluta nemo possimus similique ab sapiente, suscipit sit laborum voluptatibus quidem!</p>
+            </div>
+            <!-- PHILOSOPHY PHOTO -->
+            <div class="w3-half">
+                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_procedural_generation_flythrough.gif" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+            </div>
+        </div>
+        <!-- DESIGN PHILOSOPHY 1 DEMO VIDEO -->
+        <div class="w3-row w3-padding-top-32">
+            <div class="w3-content">
+                <video class="videoplayer" controls width="100%" height="553px" src="https://justinkrogman.com/videos/polder_hexgrid_procedural_generation.mp4" style="border-radius:4%"></video>
+                <p class="w3-content w3-small" style="max-width:600px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+            </div>
+        </div>
+        <!-- EXTRA DESIGN PHILOSOPHY 1 INFORMATION -->
+        <div class="w3-row-padding w3-padding-top-32">
+            <div class="w3-left-align">
+                <p>Some of the other techniques used here include:</p>
+                <li class="w3-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatum doloremque sunt excepturi quis earum iure illum ullam iste dignissimos cumque, velit ratione perspiciatis eum illo ut? Vel, quibusdam autem?</li>
+                <li class="w3-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam animi nulla iusto adipisci placeat dolorum, molestiae nemo quisquam veritatis aperiam excepturi ex culpa itaque molestias doloremque sint! Officia, dicta ex.</li>
+                <li class="w3-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil numquam ipsam tempora ipsum perspiciatis eaque atque exercitationem explicabo mollitia deleniti dolor ducimus in accusamus commodi a reprehenderit similique, aspernatur cumque.</li>
+            </div>
+        </div>
+        <!-- DESIGN PHILOSOPHY 2 -->
+        <div class="w3-row-padding w3-padding-top-32">
+            <div class="w3-half w3-left-align">
+                <h2>Contemporary Historical Storytelling</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolor in repellat aliquid ipsum amet voluptas cupiditate laborum iste dolorum, optio esse incidunt quidem aperiam officiis rerum distinctio aut molestiae?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et quod esse natus corporis quos soluta. Exercitationem aspernatur sapiente at veniam aut enim voluptatum inventore, quia nesciunt quisquam quam placeat odit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illum, cumque, pariatur nam doloremque incidunt nostrum assumenda obcaecati placeat soluta nemo possimus similique ab sapiente, suscipit sit laborum voluptatibus quidem!</p>
+            </div>
+            <!-- PHILOSOPHY PHOTO -->
+            <div class="w3-half">
+                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_design_philosophy_2_scenarios.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+            </div>
+        </div>
+        <!-- PHILOSOPHY 2 GIF -->
+        <div class="w3-row-padding w3-padding-top-32">
+            <video class="videoplayer" controls width="100%" height="553px" src="https://justinkrogman.com/videos/polder_round_based_time_system.mp4" style="border-radius:4%"></video>
+            <p class="w3-content w3-small" style="max-width:600px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+        </div>
+        <!-- DESIGN PHILOSOPHY 3 -->
+        <div class="w3-row-padding w3-padding-top-32">
+            <!-- PHILOSOPHY PHOTO -->
+            <div class="w3-half">
+                <video class="videoplayer" controls width="100%" height="268px" src="https://justinkrogman.com/videos/polder_faith_powers.mp4" style="border-radius:4%"></video>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+            </div>
+            <div class="w3-half w3-left-align">
+                <!-- PHILOSOPHY 3 -->
+                <h2>The Godlike Power Fantasy</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolor in repellat aliquid ipsum amet voluptas cupiditate laborum iste dolorum, optio esse incidunt quidem aperiam officiis rerum distinctio aut molestiae?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repudiandae minus cumque iste quod, voluptatibus incidunt molestiae. Quisquam totam distinctio maxime laboriosam eius quidem non ipsa dolorum. Tenetur, necessitatibus deleniti!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quaerat, est, eligendi porro quidem distinctio fugit quas vero autem consequatur velit impedit tempore voluptate, perspiciatis asperiores animi repellat incidunt molestias.</p>
+            </div>
+        </div>
+    </div>
+
+    <hr style="max-width:1000px" class="w3-opacity w3-content">
+
+    <!-- TESTING -->
+    <div class="w3-content" id="testing" style="max-width:1000px;position:relative">
+        <!-- TITLE -->
+        <h1>Testing</h1>
+        <div class="w3-row-padding w3-padding-top-32">
+            <div class="w3-half w3-left-align">
+                <!-- TESTING METHODOLOGY -->
+                <h2>Methodology</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi repudiandae beatae commodi nulla aliquam ea aspernatur eligendi culpa facilis cupiditate. Eaque deleniti officiis sit totam molestiae molestias enim maiores ducimus?</p>
+                <!-- RESULTS SUMMARY -->
+                <h2>Results</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum veniam accusantium sint hic repudiandae aliquid alias ullam aliquam, fugiat recusandae nostrum accusamus iusto nesciunt? Necessitatibus architecto et enim repellendus expedita.</p>
+            </div>
+            <!-- TESTING GIF OR PHOTO -->
+            <div class="w3-half">
+                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_testing_outreach.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+            </div>
+        </div>
+        <!-- TESTING PHOTOS -->
+        <div class="w3-row-padding w3-padding-top-24">
+            <div class="w3-half">
+                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_testing_plan.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+            </div>
+            <div class="w3-half">
+                <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_testing.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+            </div>
+        </div>
+    </div>
+
+    <hr style="max-width:1000px" class="w3-opacity w3-content">
+    
+    <!-- POST MORTEM & RETROSPECTIVE -->
+    <div class="w3-content" id="postmortem" style="max-width:1000px;position:relative">
+        <!-- POST MORTEM -->
+        <h1>Post-Mortem</h1>
+        <!-- WHAT I WOULD DO DIFFERENTLY -->
+        <div class="w3-row-padding w3-padding-top-32 w3-left-align">
+            <h2>What Would I Do Differently Today?</h2>
+            <div class="w3-half">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quia ipsa veritatis excepturi cum possimus, aut aliquid eos, ipsum unde consectetur. <b>Hic asperiores laboriosam quos suscipit</b>, voluptatibus quisquam id enim?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, hic dignissimos. Quae accusantium velit iusto consectetur maiores dolorum repudiandae ipsam provident cum corporis esse explicabo, est delectus. Rem, iure asperiores.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sapiente modi nam ex ipsa iste aspernatur saepe. Ipsa laborum, aliquid libero saepe rerum ipsam. Nemo perspiciatis blanditiis omnis neque dignissimos.</p>
+            </div>
+            <div class="w3-half">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quia ipsa veritatis excepturi cum possimus, aut aliquid eos, ipsum unde consectetur. <b>Hic asperiores laboriosam quos suscipit</b>, voluptatibus quisquam id enim?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, hic dignissimos. Quae accusantium velit iusto consectetur maiores dolorum repudiandae ipsam provident cum corporis esse explicabo, est delectus. Rem, iure asperiores.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sapiente modi nam ex ipsa iste aspernatur saepe. Ipsa laborum, aliquid libero saepe rerum ipsam. Nemo perspiciatis blanditiis omnis neque dignissimos.</p>
+            </div>
+        </div>
+        <!-- LEARNING LESSONS -->
+        <div class="w3-row-padding w3-padding-top-32 w3-left-align">
+            <h2>Learning Lessons</h2>
+            <li class="w3-padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tenetur nemo, at qui possimus quasi placeat pariatur maiores illo harum dolorem aspernatur magni laudantium culpa modi? Aperiam natus veritatis vel.</li>
+            <li class="w3-padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tenetur nemo, at qui possimus quasi placeat pariatur maiores illo harum dolorem aspernatur magni laudantium culpa modi? Aperiam natus veritatis vel.</li>
+            <li class="w3-padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tenetur nemo, at qui possimus quasi placeat pariatur maiores illo harum dolorem aspernatur magni laudantium culpa modi? Aperiam natus veritatis vel.</li>
+        </div>
+        <!-- MAJOR ACCOMPLISHMENTS -->
+        <div class="w3-row-padding w3-padding-top-32 w3-left-align">
+            <h2>Major Accomplishments</h2>
+            <li class="w3-padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tenetur nemo, at qui possimus quasi placeat pariatur maiores illo harum dolorem aspernatur magni laudantium culpa modi? Aperiam natus veritatis vel.</li>
+            <li class="w3-padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tenetur nemo, at qui possimus quasi placeat pariatur maiores illo harum dolorem aspernatur magni laudantium culpa modi? Aperiam natus veritatis vel.</li>
+            <li class="w3-padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tenetur nemo, at qui possimus quasi placeat pariatur maiores illo harum dolorem aspernatur magni laudantium culpa modi? Aperiam natus veritatis vel.</li>
+        </div>
+        <!-- POST-MORTEM GIF -->
+        <div class="w3-row-padding w3-padding-top-32">
+            <video class="videoplayer" controls width="100%" height="553px" src="https://justinkrogman.com/videos/polder_day_night_cycle_timelapse.mp4" style="border-radius:4%"></video>
+            <p class="w3-content w3-small" style="max-width:600px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+        </div>
+    </div>
+
+    <hr style="max-width:1000px" class="w3-opacity w3-content">
+
+    <!-- PLAYTHROUGH VIDEO OR TRAILER -->
+    <div class="w3-content" id="demovideo" style="position:relative">
+        <h1>Walkthrough Video</h1>
+        <!-- VIDEO -->
+        <div class="w3-row w3-padding-top-32">
+            <div class="w3-content">
+                <iframe width="100%" height="640px" src="https://www.youtube.com/embed/Zd30HxyDkpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:4%"></iframe>
+                <p class="w3-content w3-small" style="max-width:600px;font-style: italic;color:lightblue;">Circa - June 19th, 2023</p>
+            </div>
+        </div>
+    </div>
+
+    <hr style="max-width:1000px" class="w3-opacity w3-content">
+
+    <!-- FOOTER -->
+    <div id="footer">
+        <footer class="w3-content w3-padding-64 w3-text-grey w3-jumbo">
+            <a href="https://www.linkedin.com/in/justin-krogman/" target="_blank"><i class="fa fa-linkedin-square w3-hover-opacity"></i></a>
+            <a href="https://www.facebook.com/JustinDouglasKrogman" target="_blank"><i class="fa fa-facebook-square w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/liberator23" target="_blank"><i class="fa fa-twitter-square w3-hover-opacity"></i></a>
+            <a href="mailto:jkrogman23@gmail.com" target="_blank"><i class="fa fa-envelope-square w3-hover-opacity"></i></a>
+            <p class="w3-medium">Thanks for visiting! <a href="#home" class="w3-hover-text-cyan">Back to Top</a></p>
+        </footer>
+    </div>
 </div>
-
-<!-- PROJECT VIDEO -->
-        <h2 class="w3-padding-top-64 w3-center">Walkthrough Video</h2>
-        <hr style="max-width:900px" class="w3-opacity w3-content">
-
-<div class="w3-center w3 w3-content w3-justify">
-<iframe width="100%" height="640px" src="https://www.youtube.com/embed/WGG5sDJrijs" title="YouTube video player"
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen class="w3-padding"></iframe>
-</div>
-
-<!-- Footer -->
-<footer class="w3-content w3-justify w3-center w3-justify w3-center w3-padding-64 w3-text-grey w3-jumbo">
-    <a href="https://www.linkedin.com/in/justin-krogman/" target="_blank"><i class="fa fa-linkedin-square w3-hover-opacity"></i></a>
-
-    <a href="https://www.facebook.com/JustinDouglasKrogman" target="_blank"><i class="fa fa-facebook-square w3-hover-opacity"></i></a>
-
-    <a href="https://twitter.com/liberator23" target="_blank"><i class="fa fa-twitter-square w3-hover-opacity"></i></a>
-
-    <a href="mailto:jkrogman23@gmail.com" target="_blank"><i class="fa fa-envelope-square w3-hover-opacity"></i></a>
-
-    <p class="w3-medium">Thanks for visiting! <a href="#" class="w3-hover-text-cyan">Back to Top</a></p>
-</footer>
-<!-- End footer -->
 
 <!-- END PAGE CONTENT -->
 
-<!--Slideshows Script--> 
-  <script>
+<!-- SCRIPTS -->
+<div id="scripts">
+    <!-- SLIDESHOWS --> 
+    <script>
         var slideIndex = 1;
+        showDivs(slideIndex);
 
         function plusDivs(n) {
-            slideIndex = slideIndex + n;
-            showDivs(slideIndex);
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
         }
 
         function showDivs(n) {
+            var i;
             var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
             if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length };
+            if (n < 1) { slideIndex = x.length }
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
             }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace("w3-white", "");
+            }
             x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += "w3-white";
         }
-
-        showDivs(1);
-
-</script>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-        <img id="img01" class="w3-image">
-        <p id="caption"></p>
+    </script>
+    <!-- MODAL FULL SIZE IMAGE CLICK -->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image" style="width:100%">
+            <p id="caption"></p>
+        </div>
     </div>
+    <!-- MODAL IMAGE GALLERY -->
+    <script>
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+    </script>
 </div>
-
-<script>
-    // Modal Image Gallery
-    function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
-        var captionText = document.getElementById("caption");
-        captionText.innerHTML = element.alt;
-    }
-</script>
-
 </body>
 </html>
