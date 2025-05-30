@@ -333,16 +333,21 @@
             <div class="w3-half">
                 <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_core_gameplay_loop.png"
                     style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
-                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">I established this flowchart to break down the core gameplay loop into a readable and cyclical pattern, and to build out
+                the core flow into a robust enough format that I could clearly design how the majority of the game's features fit
+                together within the core flow. This allowed me to work through the entirety of the game's features within the flowchart
+                even before fully designing all of them (such as the combat system), while ensuring that they would flow together in the
+                overall gameplay loop and be both robust and scalable enough to be suitable for the final commercial product.</p>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Both flowcharts have been colour coded to the same standard. In the red segment of the chart the player is in build mode and time is paused, and in the blue segment time is ongoing and that portion of the flowchart loops on itself until the play mode has concluded. The green segment is for success and failure condition checks, as well as general score and resource checks for sub-objectives.</p>
                 <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Note: If the flowchart text is difficult to read, <b>I recommend opening the image in a new tab</b>.</p>
             </div>
         </div>
         <!-- DESIGN SOLUTIONS -->
         <div class="w3-row-padding w3-padding-top-32 w3-left-align">
             <h2>Design Solutions</h2>
-            <li class="w3-padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tenetur nemo, at qui possimus quasi placeat pariatur maiores illo harum dolorem aspernatur magni laudantium culpa modi? Aperiam natus veritatis vel.</li>
-            <li class="w3-padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tenetur nemo, at qui possimus quasi placeat pariatur maiores illo harum dolorem aspernatur magni laudantium culpa modi? Aperiam natus veritatis vel.</li>
-            <li class="w3-padding">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis tenetur nemo, at qui possimus quasi placeat pariatur maiores illo harum dolorem aspernatur magni laudantium culpa modi? Aperiam natus veritatis vel.</li>
+            <li class="w3-padding">The first design solution I established was how to facilitate historical storytelling throughout each gameplay level while maintaining a good balance of game flow and strategic decision making. I did this through the  “Build, Play, Witness” gameplay loop which initially promotes players to freely explore the game world and direct their civilisation via building construction and terraforming the landscape, then challenges them uphold those directions as their civilisation attempts to follow their commands, and finally to witness the results of those combined actions in a potentially devastating series of events that recontextualise the next round of gameplay. (Via flooding from failed terraforming, natural disasters, scripted level events, etc)</li>
+            <li class="w3-padding">The second solution I designed was a system of synergies for buildings, which provide different bonuses in a radii on the landscape hexagon grid. These synergies promote various design patterns in how a player can arrange buildings and structures together, as well as the structures that their civilisation builds. By strategically managing synergies between buildings and landscaped elements, players can achieve a much higher level of efficiency and overall performance from their civilisation, and in many cases this will be required in order to survive through the entirety of the ten rounds present in each game level.</li>
+            <li class="w3-padding">The final design solution I established was to use diegetic elements in the games overall architecture, user interface, and interactable objects to emphasise the immersion gained from virtual reality as a platform, as well as to maintain the players connection to the game world as much as possible so that they would feel a strong attachment to both the world and their civilisation. The main menu has been designed to be a fully explorable 3D space of an already built village in a picturesque composition, with 3D diegetic world elements acting as the user interface button menu options. This is further reinforced in the game levels where all user interface elements and objects that relate game data to the player are fully physicalised in the world.</li>
         </div>
     </div>
 
@@ -352,12 +357,12 @@
     <div class="w3-content" id="programming" style="max-width:1000px;position:relative">
         <!-- TITLE -->
         <h1>Programming and Scripting</h1>
-        <p class="w3-content" style="max-width:800px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quia ipsa veritatis excepturi cum possimus, aut aliquid eos, ipsum unde consectetur. <b>Hic asperiores laboriosam quos suscipit</b>, voluptatibus quisquam id enim?</p>
+        <p class="w3-content" style="max-width:800px;">I accomplished all of the prototypes programming through both Blueprint and in-editor work in Unreal Engine 5.1. This logic was mainly split across the Player Pawn Blueprint, Hex Grid Blueprints, and the prototypes Level Blueprint.</p>
         <!-- GAME MECHANIC GIFS -->
         <div class="w3-row-padding w3-padding-top-32">
             <div class="w3-third">
                 <iframe src="https://blueprintue.com/render/nzg8_iiy/" title="Game Mechanic Blueprint Code" scrolling="no" allowfullscreen style="width:100%;height:200px;border:none;"></iframe>
-                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo at aut, dicta rerum vitae quidem autem nesciunt dolores, nostrum veritatis vel, natus accusantium voluptatibus! Vel accusamus minima voluptatem hic. Cum.</p>
+                <p class="w3-content w3-small" style="max-width:450px;font-style: italic;color:lightblue;">In this Player Pawn Blueprint, black comments represent logic from the UE provided VR template, and coloured comments represent sub-systems for character and game logic. The majority of this logic is related to floating / flying movement controls, hex grid terraforming interactions, and the player's “godlike” abilities such as the “Smite” faith power.</p>
             </div>
             <div class="w3-third">
                 <img class="w3-animate-opacity" src="https://justinkrogman.com/images/polder_controls_diagram.png" style="cursor:pointer;width:100%;border-radius:4%" onclick="onClick(this)">
