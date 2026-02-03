@@ -28,6 +28,10 @@ h1,h2,h3,h4,h5,h6 {
     z-index: 2;
 }
 
+li {
+    margin-left: 25px;
+}
+
 /* MEDIA CALLS */
 /* Remove margins from "page content" on small screens. Add extra padding for navigation spacing. Limit video elements height.*/
 @media only screen and (max-width: 600px) {
